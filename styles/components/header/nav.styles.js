@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledNav = styled.nav`
-    background-color: ${({theme}) => theme.colors.blue_1};
+    background-color: ${({theme}) => theme.colors.primary};
     position: relative;
     .wrap{
         display: flex;
@@ -37,7 +37,7 @@ export const StyledUl = styled.ul`
                 a{
                     padding: 12px 5px 12px 15px;
                     display: inline-block;
-                    color: ${props => props.theme.colors.blue_3};
+                    color: ${props => props.theme.colors.primary_light};
                     text-decoration: none;
                     &:hover{
                         color: ${props => props.theme.colors.blue_2};
@@ -59,7 +59,7 @@ export const StyledA = styled.a`
     line-height: ${props => props.button ? props.theme.lineHeight.lh24 : props.theme.lineHeight.lh20};
     display: inline-block;
     padding: ${props => props.button ? "6px 12px" : props.icon ? "10px 0" : "12px 0"};
-    background-color: ${props => props.button ? props.theme.colors.orange_1 : "transparent"};
+    background-color: ${props => props.button ? props.theme.colors.secondary : "transparent"};
     border-radius: ${props => props.button ? "4px" : ""};
     &:hover{
         text-decoration: underline;
@@ -99,12 +99,12 @@ export const StyledUserDiv = styled.div`
         border-radius: 4px;
         display: none;
         a{
-            color: ${props => props.theme.colors.blue_3};
+            color: ${props => props.theme.colors.primary_light};
             border-bottom: 1px solid #d4d4d4;
             padding: 12px 24px;
             display: block;
             &:hover{
-                background-color: ${props => props.theme.colors.gray_1};
+                background-color: ${props => props.theme.colors.tertiary};
             }
         }
     }

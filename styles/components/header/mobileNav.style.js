@@ -17,7 +17,7 @@ export const MobileDiv = styled.div`
 export const NavButton = styled.button`
     padding: 0;
     font-size: ${props => props.theme.fontSize.fs22};
-    color: ${props => props.theme.colors.blue_1};
+    color: ${props => props.theme.colors.primary};
     border: none;
     background-color: transparent;
     text-align: left;
@@ -26,13 +26,13 @@ export const NavButton = styled.button`
 
 export const SignUp = styled.a`
     text-decoration: none;
-    background-color: ${props => props.theme.colors.orange_1};
+    background-color: ${props => props.theme.colors.secondary};
     border-radius: 4px;
     color: ${props => props.theme.colors.white};
     padding: 6px 12px;
 `
 export const MbNavItemsDiv = styled.div`
-    background-color: ${props => props.theme.colors.blue_1};
+    background-color: ${props => props.theme.colors.primary};
     height: calc(100vh - 54px);
     overflow-y: auto;
     position: fixed;

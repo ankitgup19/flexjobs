@@ -9,7 +9,7 @@ export const StyledHeader = styled.header`
 `
 export const SearchWrap = styled.div`
     padding: 16px 0;
-    background-color: ${props => props.theme.colors.blue_1};
+    background-color: ${props => props.theme.colors.primary};
     display: flex;
     justify-content: center;
     @media all and (max-width: 767px){

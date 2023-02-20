@@ -2,13 +2,13 @@ const Variables = () => {
     return (
         {
             colors:{
+                primary: "#004f6d",//blue_1
+                primary_light: "#007cad",//blue_3
+                primary_dark: "#23527c",//blue_2
+                secondary: "#ff532a",//orange_1                
+                tertiary: "#e9ecef",//gray_1
                 white: "#fff",
                 black: "#000",
-                gray_1: "#e9ecef",
-                blue_1: "#004f6d",
-                blue_2: "#23527c",
-                blue_3: "#007cad",
-                orange_1: "#ff532a"
             },
             fontSize:{
                 fs16: "16px",

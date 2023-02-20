@@ -3,14 +3,14 @@ import styled from "styled-components";
 export const StyledA = styled.a`
     display: inline-block;
     text-transform: uppercase;
-    color: ${props => props.theme.colors.blue_1};
+    color: ${props => props.theme.colors.primary};
     text-decoration: none;
     font-family: "halcyon-medium";
     .logoImg{
         margin-right: 8px;
     }
     & > span{
-        color: ${props => props.theme.colors.orange_1};
+        color: ${props => props.theme.colors.secondary};
     }
     &:hover{
         text-decoration: underline;
