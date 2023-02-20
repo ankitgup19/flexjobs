@@ -10,18 +10,18 @@ export const InputSearch = styled.input`
     border-bottom-left-radius: ${({bdrcurve}) => bdrcurve ? "4px" : ""};
     outline: none;
     &:focus{
-        border: 3px solid #007cad;
+        border: 3px solid ${props => props.theme.colors.primaryLight};
     }
     @media all and (max-width:1024px){
         width: 100%;
         height: auto;
-        background-color: #fff;
+        background-color: ${props => props.theme.colors.white};
     }
 `
 export const SearchDiv = styled.div`
     box-shadow: 0 3px 6px rgb(0 0 0 / 25%);
     display: flex;
-    border: 1px solid #000;
+    border: 1px solid ${props => props.theme.colors.black};
     border-radius: 4px;
     @media all and (max-width:1024px){
         border: none;
@@ -33,8 +33,8 @@ export const SearchBtn =  styled.button`
     background-color: #FF6843;
     border: none;
     padding: 0 12px;
-    font-size: 21px;
-    color: #fff;
+    font-size: 2.1rem;
+    color: ${props => props.theme.colors.white};
     cursor: pointer;
     @media all and (max-width:1024px){
         padding: 8px 6px;

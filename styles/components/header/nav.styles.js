@@ -37,10 +37,10 @@ export const StyledUl = styled.ul`
                 a{
                     padding: 12px 5px 12px 15px;
                     display: inline-block;
-                    color: ${props => props.theme.colors.primary_light};
+                    color: ${props => props.theme.colors.primaryLight};
                     text-decoration: none;
                     &:hover{
-                        color: ${props => props.theme.colors.blue_2};
+                        color: ${props => props.theme.colors.primaryDark};
                         text-decoration: underline;
                     }
                 }
@@ -55,8 +55,8 @@ export const StyledUl = styled.ul`
 export const StyledA = styled.a`
     color: ${props => props.theme.colors.white};
     text-decoration: none;
-    font-size: ${props => props.icon ? props.theme.fontSize.fs24 : props.theme.fontSize.fs16} ;
-    line-height: ${props => props.button ? props.theme.lineHeight.lh24 : props.theme.lineHeight.lh20};
+    font-size: ${props => props.icon ? props.theme.fontSize.lg : props.theme.fontSize.sm} ;
+    line-height: ${props => props.button ? props.theme.lineHeight.lg : props.theme.lineHeight.md};
     display: inline-block;
     padding: ${props => props.button ? "6px 12px" : props.icon ? "10px 0" : "12px 0"};
     background-color: ${props => props.button ? props.theme.colors.secondary : "transparent"};
@@ -81,7 +81,7 @@ export const StyledUserDiv = styled.div`
         &::after{
             content: "";
             display: inline-block;
-            border-top: 5px solid #fff;
+            border-top: 5px solid ${props => props.theme.colors.white};
             border-left: 5px solid transparent;
             border-right: 5px solid transparent;
             margin: 0 0 2px 5px;
@@ -99,7 +99,7 @@ export const StyledUserDiv = styled.div`
         border-radius: 4px;
         display: none;
         a{
-            color: ${props => props.theme.colors.primary_light};
+            color: ${props => props.theme.colors.primaryLight};
             border-bottom: 1px solid #d4d4d4;
             padding: 12px 24px;
             display: block;

@@ -8,8 +8,8 @@ export const FooterStyle = styled.footer`
         .col{
             padding: 20px 0;
             h5{
-                font-size: 16px;
-                line-height: 24px;
+                font-size: ${props => props.theme.fontSize.sm};
+                line-height: ${props => props.theme.lineHeight.lg};
                 margin: 0 0 14px;
                 color: #3d3e3f;
                 font-family: 'halcyon-medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -23,8 +23,8 @@ export const FooterStyle = styled.footer`
                     a{
                         color: #3E3D3F;
                         text-decoration: none;
-                        font-size: 14px;
-                        line-height: 21px;
+                        font-size: ${props => props.theme.fontSize.xs};
+                        line-height: 2.1rem;
                         &:hover{
                             text-decoration: underline;
                         }
@@ -36,8 +36,8 @@ export const FooterStyle = styled.footer`
             padding: 25px 0;
             justify-content: center;
             text-align: center;
-            font-size: 14px;
-            line-height: 20px;
+            font-size: ${props => props.theme.fontSize.xs};
+            line-height:${props => props.theme.lineHeight.md};
             .mb-20{
                 margin-bottom: 20px;
             }
@@ -45,10 +45,10 @@ export const FooterStyle = styled.footer`
                 margin-right: 20px;
             }
             a{
-                color: #007CAD;
+                color: ${props => props.theme.colors.primaryLight};
                 text-decoration: none;
                 &:hover{
-                    color: #23527c;
+                    color: ${props => props.theme.colors.primaryDark};
                     text-decoration: underline;
                 }
             }
@@ -107,10 +107,10 @@ export const EqDiv = styled.div`
     width: 33.33%;
     text-align: center;
     h5{
-        font-size: 16px;
+        font-size: ${props => props.theme.fontSize.sm};
         margin: 0 0 8px;
         text-align: center;
-        line-height: 20px;
+        line-height:${props => props.theme.lineHeight.md};
         font-family: 'halcyon-medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
     }  
     a{
@@ -128,7 +128,7 @@ export const EqDiv = styled.div`
         li{
             margin: 0 5px;
             a{
-                font-size: 31px;
+                font-size: 3.1rem;
                 display: inline-block;
                 padding: 0;
                 &.iconFacebook{
@@ -147,7 +147,7 @@ export const EqDiv = styled.div`
                     color: #e60023;
                 }
                 &.iconInstagram{
-                    color: #000;
+                    color: ${props => props.theme.colors.black};
                 }
                 &.iconReddit{
                     color: #FF4500;

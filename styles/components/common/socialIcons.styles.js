@@ -12,5 +12,5 @@ export const StyledIconA = styled.a`
     padding: 12px;
     color: ${props => props.theme.color};
     display: inline-block;
-    font-size: 30px;
+    font-size: 3rem;
 `
