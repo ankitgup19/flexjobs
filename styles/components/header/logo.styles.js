@@ -9,10 +9,10 @@ export const StyledLink = styled.a`
     &:hover{
         text-decoration: underline;
     }
-    .logoImg{
+    .logo-img{
         margin-right: 8px;
     }
-    & > .txt-orange{
+    & > .txt-highlight{
         color: ${props => props.theme.colors.secondary};
     }
 `

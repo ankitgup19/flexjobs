@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import { InputSearch, SearchWrap, SearchBtn, Styledform } from "../../../styles/components/common/search.style";
+import { InputSearch, SearchWrap, SearchBtn, Styledform } from "../../../styles/components/common/Search.style";
 
 const Search = (props) => {
     const [jtText, setJtText] = useState("");

@@ -1,6 +1,6 @@
 import React from "react";
 import Breadcrumb from "./components/common/Breadcrumb";
-import { StyledContainerMd } from "../styles/components/common/common.styles";
+import { StyledContainerMd } from "../styles/components/common/Common.styles";
 import Layout from "./components/layout/Layout"
 
 const App = () => {

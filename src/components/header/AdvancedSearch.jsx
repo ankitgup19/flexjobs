@@ -1,6 +1,6 @@
 import React from "react";
 
-import { AdvSearchLink } from "../../../styles/components/header/advancedSearch.styles.js"
+import { AdvSearchLink } from "../../../styles/components/header/AdvancedSearch.styles.js"
 
 const AdvancedSearch = () => {
     return (
