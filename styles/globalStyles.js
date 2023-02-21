@@ -13,13 +13,16 @@ const GlobalStyle = createGlobalStyle`
     *{
         box-sizing: border-box;
     }
+    html {
+        font-size: 62.5%;
+    }
     body,
     input{
         margin: 0;
         font-family: "halcyon";
         width: 100%;
-        font-size: 16px;
-        line-height: 22px;
+        font-size: ${props => props.theme.fontSize.sm};
+        line-height: 2.2rem;
         font-weight: 400;
     }
     img{

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
-    background-color: #f5f5f5;
+    background-color: ${props => props.theme.colors.tertiaryLight};
     @media all and (max-width:1024px){
         .logoWrap{
             display: flex;
@@ -17,10 +17,10 @@ export const StyledListWrap = styled.ul`
     li{
         margin-bottom: 8px;
         a{
-            color: #3E3D3F;
+            color: ${props => props.theme.colors.tertiaryDarker};
             text-decoration: none;
-            font-size: 14px;
-            line-height: 21px;
+            font-size: ${props => props.theme.fontSize.xs};
+            line-height: 2.1rem;
             &:hover{
                 text-decoration: underline;
             }
@@ -31,7 +31,7 @@ export const StyledListWrap = styled.ul`
     }
 `
 export const StyledH5 = styled.h5`
-    font-size: 16px;
+    font-size: ${props => props.theme.fontSize.sm};
     font-weight: 500;
 `
 export const StyledWrap = styled.div`
@@ -99,10 +99,10 @@ export const StyledCopyrightWrap = styled.div`
         margin-right: 20px;
     }
     a{
-        color: #007CAD;
+        color: ${props => props.theme.colors.primaryLight};
         text-decoration: none;
         &:hover{
-            color: #23527c;
+            color: ${props => props.theme.colors.primaryDark};
             text-decoration: underline;
         }
     }
@@ -132,7 +132,7 @@ export const EqDiv = styled.div`
         li{
             margin: 0 5px;
             a{
-                font-size: 31px;
+                font-size: 3.1rem;
                 display: inline-block;
                 padding: 0;
                 &.iconFacebook{
@@ -151,7 +151,7 @@ export const EqDiv = styled.div`
                     color: #e60023;
                 }
                 &.iconInstagram{
-                    color: #000;
+                    color: ${props => props.theme.colors.black};
                 }
                 &.iconReddit{
                     color: #FF4500;

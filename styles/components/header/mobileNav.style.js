@@ -16,8 +16,8 @@ export const MbHeadWrap = styled.div`
 
 export const NavButton = styled.button`
     padding: 0;
-    font-size: ${props => props.theme.fontSize.fs22};
-    color: ${props => props.theme.colors.blue_1};
+    font-size: ${props => props.theme.fontSize.md};
+    color: ${props => props.theme.colors.primary};
     border: none;
     background-color: transparent;
     text-align: left;
@@ -26,21 +26,21 @@ export const NavButton = styled.button`
 
 export const SignUpLink = styled.a`
     text-decoration: none;
-    background-color: ${props => props.theme.colors.orange_1};
+    background-color: ${props => props.theme.colors.secondary};
     border-radius: 4px;
     color: ${props => props.theme.colors.white};
     padding: 6px 12px;
 `
 
 export const MbNavItemsWrap = styled.div`
-    background-color: ${props => props.theme.colors.blue_1};
+    background-color: ${props => props.theme.colors.primary};
     height: calc(100vh - 54px);
     overflow-y: auto;
     position: fixed;
     width: 100%;
     left: 0;
     top: 58px;
-    color: #fff;
+    color: ${props => props.theme.colors.white};
     padding: 5px 8px;
     .menu{
         list-style: none;
@@ -53,7 +53,7 @@ export const MbNavItemsWrap = styled.div`
                 content: "";
                 border-left: 6px solid transparent;
                 border-right: 6px solid transparent;
-                border-top: 6px solid #fff;
+                border-top: 6px solid ${props => props.theme.colors.white};
                 position: absolute;
                 right: 10px;
                 top: 20px;
@@ -83,7 +83,7 @@ export const MbNavItemsWrap = styled.div`
             }
             &:after{
                 border-top: none;
-                border-bottom: 6px solid #fff;
+                border-bottom: 6px solid ${props => props.theme.colors.white};
             }
         }
     }
@@ -117,7 +117,7 @@ export const EmployerUl = styled.ul`
     list-style: none;
     a{
         padding: 12px 8px;
-        color: #fff;
+        color: ${props => props.theme.colors.white};
         display: inline-block;
         text-decoration: none;
         &::after{
@@ -125,8 +125,8 @@ export const EmployerUl = styled.ul`
             width: 5px;
             height: 5px;
             display: inline-block;
-            border-top: 2px solid #fff;
-            border-right: 2px solid #fff;
+            border-top: 2px solid ${props => props.theme.colors.white};
+            border-right: 2px solid ${props => props.theme.colors.white};
             transform: rotate(45deg);
             margin-left: 8px;
             margin-bottom: 1px;
@@ -136,7 +136,7 @@ export const EmployerUl = styled.ul`
 
 export const SettingsLink = styled.a`
     font-size: 22px;
-    color: #004F6D;
+    color: ${props => props.theme.colors.primary};
     width: 80px;
     text-align: right;
 `
