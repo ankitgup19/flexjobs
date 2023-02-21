@@ -8,39 +8,49 @@ import ArticleTips from "./mobileSubNavItems/ArticleTips";
 import MoreItems from "./mobileSubNavItems/MoreItems";
 import SocialIcons from "../../../common/SocialIcons";
 import Employer from "./Employer";
+import { AUTH_USER } from "../../../../helper/Common";
 import { socialIconsSidebar } from "../../../../helper/Common";
 
-import { MbNavItemsDiv } from "../../../../../styles/components/header/mobileNav.style";
+import { MbNavItemsWrap, StyledText, StyledLink } from "../../../../../styles/components/header/mobileNav.style";
 import { SocialIconsUl } from "../../../../../styles/components/common/socialIcons.styles";
 
-const nav = [Login, RemoteJobs, About, CareerAdvice, EventsWebinars, ArticleTips, MoreItems];
+const loginNav = [Login]
+const subNav = [RemoteJobs, About, CareerAdvice, EventsWebinars, ArticleTips, MoreItems];
+let nav = [];
 
 const MobileNavItems = () => {
+    if(AUTH_USER){
+        nav = subNav;
+    }else{
+        nav = loginNav.concat(subNav);
+    }
     const handleSubMenu = (e) => {
         let parentElem = e.target.parentNode;
-        if(parentElem.getAttribute("class") == "showMenu"){
-            parentElem.setAttribute('class', 'hideMenu');
+        if(parentElem.getAttribute("class") == "show-menu"){
+            parentElem.setAttribute('class', 'hide-menu');
         }else{
-            document.querySelectorAll('.menu > li:not(.noChild)').forEach(function(i){
-                i.setAttribute('class', 'hideMenu');
+            document.querySelectorAll('.menu > li:not(.no-child)').forEach(function(i){
+                i.setAttribute('class', 'hide-menu');
             });
-            parentElem.setAttribute('class', 'showMenu');
-            if(parentElem.parentNode.parentNode.getAttribute("class") == "hideMenu") parentElem.parentNode.parentNode.setAttribute('class', 'showMenu');
+            parentElem.setAttribute('class', 'show-menu');
+            if(parentElem.parentNode.parentNode.getAttribute("class") == "hide-menu") parentElem.parentNode.parentNode.setAttribute('class', 'show-menu');
         }
     }
 
     const generateMbNav = (nav, children) => {
         let topClassName = (children) ? 'submenu': 'menu';
-        let navLength = (nav.length > 6) ? "multiCol" : null
+        let navLength = (nav.length > 6) ? "multi-col" : null
         return (
             <ul className={[topClassName,navLength].join(" ")}>
                 {   
                     nav.map(item => (
-                        <li className={(!item.children) ? "noChild" : null}
+                        <li className={(!item.children) ? "no-child" : null}
                             >
-                            {!children && <span onClick = {(e)=>handleSubMenu(e)}>{item.icon && <i className="prefixIcon">{item.icon}</i>}{item.name}</span>}
-                            {children && item.children ? <span onClick = {(e)=>handleSubMenu(e)}>{item.name}</span> : null }
-                            {children && !item.children && <a href={item.route}>{item.name}</a> }
+                            {!children && <StyledText onClick = {(e)=>handleSubMenu(e)}>
+                            {item.icon && <i className="prefix-icon">{item.icon}</i>}
+                            {item.name}</StyledText>}
+                            {children && item.children ? <StyledText childMenu onClick = {(e)=>handleSubMenu(e)}>{item.name}</StyledText> : null }
+                            {children && !item.children && <StyledLink href={item.route}>{item.name}</StyledLink> }
                             {item.children && generateMbNav(item.children, true)}
                         </li>
                     ))
@@ -49,15 +59,15 @@ const MobileNavItems = () => {
         )
     }
     return (
-        <MbNavItemsDiv>
+        <MbNavItemsWrap>
             {generateMbNav(nav, false)}
             <SocialIconsUl>
                 {
                     socialIconsSidebar.map(item => <SocialIcons theme={{color: "white"}} {...item}/>)
                 }
             </SocialIconsUl>
-            <Employer/>
-        </MbNavItemsDiv>
+            {!AUTH_USER ? <Employer/> : null}
+        </MbNavItemsWrap>
     )
 }
 

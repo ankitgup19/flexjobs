@@ -11,7 +11,7 @@ import Blog from "./subNavItems/Blog";
 
 import { AUTH_USER } from "../../../helper/Common";
 
-import { StyledNav, StyledUl, StyledA } from "../../../../styles/components/header/nav.styles";
+import { StyledNav, StyledWrap, StyledInnerWrap, StyledSubmenu, StyledSubmenuWrap, StyledLink } from "../../../../styles/components/header/nav.styles";
 
 const navigation = [RemoteJobs, About, CareerAdvice, EventsWebinars, Blog];
 
@@ -26,22 +26,22 @@ const NavMenu = () => {
 
     const generateNav = (navigation, children) => {
         return (
-            <StyledUl className='menu'>
+            <StyledInnerWrap className='menu'>
                 {
                     navigation.map(item => (
                         <li key={item.route}>
-                            {!children && <StyledA href={item.route} onClick={(e)=>handleClick(e)}>{item.name}</StyledA>}
+                            {!children && <StyledLink href={item.route} onClick={(e)=>handleClick(e)}>{item.name}</StyledLink>}
                             {item.children && generateSubNav(item.children, true)}
                         </li>
                     ))
                 }
-            </StyledUl>
+            </StyledInnerWrap>
         )
     }
     const generateSubNav = (subnav, child) => {
         return (
-            <div className="submenuWrap">
-                <ul className="submenu">
+            <StyledSubmenu>
+                <StyledSubmenuWrap>
                     {
                         subnav.map(item => (
                             <li key={item.route}>
@@ -50,16 +50,16 @@ const NavMenu = () => {
                             </li>
                         ))
                     }
-                </ul>
-            </div>
+                </StyledSubmenuWrap>
+            </StyledSubmenu>
         )
     }
     return (
         <StyledNav>
-            <div className="wrap">
+            <StyledWrap>
                 { generateNav(navigation, false) }
                 { AUTH_USER ? <AuthNav/> : <UnAuthNavItems/> }
-            </div>
+            </StyledWrap>
         </StyledNav>
     )
 }

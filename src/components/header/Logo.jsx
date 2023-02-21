@@ -3,24 +3,24 @@ import Search from "../common/Search";
 import AdvancedSearch from "./AdvancedSearch";
 import BrandLogo from "./BrandLogo";
 import { StyledContainerMd } from "../../../styles/components/common/common.styles";
-import { StyledA, StyledDiv, StyledWrap } from "../../../styles/components/header/logo.styles";
+import { StyledLink, StyledWrap } from "../../../styles/components/header/logo.styles";
 
 const Logo = (props) => {
     return (
         <StyledContainerMd>
-            <StyledDiv>
-                <StyledA href="/">
+            <StyledWrap>
+                <StyledLink href="/">
                     <BrandLogo width={133} height={60} className="logoImg"/>
-                    Find a <span>Better</span> Way to Work
-                </StyledA>
+                    Find a <span className="txt-orange">Better</span> Way to Work
+                </StyledLink>
                 {
                     props.v1 ? 
-                        <StyledWrap>
+                        <StyledWrap innerWrap>
                             <Search {...props}/>
                             <AdvancedSearch/>
                         </StyledWrap>: ""
                 }
-            </StyledDiv>
+            </StyledWrap>
         </StyledContainerMd>
     )
 }

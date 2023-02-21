@@ -1,30 +1,25 @@
 import styled from "styled-components";
 
-export const StyledA = styled.a`
+export const StyledLink = styled.a`
     display: inline-block;
     text-transform: uppercase;
     color: ${props => props.theme.colors.blue_1};
     text-decoration: none;
-    font-family: "halcyon-medium";
-    .logoImg{
-        margin-right: 8px;
-    }
-    & > span{
-        color: ${props => props.theme.colors.orange_1};
-    }
+    font-weight: 500;
     &:hover{
         text-decoration: underline;
     }
-`
-
-export const StyledDiv = styled.div`
-    padding: 14px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    .logoImg{
+        margin-right: 8px;
+    }
+    & > .txt-orange{
+        color: ${props => props.theme.colors.orange_1};
+    }
 `
 
 export const StyledWrap = styled.div`
+    padding: ${props => props.innerWrap ? null : "14px 0"};
     display: flex;
     align-items: center;
+    justify-content: ${props => props.innerWrap ? null : "space-between"};
 `

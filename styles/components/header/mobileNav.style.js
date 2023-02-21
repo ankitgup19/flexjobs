@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const MobileDiv = styled.div`
+export const MbHeadWrap = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 5px 15px;
@@ -8,7 +8,7 @@ export const MobileDiv = styled.div`
     .logo {
         flex-grow: 1;
         text-align: center;
-        a{
+        .link{
             display: inline-block;
         }
     }
@@ -24,14 +24,15 @@ export const NavButton = styled.button`
     width: 80px;
 `
 
-export const SignUp = styled.a`
+export const SignUpLink = styled.a`
     text-decoration: none;
     background-color: ${props => props.theme.colors.orange_1};
     border-radius: 4px;
     color: ${props => props.theme.colors.white};
     padding: 6px 12px;
 `
-export const MbNavItemsDiv = styled.div`
+
+export const MbNavItemsWrap = styled.div`
     background-color: ${props => props.theme.colors.blue_1};
     height: calc(100vh - 54px);
     overflow-y: auto;
@@ -48,17 +49,6 @@ export const MbNavItemsDiv = styled.div`
         li{
             border-bottom: 1px solid rgba(255,255,255,0.5);
             position: relative;
-            > span{
-                color: ${props => props.theme.colors.white};
-                text-decoration: none;
-                padding: 12px 8px;
-                display: block;
-                .prefixIcon{
-                    margin-right: 7px;
-                    position: relative;
-                    bottom: -2px;
-                }
-            }
             &:after{
                 content: "";
                 border-left: 6px solid transparent;
@@ -69,7 +59,7 @@ export const MbNavItemsDiv = styled.div`
                 top: 20px;
                 z-index: -1;
             }
-            &.noChild{
+            &.no-child{
                 &:after{
                     display: none;
                 }
@@ -78,7 +68,7 @@ export const MbNavItemsDiv = styled.div`
                 border-bottom: none;
             }
         }
-        .showMenu{
+        .show-menu{
             > .submenu{
                 display: block;
                 list-style: none;
@@ -86,17 +76,8 @@ export const MbNavItemsDiv = styled.div`
                 margin: 0;
                 > li{
                     border: none;
-                    > a{
-                        color: ${props => props.theme.colors.white};
-                        text-decoration: none;
-                        padding: 12px 0px;
-                        display: block;
-                    }
-                    > span{
-                        padding: 12px 0px;
-                    }
                 }
-                &.multiCol{
+                &.multi-col{
                     column-count: 2;
                 }
             }
@@ -110,27 +91,52 @@ export const MbNavItemsDiv = styled.div`
         display: none;
     }
 `
+
+export const StyledText = styled.span`
+    color: ${props => props.theme.colors.white};
+    text-decoration: none;
+    padding: ${({childMenu}) => childMenu ? "12px 0" : "12px 8px"};
+    display: block;
+    .prefix-icon{
+        margin-right: 7px;
+        position: relative;
+        bottom: -2px;
+    }
+`
+
+export const StyledLink = styled.a`
+    color: ${props => props.theme.colors.white};
+    text-decoration: none;
+    padding: 12px 0px;
+    display: block;
+`
+
 export const EmployerUl = styled.ul`
     margin: 0;
     padding: 0;
     list-style: none;
-    li{
-        a{
-            padding: 12px 8px;
-            color: #fff;
+    a{
+        padding: 12px 8px;
+        color: #fff;
+        display: inline-block;
+        text-decoration: none;
+        &::after{
+            content: "";
+            width: 5px;
+            height: 5px;
             display: inline-block;
-            text-decoration: none;
-            &::after{
-                content: "";
-                width: 5px;
-                height: 5px;
-                display: inline-block;
-                border-top: 2px solid #fff;
-                border-right: 2px solid #fff;
-                transform: rotate(45deg);
-                margin-left: 8px;
-                margin-bottom: 1px;
-            }
+            border-top: 2px solid #fff;
+            border-right: 2px solid #fff;
+            transform: rotate(45deg);
+            margin-left: 8px;
+            margin-bottom: 1px;
         }
     }
+`
+
+export const SettingsLink = styled.a`
+    font-size: 22px;
+    color: #004F6D;
+    width: 80px;
+    text-align: right;
 `

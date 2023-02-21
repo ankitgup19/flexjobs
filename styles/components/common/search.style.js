@@ -18,7 +18,7 @@ export const InputSearch = styled.input`
         background-color: #fff;
     }
 `
-export const SearchDiv = styled.div`
+export const SearchWrap = styled.div`
     box-shadow: 0 3px 6px rgb(0 0 0 / 25%);
     display: flex;
     border: 1px solid #000;

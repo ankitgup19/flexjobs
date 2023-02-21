@@ -2,8 +2,7 @@ import React from "react";
 import { FlexibleJobs, AboutFlexJobs, JobSearch } from "./FooterNavLinks";
 import SocialIcons from "../common/SocialIcons";
 import { socialIconsFooter } from "../../helper/Common";
-import { FooterStyle, EqDiv } from "../../../styles/components/footer/footer.styles";
-import { StyledContainerMd } from "../../../styles/components/common/common.styles";
+import { StyledFooter, StyledWrap, StyledListWrap, StyledCopyrightWrap, StyledH5, EqDiv } from "../../../styles/components/footer/footer.styles";
 import useMediaQuery from "../../helper/useMediaQuery";
 
 import BrandLogo from "../header/BrandLogo";
@@ -26,7 +25,7 @@ const Footer = () => {
     }
     const getChildNav = (nav) => {
         return (
-            <ul>
+            <StyledListWrap>
                 {
                     nav.map(items => (
                         <li>
@@ -35,21 +34,21 @@ const Footer = () => {
                         </li>
                     ))
                 }
-            </ul>
+            </StyledListWrap>
         )
     }
     const getFooterNav = (footerNavLinks) => {
         return (
             footerNavLinks.map(items => (
                 <div className = "col">
-                <h5 onClick={(e)=>handleFooterNav(e)}>{items.name}</h5>
-                { items.children && getChildNav(items.children,true) }
+                    <StyledH5 onClick={(e)=>handleFooterNav(e)}>{items.name}</StyledH5>
+                    { items.children && getChildNav(items.children,true) }
                 </div>
             ))
         )
     }
     return (
-        <FooterStyle>
+        <StyledFooter>
             {
                 isMobileView ? 
                 <a href="/" className="logoWrap">
@@ -57,12 +56,12 @@ const Footer = () => {
                 </a> 
                 : null
             }
-            <StyledContainerMd>
-            { getFooterNav(footerNavLinks) }
-            </StyledContainerMd>
-            <StyledContainerMd>
+            <StyledWrap>
+                { getFooterNav(footerNavLinks) }
+            </StyledWrap>
+            <StyledWrap>
                 <EqDiv>
-                    <h5>Follow Us on</h5>
+                    <StyledH5>Follow Us on</StyledH5>
                     <ul>
                         {
                             socialIconsFooter.map(item => <SocialIcons {...item}/>)
@@ -75,7 +74,7 @@ const Footer = () => {
                     </a>
                 </EqDiv>
                 <EqDiv>
-                    <h5>Partner Sites</h5>
+                    <StyledH5>Partner Sites</StyledH5>
                     <a href="https://remote.co/" rel="noopener" target="_blank" className="firstLogo">
                         <img src={RemoteCoLogo} width="110" height="21" alt="Remote.co" title="Remote.co logo"/>
                     </a>
@@ -83,10 +82,10 @@ const Footer = () => {
                         <img src={JobhuntLogo} width="70" height="35" alt="Job Hunt logo"/>
                     </a>
                 </EqDiv>
-            </StyledContainerMd>
+            </StyledWrap>
             {
                 isMobileView ?
-                    <div className="copyrightText">
+                    <StyledCopyrightWrap>
                         <div className="mb-20">
                             <a href="/termsOfUse.aspx">Terms of Use</a>
                             &nbsp;|&nbsp;
@@ -96,17 +95,17 @@ const Footer = () => {
                             <span className="mr-20">© 2007-2023 FlexJobs</span>
                             All Rights Reserved
                         </div>
-                    </div>
+                    </StyledCopyrightWrap>
                     : 
-                    <div className="copyrightText">
+                    <StyledCopyrightWrap>
                         <a href="/termsOfUse.aspx">Terms of Use</a>
                         &nbsp;|&nbsp;
                         <a href="/PrivacyPolicy.aspx">Privacy Policy</a>
                         &nbsp;|&nbsp; 
                         <span>© 2007-2023  FlexJobs</span> All Rights Reserved
-                    </div>
+                    </StyledCopyrightWrap>
             }
-        </FooterStyle>
+        </StyledFooter>
     )
 }
 
