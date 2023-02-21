@@ -7,6 +7,9 @@ const Variables = () => {
                 primaryDark: "#23527c",//blue_2
                 secondary: "#ff532a",//orange_1                
                 tertiary: "#e9ecef",//gray_1
+                tertiaryDark: "#d4d4d4",
+                tertiaryDarker: "#3E3D3F",
+                tertiaryLight: "#f5f5f5",
                 white: "#fff",
                 black: "#000",
             },
