@@ -18,7 +18,8 @@ const Variables = () => {
                 xs: "1.4rem",
                 sm: "1.6rem",
                 md: "2.2rem",
-                lg: "2.4rem"
+                lg: "2.4rem",
+                xl: "2.8rem"
             },
             lineHeight:{
                 md: "2rem",
