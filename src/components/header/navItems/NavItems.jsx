@@ -18,7 +18,7 @@ const navigation = [RemoteJobs, About, CareerAdvice, EventsWebinars, Blog];
 const NavMenu = () => {
 
     function handleClick(e){
-        document.querySelectorAll('.menu > li').forEach(function(i){
+        document.querySelectorAll('.menu > li').forEach((i) => {
             if(i.childNodes.length > 1) i.childNodes[i.childNodes.length - 1].style.display = "none";
         });
         if(e.target.nextSibling) e.target.nextSibling.style.display = "block";

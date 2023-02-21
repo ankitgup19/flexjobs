@@ -17,7 +17,7 @@ const Footer = () => {
         if(elem.target.parentNode.classList.contains("showNav")){
             elem.target.parentNode.setAttribute("class","col hideNav");
         }else{
-            document.querySelectorAll("footer .col").forEach(function(e){
+            document.querySelectorAll("footer .col").forEach((e) => {
                 e.setAttribute("class","col hideNav")
             })
             elem.target.parentNode.setAttribute("class","col showNav");

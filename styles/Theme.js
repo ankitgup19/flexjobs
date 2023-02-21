@@ -14,6 +14,7 @@ const Variables = () => {
                 black: "#000",
             },
             fontSize:{
+                xxs: "1.3rem",
                 xs: "1.4rem",
                 sm: "1.6rem",
                 md: "2.2rem",

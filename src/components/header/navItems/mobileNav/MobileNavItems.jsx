@@ -29,7 +29,7 @@ const MobileNavItems = () => {
         if(parentElem.getAttribute("class") == "show-menu"){
             parentElem.setAttribute('class', 'hide-menu');
         }else{
-            document.querySelectorAll('.menu > li:not(.no-child)').forEach(function(i){
+            document.querySelectorAll('.menu > li:not(.no-child)').forEach((i) => {
                 i.setAttribute('class', 'hide-menu');
             });
             parentElem.setAttribute('class', 'show-menu');
