@@ -12,6 +12,10 @@ const Variables = () => {
                 tertiaryDarker: "#3e3d3f",
                 white: "#fff",
                 black: "#000",
+                danger: '#d2322d',
+                dangerLight: '#f5c2c7',
+                dangerLighter: '#f8d7da',
+                //border: 1px solid #ced4da;FormGroup Input
             },
             fontSize:{
                 xxs: "1.3rem",

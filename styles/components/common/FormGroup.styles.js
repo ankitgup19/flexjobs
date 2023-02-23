@@ -16,3 +16,11 @@ export const Label = styled.label`
     display: flex;
     justify-content: flex-start;
 `
+export const IcnPwMask = styled.span`
+    position: absolute;
+    right: 10px;
+    top: 32px;
+    color: ${props => props.theme.colors.primaryLight};
+    cursor: pointer;
+    width: 20px;
+`
