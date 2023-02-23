@@ -63,3 +63,15 @@ export const ForgotPw = styled.p`
     display: flex;
     margin: 0 0 16px;
 `
+export const AlertDanger = styled.div`
+    background-color: ${props => props.theme.colors.dangerLighter};
+    border: 1px solid ${props => props.theme.colors.dangerLight};
+    color: ${props => props.theme.colors.danger};
+    border-radius: 4px;
+    padding: 16px;
+    margin: 0 0 16px;
+    display: flex;
+`
+export const AlertDangerP = styled.p`
+    margin: 0;
+`
