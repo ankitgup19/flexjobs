@@ -70,7 +70,7 @@ const Footer = () => {
                 </EqDiv>
                 <EqDiv>
                     <a href="https://www.bbb.org/us/co/boulder/profile/employment-agencies/flexjobs-1296-90091095/customer-reviews" rel="external nofollow" target="_blank" aria-label="link to verify BBB accreditation and to see a BBB report">
-                        <img alt="FlexJobs BBB Business Review" width="190" src={AcCredited} title="BBB logo" class="img-fluid"/>
+                        <img alt="FlexJobs BBB Business Review" width="190" src={AcCredited} title="BBB logo" className="img-fluid"/>
                     </a>
                 </EqDiv>
                 <EqDiv>

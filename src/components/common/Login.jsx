@@ -20,7 +20,7 @@ const Login = (props) => {
                 </AlertDanger>
                 <ForgotPw><Link href="">Forgot Password?</Link></ForgotPw>
                 <LoginBtn type="submit">Log In</LoginBtn>
-                <P>New to FlexJobs? <Link href="">Join now!</Link></P>
+                <P lastChild>New to FlexJobs? <Link href="">Join now!</Link></P>
             </LoginWrap>
         </Styledform>
     )

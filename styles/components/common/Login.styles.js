@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Styledform = styled.form`
     margin: 0;
-    background: right 0 url(https://www.flexjobs.com/images/bg-login.jpg) no-repeat;
+    background: right 0 url(${props => props.passwordRecovery ? 'https://www.flexjobs.com/images/bg-password.jpg' : 'https://www.flexjobs.com/images/bg-login.jpg'}) no-repeat;
     background-size: contain;
     padding: 0 0 48px;
 `
@@ -35,7 +35,7 @@ export const LoginWrap = styled.div`
     flex: 0 0 auto;
     width: 50%;
     text-align: center;
-    padding: 48px 48px 32px;
+    padding: 48px;
 `
 
 export const LoginBtn = styled.button`
@@ -56,7 +56,7 @@ export const Link = styled.a`
     }
 `
 export const P = styled.p`
-    margin: 0 0 16px;
+    margin: ${props => props.lastChild ? '0' : '0 0 16px'};
 `
 export const ForgotPw = styled.p`
     margin: 0;

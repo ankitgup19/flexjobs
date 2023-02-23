@@ -6,7 +6,7 @@ const Breadcrumb = () => {
         <StyledbcrumbWrap>
             <li><a href="/">Home</a></li>
             <li><a href="/remote-jobs">Find Jobs</a></li>
-            <li class="active">Job Listings </li>
+            <li className="active">Job Listings </li>
         </StyledbcrumbWrap>
     )
 }
