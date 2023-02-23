@@ -1,6 +1,7 @@
 import React from "react";
 import Breadcrumb from "./components/common/Breadcrumb";
 import Login from "./components/common/Login";
+import SignUp from "./components/common/SignUp";
 import { StyledContainerMd } from "../styles/components/common/Common.styles";
 import Layout from "./components/layout/Layout"
 
@@ -10,6 +11,7 @@ const App = () => {
             <StyledContainerMd layout>
                 {/* <Breadcrumb/> */}                
                 <Login/>
+                <SignUp/>
             </StyledContainerMd>
         </Layout>
     )

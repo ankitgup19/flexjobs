@@ -17,16 +17,26 @@ const GlobalStyle = createGlobalStyle`
         font-size: 62.5%;
     }
     body,
+    button,
+    input{
+        font-family: "halcyon";
+    }
+    body,
     input{
         margin: 0;
-        font-family: "halcyon";
         width: 100%;
         font-size: ${props => props.theme.fontSize.sm};
         line-height: 2.2rem;
         font-weight: 400;
     }
+    p{
+        margin: 0 0 1.2rem;
+    }
     img{
         vertical-align: middle;
+    }
+    strong{
+        font-weight: 600;
     }
     @font-face {
         font-family: 'halcyon';
