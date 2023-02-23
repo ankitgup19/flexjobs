@@ -43,6 +43,13 @@ export const StyledFormWrap = styled.div`
             left: 12px;
             background-color: #f5f5f5;
         }
+        .pwd-mask{
+            top: 37px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 58px;
+        }
     }
 `
 

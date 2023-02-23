@@ -22,5 +22,4 @@ export const IcnPwMask = styled.span`
     top: 32px;
     color: ${props => props.theme.colors.primaryLight};
     cursor: pointer;
-    width: 20px;
 `

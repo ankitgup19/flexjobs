@@ -5,18 +5,19 @@ const FormGroup = (props) => {
     const [input, setInput] = useState('');
     const [inputType, setInputType] = useState(props.type);
     const [mask, setMask] = useState(true);
-    const toggleMask = () => {
-        setMask(!mask);
-    };
+    const [pwLabel, setPwLabel] = useState("show");
+    
     useEffect(() => {       
         props.hasPwMask && setInputType(mask ? 'password' : 'text');
-    });
+        props.hasPwLabel && setPwLabel(mask ? 'show' : 'hide');
+    },[mask]);
+
     return (
         <StyleFormGroup className={props.formGrpClass}>
             {props.label && <Label htmlFor={props.id}>{props.label}</Label>}
             <Input type={inputType} onChange={(e) => setInput(e.target.value)} value={input} id={props.id} placeholder={props.placeholder}/>
             {props.hasPwMask &&
-                <IcnPwMask className={`fa ${mask} ${mask ? 'fa-eye' : 'fa-eye-slash'}`} onClick={toggleMask} />
+                <IcnPwMask className="pwd-mask" onClick={()=> setMask(!mask)}><i className={`fa ${mask ? 'fa-eye' : 'fa-eye-slash'}`}></i>{props.hasPwLabel && pwLabel}</IcnPwMask>
             }
         </StyleFormGroup>
     )
