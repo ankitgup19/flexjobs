@@ -12,6 +12,18 @@ export const StyledMain = styled.main`
 
 export const StyledAside = styled.aside`
     width: 25%;
+    margin: 10px 0 0 15px;
+`
+
+export const AsideInner = styled.div`
+    border: 1px solid rgba(0,0,0,0.125);
+    padding: 16px;
+`
+
+export const H2 = styled.h2`
+    margin: 16px 0;
+    text-align: center;
+    color: ${props => props.theme.colors.primary};
 `
 
 export const MainHeading = styled.h1`

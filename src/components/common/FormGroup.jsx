@@ -17,7 +17,7 @@ const FormGroup = (props) => {
             {props.label && <Label htmlFor={props.id}>{props.label}</Label>}
             <Input type={inputType} onChange={(e) => setInput(e.target.value)} value={input} id={props.id} placeholder={props.placeholder}/>
             {props.hasPwMask &&
-                <IcnPwMask className="pwd-mask" onClick={()=> setMask(!mask)}><i className={`fa ${mask ? 'fa-eye' : 'fa-eye-slash'}`}></i>{props.hasPwLabel && pwLabel}</IcnPwMask>
+                <IcnPwMask className={props.hasPwLabel && "pwd-mask"} onClick={()=> setMask(!mask)}><i className={`fa ${mask ? 'fa-eye' : 'fa-eye-slash'}`}></i>{props.hasPwLabel && pwLabel}</IcnPwMask>
             }
         </StyleFormGroup>
     )
