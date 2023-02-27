@@ -20,8 +20,10 @@ const NavMenu = () => {
     function handleClick(e){
         document.querySelectorAll('.menu > li').forEach((i) => {
             if(i.childNodes.length > 1) i.childNodes[i.childNodes.length - 1].style.display = "none";
+            if(i.childNodes.length > 1) i.childNodes[0].classList.remove("active");
         });
         if(e.target.nextSibling) e.target.nextSibling.style.display = "block";
+        if(e.target.nextSibling) e.target.classList.add("active");
     }
 
     const generateNav = (navigation, children) => {

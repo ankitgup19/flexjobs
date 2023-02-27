@@ -64,6 +64,20 @@ export const StyledLink = styled.a`
     &:hover{
         text-decoration: underline;
     }
+    &.active{
+        position: relative;
+        &::before{
+            content: "";
+            display: inline-block;
+            border-left: 14px solid transparent;
+            border-right: 14px solid transparent;
+            border-bottom: 8px solid #fff;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+        }
+    }
 `
 
 export const StyledUserWrap = styled.div`

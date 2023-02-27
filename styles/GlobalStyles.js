@@ -18,11 +18,13 @@ const GlobalStyle = createGlobalStyle`
     }
     body,
     button,
-    input{
+    input,
+    select{
         font-family: "halcyon";
     }
     body,
-    input{
+    input,
+    select{
         margin: 0;
         width: 100%;
         font-size: ${props => props.theme.fontSize.sm};

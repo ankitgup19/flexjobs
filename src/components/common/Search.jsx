@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { COUNTRY_LIST } from "../../helper/Common";
 import useMediaQuery from "../../helper/useMediaQuery";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import { InputSearch, SearchWrap, SearchBtn, Styledform } from "../../../styles/components/common/Search.style";
+import { InputSearch, SearchWrap, SearchBtn, Styledform, Select } from "../../../styles/components/common/Search.style";
 
 const Search = (props) => {
     const isMobile = useMediaQuery("(max-width:1024px)");
@@ -17,10 +18,18 @@ const Search = (props) => {
 
     return (
         <Styledform action="/search" method="get">
-            <SearchWrap {...props}>
-                <InputSearch bdrcurve type="text" placeholder={searchPh} onChange={(e) => setJtText(e.target.value)} value={jtText}/>
-                <InputSearch type="text" value={location} placeholder={locationPh} onChange={(e)=> setLocation(e.target.value)}/>
-                <SearchBtn type="submit"><FontAwesomeIcon icon={faSearch}/></SearchBtn>
+            <SearchWrap className={props.type}>
+                <InputSearch bdrcurve type="text" placeholder={searchPh} onChange={(e) => setJtText(e.target.value)} value={jtText} className="search-box"/>
+                <InputSearch type="text" value={location} placeholder={locationPh} onChange={(e)=> setLocation(e.target.value)} className="search-box" />
+                {
+                    props.country && 
+                    <Select>
+                        {
+                            COUNTRY_LIST.map((country) => <option>{country}</option>)
+                        }
+                    </Select>
+                }
+                <SearchBtn type="submit" className="submit-btn"><FontAwesomeIcon icon={faSearch}/></SearchBtn>
             </SearchWrap>
         </Styledform>
     )

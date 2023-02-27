@@ -8,3 +8,10 @@ export const StyledContainerMd = styled.div`
         padding: ${({layout}) => layout ? "135px 15px 0" : "0 15px"};
     }
 `
+
+export const MainWrap = styled.main`
+    width: 75%;
+`
+export const AsideWrap = styled.aside`
+    width: 25%;
+`

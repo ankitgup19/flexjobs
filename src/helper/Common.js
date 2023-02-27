@@ -21,3 +21,5 @@ export const socialIconsFooter = [
     {href: "https://www.tiktok.com/@flexjobs?lang=en", title: "TikTok", className: faTiktok},
     {href: "https://www.reddit.com/user/flexjobs", title: "Reddit", className: faSquareReddit}
 ]
+
+export const COUNTRY_LIST = ["Select Country","Anywhere (can be done from anywhere worldwide)","Afghanistan","Albania","Algeria"]
