@@ -9,8 +9,8 @@ const AuthNav = () => {
         e.target.classList.toggle("active");
     }
     return(
-        <StyledUserWrap>
-            <a href="javascript:;" className="dropdown" onClick={(e)=>showDropDownMenu(e)}>
+        <StyledUserWrap>   
+            <a href="" className="dropdown" onClick={(e)=>showDropDownMenu(e)}>
                 {AUTH_USER_NAME}</a>
             <StyledDropdownMenu id="dropdown-menu-member">
                 <a href="/members/account">Account Details</a>

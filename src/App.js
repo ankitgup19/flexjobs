@@ -1,5 +1,6 @@
 import React from "react";
 // import Breadcrumb from "./components/common/Breadcrumb";
+import SearchHeader from "./components/common/SearchHeader";
 import Login from "./components/common/Login";
 import SignUp from "./components/common/SignUp";
 import PasswordRecovery from "./components/common/PasswordRecovery";
@@ -10,7 +11,8 @@ const App = () => {
     return (
         <Layout>
             <StyledContainerMd layout>
-                {/* <Breadcrumb/> */}                
+                {/* <Breadcrumb/> */}    
+                <SearchHeader />        
                 <Login/>
                 <SignUp/>
                 <PasswordRecovery/>

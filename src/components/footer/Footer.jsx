@@ -27,8 +27,8 @@ const Footer = () => {
         return (
             <StyledListWrap>
                 {
-                    nav.map(items => (
-                        <li>
+                    nav.map((items, index) => (
+                        <li key={items.name + index} className={items.name + index}>
                             {items.name && <a href={items.route}>{items.name}</a>}
                             {items.children && getChildNav(items.children)}
                         </li>

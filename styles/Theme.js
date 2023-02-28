@@ -4,7 +4,9 @@ const Variables = () => {
             colors:{
                 primary: "#004f6d",//blue_1
                 primaryLight: "#007cad",//blue_3
+                primaryLighter: "#2d67b0",
                 primaryDark: "#23527c",//blue_2
+                primaryDarker: "#23527c",//blue_2
                 secondary: "#ff532a",//orange_1,
                 tertiary: "#e9ecef",//gray_1
                 tertiaryLight: "#f5f5f5",
