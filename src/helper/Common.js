@@ -22,4 +22,68 @@ export const socialIconsFooter = [
     {href: "https://www.reddit.com/user/flexjobs", title: "Reddit", className: faSquareReddit}
 ]
 
-export const COUNTRY_LIST = ["Select Country","Anywhere (can be done from anywhere worldwide)","Afghanistan","Albania","Algeria"]
+export const COUNTRY_LIST = ["Select Country","Anywhere (can be done from anywhere worldwide)","Afghanistan","Albania","Algeria"];
+
+export const FILTER_OPTIONS = [
+    {
+        name: "Remote", 
+        children: [{
+            name: "100% Remote Work (879)"
+        },
+        {
+            name: "Hybrid Remote Work (76)"
+        }]
+    },
+    {
+        name: "Job Type",
+        children: [{
+            name: "Employee (758)"
+        },
+        {
+            name: "Freelance (210)"
+        }]
+    },
+    {
+        name: "Schedule", 
+        children:[{
+            name: "Full-Time (5)"
+        },
+        {
+            name: "Part-Time (4)"
+        }]
+    },
+    {
+        name: "Category",
+        children: [{
+            name: "Accounting & Finance (3)",
+            children: [{
+                name: "Bookkeeping (2)"
+            }],
+        },
+        {
+            name: "Editing (3)"
+        },
+        {
+            name: "Bilingual (2)",
+            children: [{
+                name: "Spanish (2)"
+            }]
+        },
+        {
+            name: "Education & Training (2)",
+            children: [{
+                name: "College & University (1)"
+            },
+            {
+                name: "Online Teaching (2)"
+            },
+            {
+                name: "Teaching (1)"
+            }]
+        }]
+    },
+    {name: "Career Level"},
+    {name: "Accolades"},
+    {name: "Title"},
+    {name: "Travel"}
+]

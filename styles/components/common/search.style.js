@@ -27,7 +27,7 @@ export const SearchWrap = styled.div`
     &.transparent{
         border: none;
         box-shadow: none;
-        padding: 16px 8px;
+        padding: 16px 0 8px;
         .search-box{
             background-color: transparent;
             border: 1px solid #ced4da;

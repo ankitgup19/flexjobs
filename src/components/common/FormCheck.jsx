@@ -7,7 +7,7 @@ const FormCheck = (props) => {
     return (
         <StyledFormCheck>
             <InputCheck type={props.type} onChange={()=>setCheck(!check)} value={check}/>
-            <Label>{props.label}</Label>
+            {props.label && <Label>{props.label}</Label>}
         </StyledFormCheck>
     )
 }
