@@ -22,21 +22,9 @@ const getFilterOptions = (filters, child) => {
 }
 
 const ButtonGroup = (props) => {
-    
-    const isVisible = (e) => {
-        if(e.target.parentNode.classList.contains("active")){
-            e.target.parentNode.classList.remove("active");
-        }else{
-            document.querySelectorAll(".btn-group").forEach((elem)=>{
-                elem.classList.remove("active");
-            })
-            e.target.parentNode.classList.add("active");
-        }
-    }
-
     return (
-        <div class="btn-group">
-            {props.name && <Button onClick={(e) => isVisible(e) }>{props.name}</Button>}
+        <div className = {`btn-group ${props.active ? "active" : ""}`}>
+            {props.name && <Button onClick={props.onToggle}>{props.name}</Button>}
             {
                 props.children && <DropdownList className="dropdown">{getFilterOptions(props.children, true)}</DropdownList>
             }

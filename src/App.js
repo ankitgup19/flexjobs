@@ -11,7 +11,7 @@ const App = () => {
     return (
         <Layout>
             <StyledContainerMd layout>
-                {/* <Breadcrumb/> */}    
+                {/* <Breadcrumb/>*/}     
                 <SearchHeader />        
                 <Login/>
                 <SignUp/>
