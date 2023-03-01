@@ -14,6 +14,12 @@ export const MainHeading = styled.h1`
         align-self: center;
     }
 `
+export const CountSortWrap = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 2.4rem;
+`
 export const CountHeading = styled.h4`
     font-weight: 500;
     color: ${props => props.theme.colors.primary};

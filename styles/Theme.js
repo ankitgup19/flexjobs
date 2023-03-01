@@ -9,9 +9,12 @@ const Variables = () => {
                 primaryDarker: "#23527c",//blue_2
                 secondary: "#ff532a",//orange_1,
                 tertiary: "#e9ecef",//gray_1
-                tertiaryLight: "#f5f5f5",
+                tertiaryLight: "#f5f5f5",                
+                tertiaryLighter: "#e6e6e6",
+                tertiaryLightest: "#ccc",
                 tertiaryDark: "#d4d4d4",
                 tertiaryDarker: "#3e3d3f",
+                tertiaryDarkest: "#333",
                 white: "#fff",
                 black: "#000",
                 danger: '#d2322d',
@@ -20,6 +23,7 @@ const Variables = () => {
                 //border: 1px solid #ced4da;FormGroup Input
             },
             fontSize:{
+                xxxs: "1.2rem",
                 xxs: "1.3rem",
                 xs: "1.4rem",
                 sm: "1.6rem",

@@ -23,7 +23,8 @@ const GlobalStyle = createGlobalStyle`
         font-family: "halcyon";
     }
     body,
-    input,
+    input[type='text'],
+    input[type='password'],
     select{
         margin: 0;
         width: 100%;
