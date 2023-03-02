@@ -9,7 +9,7 @@ const PasswordRecovery = (props) => {
             <Breadcrumb />
             <LoginWrap {...props}>
                 <HeadingLogin>
-                    <IconLogin src="https://www.flexjobs.com/images/icons/streamline-thin/icn-password-help.svg" alt="Password Help icon" title="Password Help icon" />
+                    <IconLogin src="https://www.flexjobs.com/images/icons/streamline-thin/icn-password-help.svg" alt="Password Help icon" title="Password Help icon" width={44} height={44} />
                     <Heading>Password Help</Heading>
                 </HeadingLogin>
                 <P>Please enter your email address below.<br/>We will send you a new password.</P>

@@ -1,31 +1,32 @@
 import React from "react";
-import { PopoverWrap, IconGuideList, ImgGlobal, ImgFlag, P, Arrow } from "../../../styles/components/common/Popover.styles.js";
+import { PopoverWrap, IconGuideList, ImgGlobal, ImgFlag, P, Arrow, PopoverHeader, PopoverBody, Li, VisuallyHidden } from "../../../styles/components/common/Popover.styles.js";
 
 const Popover = () => {
 
   return (
     <>
-      <PopoverWrap className="popover fadeshow fade show bs-popover-bottom" role="tooltip" id="popover" data-popper-placement="bottom">
+      <PopoverWrap role="tooltip">
         <Arrow />
-        <h3 className="popover-header">Job Icon Guide</h3>
-        <div className="popover-body"><p><strong>Job is open to:</strong></p>
+        <PopoverHeader>Job Icon Guide</PopoverHeader>
+        <PopoverBody><p><strong>Job is open to:</strong></p>
           <IconGuideList>
-            <li><ImgGlobal src="https://www.flexjobs.com/images/icons/icon-everywhere.png" alt="everywhere icon" width='16' height='16' /> Candidates Everywhere</li>
-            <li><ImgFlag src="https://www.flexjobs.com/images/icons/icon-usa.png" alt="United States icon" width='20' height='16' /> Candidates in US</li>
-            <li><ImgFlag src="https://www.flexjobs.com/images/icons/australia.png" alt="Australia icon" width='20' height='16' /> Australia Candidates</li>
-            <li><ImgFlag src="https://www.flexjobs.com/images/icons/canada.png" alt="Canada icon" width='20' height='16' /> Canada Candidates</li>
-            <li><ImgFlag src="https://www.flexjobs.com/images/icons/india.png" alt="India icon" width='20' height='16' /> India Candidates</li>
-            <li><ImgFlag src="https://www.flexjobs.com/images/icons/uk.png" alt="UK icon" width='20' height='16' /> UK Candidates</li>
+            <Li><ImgGlobal src="https://www.flexjobs.com/images/icons/icon-everywhere.png" alt="everywhere icon" width='16' height='16' /> Candidates Everywhere</Li>
+            <Li><ImgFlag src="https://www.flexjobs.com/images/icons/icon-usa.png" alt="United States icon" width='20' height='16' /> Candidates in US</Li>
+            <Li><ImgFlag src="https://www.flexjobs.com/images/icons/australia.png" alt="Australia icon" width='20' height='16' /> Australia Candidates</Li>
+            <Li><ImgFlag src="https://www.flexjobs.com/images/icons/canada.png" alt="Canada icon" width='20' height='16' /> Canada Candidates</Li>
+            <Li><ImgFlag src="https://www.flexjobs.com/images/icons/india.png" alt="India icon" width='20' height='16' /> India Candidates</Li>
+            <Li><ImgFlag src="https://www.flexjobs.com/images/icons/uk.png" alt="UK icon" width='20' height='16' /> UK Candidates</Li>
           </IconGuideList>
           <p><strong>Job is for local candidate of:</strong></p>
           <IconGuideList>
-            <li><i className="fa fa-map-marker-alt" aria-hidden="true"></i><span className="visually-hidden">Candidates need to be able to work in the City or State specified</span> a Certain City or State</li>
+            <Li><i className="fa fa-map-marker-alt" aria-hidden="true"></i><VisuallyHidden>Candidates need to be able to work in the City or State specified</VisuallyHidden> a Certain City or State</Li>
           </IconGuideList>
           <p><strong>FlexJobs logos:</strong></p>
           <IconGuideList flex>
-            <li><ImgFlag src="https://www.flexjobs.com/images/fj-star.png" alt="" /> 
-            <P>Featured Companies are employers who have come directly to FlexJobs, been approved by our staff, and have directly posted their jobs to the FlexJobs site.</P></li>
-          </IconGuideList></div>
+            <Li><ImgFlag src="https://www.flexjobs.com/images/fj-star.png" alt="" />
+              <P>Featured Companies are employers who have come directly to FlexJobs, been approved by our staff, and have directly posted their jobs to the FlexJobs site.</P></Li>
+          </IconGuideList>
+        </PopoverBody>
       </PopoverWrap>
     </>
   )

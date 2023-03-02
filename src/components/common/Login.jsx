@@ -9,7 +9,7 @@ const Login = (props) => {
             <Breadcrumb />
             <LoginWrap {...props}>
                 <HeadingLogin>
-                    <IconLogin src="https://www.flexjobs.com/images/icons/streamline-thin/icn-login.svg" alt="Welcome Back icon" title="Welcome Back icon" />
+                    <IconLogin src="https://www.flexjobs.com/images/icons/streamline-thin/icn-login.svg" alt="Welcome Back icon" title="Welcome Back icon" width={48} height={42} />
                     <Heading>Welcome Back!</Heading>
                 </HeadingLogin>
                 <P>Please log in below by entering the email address and password you created when you registered.</P>

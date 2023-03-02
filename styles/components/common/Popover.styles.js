@@ -18,47 +18,42 @@ export const PopoverWrap = styled.div`
     .visually-hidden {
         display: none;
     }
-
-    .popover-arrow {
-        position: absolute;
-        display: block;
-        width: 1.6rem;
-        height: .8rem
-    }
-
-    .popover-arrow::after,
-    .popover-arrow::before {
-        position: absolute;
-        display: block;
-        content: "";
-        border-color: transparent;
-        border-style: solid
-    }
-    .popover-header {
-        padding: .8rem 1.6rem;
-        margin: 0;
-        font-size: ${props => props.theme.fontSize.sm};
-        background-color: #f0f0f0;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-    }
-    .popover-body {
-        padding: 1.6rem;
-        color: #212529;
-    }
     .fa-map-marker-alt {
         margin: 0 1rem 0 .2rem;
     }
 `
+export const PopoverHeader = styled.h3`
+    padding: .8rem 1.6rem;
+    margin: 0;
+    font-size: ${props => props.theme.fontSize.sm};
+    background-color: #f0f0f0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+`
+export const PopoverBody = styled.div`
+    padding: 1.6rem;
+    color: #212529;
+`
+export const VisuallyHidden = styled.span`
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+`
 export const IconGuideList = styled.div`
     list-style: none;
-    margin: ${props => props.flex ? '0' : '0 0 1.6rem'};
-    li {
-        display: flex;
-        align-items: center;
-        font-size: ${props => props.theme.fontSize.xxxs};
-    }    
+    margin: ${props => props.flex ? '0' : '0 0 1.6rem'};  
+`
+export const Li = styled.li`
+    display: flex;
+    align-items: center;
+    font-size: ${props => props.theme.fontSize.xxxs};   
 `
 export const ImgGlobal = styled.img`
     margin: 0 0.5rem 0 0.3rem;
