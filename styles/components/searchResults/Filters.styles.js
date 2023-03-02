@@ -65,6 +65,7 @@ export const DropdownList = styled.div`
     width: 250px;
     padding: 15px;
     border: 1px solid rgba(0,0,0,0.15);
+    z-index: 1;
     ul{
         padding: 0;
         margin: 0;

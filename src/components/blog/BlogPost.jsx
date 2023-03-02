@@ -8,7 +8,7 @@ const BlogPost = (props) => {
             </a>
             <div className="card-body">
                 <h4 className="title"><a href={props.href}>{props.name}</a></h4>
-                <p>{props.description}</p>
+                {props.description && <p>{props.description}</p>}
             </div>
         </div>
     )

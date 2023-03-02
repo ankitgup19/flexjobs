@@ -31,7 +31,7 @@ const NavMenu = () => {
             <StyledInnerWrap className='menu'>
                 {
                     navigation.map((item, index) => (
-                        <li key={item.route + index} className={item.route + index}>
+                        <li key={item.route + index}>
                             {!children && <StyledLink href={item.route} onClick={(e)=>handleClick(e)}>{item.name}</StyledLink>}
                             {item.children && generateSubNav(item.children, true)}
                         </li>
