@@ -64,7 +64,7 @@ export const ImgGlobal = styled.img`
     margin: 0 0.5rem 0 0.3rem;
 `
 export const ImgFlag = styled.img`
-    margin: 0 0 .5rem 0 0;
+    margin: 0 0.5rem 0 0;
 `
 export const P = styled.p`
     margin: 0;
