@@ -9,18 +9,8 @@ export const PopoverWrap = styled.div`
     display: block;
     max-width: 576px;
     font-size: ${props => props.theme.fontSize.xs};
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.5;
     text-align: left;
-    text-decoration: none;
-    text-transform: none;
-    letter-spacing: normal;
-    word-break: normal;
-    word-spacing: normal;
-    white-space: normal;
-    line-break: auto;
-    word-wrap: break-word;
     background-color: ${props => props.theme.colors.white};
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -71,10 +61,10 @@ export const IconGuideList = styled.div`
     }    
 `
 export const ImgGlobal = styled.img`
-    margin: 0 .5rem 0 0.3rem;
+    margin: 0 0.5rem 0 0.3rem;
 `
 export const ImgFlag = styled.img`
-    margin: 0 .5rem 0 0;
+    margin: 0 0 .5rem 0 0;
 `
 export const P = styled.p`
     margin: 0;

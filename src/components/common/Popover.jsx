@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { PopoverWrap, IconGuideList, ImgGlobal, ImgFlag, P, Arrow } from "../../../styles/components/common/Popover.styles.js";
 
-const Popover = (props) => {
+const Popover = () => {
 
   return (
     <>

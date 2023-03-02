@@ -6,7 +6,7 @@ export const MainHeading = styled.h1`
     font-size: ${props => props.theme.fontSize.lg};
     line-height: 1.2;
     display: flex;
-    margin: 4rem 0 .8rem;
+    margin: 1.6rem 0 .8rem;
     position: relative;
     .fa-info-circle {
         font-size: ${props => props.theme.fontSize.xs};

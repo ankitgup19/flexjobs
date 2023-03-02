@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { RadioButtonGroupWrap, Radio, Label } from "../../../styles/components/common/RadioButtonGroup.styles.js";
 
-const RadioButtonGroup = (props) => {
+const RadioButtonGroup = () => {
     const [sortOptions, setSortOptions] = useState('relsort');
     return (
         <>
