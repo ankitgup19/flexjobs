@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const PopoverWrap = styled.div`
     position: absolute;
     top: 0;
-    left: 0;
+    left: 238px;
+    transform: translateY(-45.5%);
     z-index: 1070;
     display: block;
     max-width: 576px;
@@ -13,7 +14,6 @@ export const PopoverWrap = styled.div`
     line-height: 1.5;
     text-align: left;
     text-decoration: none;
-    text-shadow: none;
     text-transform: none;
     letter-spacing: normal;
     word-break: normal;
@@ -82,7 +82,7 @@ export const P = styled.p`
 export const Arrow = styled.div`
     position: absolute;
     top: 0px;
-    transform: translate(-9px, 173px);
+    transform: translate(-8px, 173px);
     &::before,
     &::after {
         position: absolute;

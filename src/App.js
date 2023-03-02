@@ -12,11 +12,11 @@ const App = () => {
         <Layout>
             <StyledContainerMd layout>
                 {/* <Breadcrumb/>*/}     
-                <SearchHeader />      
                 <Login/>
                 <SignUp/>
                 <PasswordRecovery/>
-                <SearchResult/>  
+                <SearchResult/>   
+                <SearchHeader />
             </StyledContainerMd>
         </Layout>
     )

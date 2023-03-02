@@ -2,18 +2,6 @@ import React, { useEffect } from "react";
 import { PopoverWrap, IconGuideList, ImgGlobal, ImgFlag, P, Arrow } from "../../../styles/components/common/Popover.styles.js";
 
 const Popover = (props) => {
-  useEffect(() => {
-    const listener = () => {
-      let $popover = document.querySelector('.popover');
-      $popover.style.left = (document.querySelector('.fa-info-circle')?.getBoundingClientRect().x + 48) + 'px';
-      $popover.style.top = (document.querySelector('.fa-info-circle')?.getBoundingClientRect().y - 175) + 'px';
-    }
-    listener();
-    window.addEventListener("resize", listener);
-    return () => {
-      window.removeEventListener("resize", listener);
-    };
-  });
 
   return (
     <>
