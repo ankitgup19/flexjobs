@@ -19,7 +19,7 @@ export const Heading = styled.h2`
     margin: 0;
 `
 export const IconLogin = styled.img`
-    padding: 0 12px;
+    margin: 0 12px;
 `
 export const LoginWrap = styled.div`
     box-shadow: 0 3px 6px rgb(0 0 0 / 25%);

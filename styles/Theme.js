@@ -6,7 +6,6 @@ const Variables = () => {
                 primaryLight: "#007cad",//blue_3
                 primaryLighter: "#2d67b0",
                 primaryDark: "#23527c",//blue_2
-                primaryDarker: "#23527c",//blue_2
                 secondary: "#ff532a",//orange_1,
                 tertiary: "#e9ecef",//gray_1
                 tertiaryLight: "#f5f5f5",                
@@ -21,6 +20,7 @@ const Variables = () => {
                 dangerLight: '#f5c2c7',
                 dangerLighter: '#f8d7da',
                 //border: 1px solid #ced4da;FormGroup Input
+                //#f0f0f0 PopoverHeader bg
             },
             fontSize:{
                 xxxs: "1.2rem",
