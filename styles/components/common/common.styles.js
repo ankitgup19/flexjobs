@@ -9,9 +9,11 @@ export const StyledContainerMd = styled.div`
     }
 `
 
-export const MainWrap = styled.main`
-    width: 75%;
-`
-export const AsideWrap = styled.aside`
-    width: 25%;
+export const FeaturedWrap = styled.div`
+    display: grid;
+    grid-template-columns: ${props => props.blog ? "58.33% auto" : props.filter ? "75% auto" : "1fr 1fr"};
+    .left,
+    .right{
+        padding: ${props => props.blog ? "0 12px" : ""};
+    }
 `

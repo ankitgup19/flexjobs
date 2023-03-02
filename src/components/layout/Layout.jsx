@@ -1,8 +1,8 @@
-import React from "react"
+import React, { Children } from "react"
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 
-import { MainWrap, AsideWrap } from "../../../styles/components/common/Common.styles";
+import { FeaturedWrap } from "../../../styles/components/common/Common.styles";
 
 const Layout = (props) => {
     return(
@@ -14,12 +14,14 @@ const Layout = (props) => {
     )
 }
 
-export const MainContainer = (props) => {
-    return <MainWrap>{props.children}</MainWrap>
-}
-
-export const AsideContainer = (props) => {
-    return <AsideWrap>{props.children}</AsideWrap>
+export const FlexLayout = (props) => {
+    const [left, right] = Children.toArray(props.children);
+    return (
+        <FeaturedWrap {...props}>
+            <div className="left">{left}</div>
+            <div className="right">{right}</div>
+        </FeaturedWrap>
+    )
 }
 
 export default Layout;
