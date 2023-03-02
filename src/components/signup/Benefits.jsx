@@ -19,8 +19,8 @@ const benefitsList = [
 
 const Benefits = () => {
     return (
-        benefitsList.map((item)=>(
-            <ItemWrap>
+        benefitsList.map((item, index)=>(
+            <ItemWrap key={index}>
                 <ImgWrap>
                     <InnerWrap>
                         <img src={item.icon} alt={item.title} width="35" height="41"/>

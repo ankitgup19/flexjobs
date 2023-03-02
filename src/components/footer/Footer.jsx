@@ -28,7 +28,7 @@ const Footer = () => {
             <StyledListWrap>
                 {
                     nav.map((items, index) => (
-                        <li key={items.name + index} className={items.name + index}>
+                        <li key={items.name + index}>
                             {items.name && <a href={items.route}>{items.name}</a>}
                             {items.children && getChildNav(items.children)}
                         </li>
@@ -39,8 +39,8 @@ const Footer = () => {
     }
     const getFooterNav = (footerNavLinks) => {
         return (
-            footerNavLinks.map(items => (
-                <div className = "col">
+            footerNavLinks.map((items, index) => (
+                <div key={index} className = "col">
                     <StyledH5 onClick={(e)=>handleFooterNav(e)}>{items.name}</StyledH5>
                     { items.children && getChildNav(items.children,true) }
                 </div>
@@ -64,7 +64,7 @@ const Footer = () => {
                     <StyledH5>Follow Us on</StyledH5>
                     <ul>
                         {
-                            socialIconsFooter.map(item => <SocialIcons {...item}/>)
+                            socialIconsFooter.map((item, index) => <SocialIcons key={index} {...item}/>)
                         }
                     </ul>
                 </EqDiv>

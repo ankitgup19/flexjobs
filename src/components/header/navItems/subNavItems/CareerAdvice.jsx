@@ -1,29 +1,29 @@
 const CareerAdvice = [{
     name: "Career Advice",
-    route: "javascript:;",
+    route: "/career-advice",
     children: [{
         name: "Job Search and Career Advice",
-        route: "/"
+        route: "/job-search-career-advice"
     },
     {
         name: "Career Coaching",
-        route: "/"
+        route: "/members/career-coaching"
     },
     {
         name: "Resume Review",
-        route: "/"
+        route: "/resume-review"
     },
     {
         name: "Career Coaching & Resume Review Bundle",
-        route: "/"
+        route: "/career-coaching-resume-review-bundle"
     },
     {
         name: "Mock Interviews",
-        route: "/"
+        route: "/mock-job-interview"
     },
     {
         name: "Career Change Coaching",
-        route: "/"
+        route: "/career-change-coaching"
     }]
 }]
 

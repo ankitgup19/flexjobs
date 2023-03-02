@@ -1,33 +1,33 @@
 const Blog = [{
     name: "Job Search Articles",
-    route: "javascript:;",
+    route: "/blog",
     children: [{
         name: "Articles on Finding a Job",
-        route: "/"
+        route: "/blog/category/find-job/"
     },
     {
         name: "Flexible Work Options",
-        route: "/"
+        route: "/blog/category/flexible-work-options/"
     },
     {
         name: "Flex Benefits",
-        route: "/"
+        route: "/blog/category/flex-job-benefits/"
     },
     {
         name: "Jobs & Companies",
-        route: "/"
+        route: "/blog/category/best-jobs-companies/"
     },
     {
         name: "Flex Workers",
-        route: "/"
+        route: "/blog/category/flex-workers/"
     },
     {
         name: "Job News",
-        route: "/"
+        route: "/blog/category/news-job-trends/"
     },
     {
         name: "FlexJobs Resources",
-        route: "/"
+        route: "/blog/category/job-resources/"
     }]
 }]
 

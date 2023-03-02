@@ -63,7 +63,7 @@ const MobileNavItems = () => {
             {generateMbNav(nav, false)}
             <SocialIconsUl>
                 {
-                    socialIconsSidebar.map(item => <SocialIcons theme={{color: "white"}} {...item}/>)
+                    socialIconsSidebar.map((item, index) => <SocialIcons key={index} theme={{color: "white"}} {...item}/>)
                 }
             </SocialIconsUl>
             {!AUTH_USER ? <Employer/> : null}

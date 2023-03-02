@@ -1,6 +1,6 @@
 const ArticleTips = [{
     name: "Articles & Tips",
-    route: "/"
+    route: ""
 }]
 
 export default ArticleTips[0];

@@ -1,41 +1,41 @@
 const About = [{
     name: "How FlexJobs Works",
-    route: "javascript:;",
+    route: "/About.aspx",
     children: [{
         name: "Benefits",
-        route: "/"
+        route: "/Benefits.aspx"
     },
     {
         name: "Pricing",
-        route: "/"
+        route: "/Pricing.aspx"
     },
     {
         name: "Success Stories",
-        route: "/"
+        route: "/reviews-success-stories"
     },
     {
         name: "Job Research All-Stars",
-        route: "/"
+        route: "/research-team"
     },
     {
         name: "Our Team",
-        route: "/"
+        route: "/FlexJobsTeam.aspx"
     },
     {
         name: "Press & Awards",
-        route: "/"
+        route: "/PressReviews.aspx"
     },
     {
         name: "Member Perks",
-        route: "/"
+        route: "/savings"
     },
     {
         name: "FAQ",
-        route: "/"
+        route: "/faq"
     },
     {
         name: "Tour",
-        route: "/"
+        route: "/tour"
     }]
 }]
 

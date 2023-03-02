@@ -1,29 +1,29 @@
 const RemoteJobs = [{
     name: "Find Remote, Hybrid, & Flexible Jobs",
-    route: "javascript:;",
+    route: "/remote-jobs",
     children : [{
         name: "New Jobs",
-        route: "/"
+        route: "/jobs/new-hiring-now"
     },
     {
         name: "Research Companies",
-        route: "/"
+        route: "/company-guide"
     },
     {
         name: "Jobs by Location",
-        route: "/"
+        route: "/searchLocation"
     },
     {
         name: "Featured Employer Jobs",
-        route: "/"
+        route: "/jobs/featured"
     },
     {
         name: "100 Surprising Jobs",
-        route: "/"
+        route: "/jobs/surprising-jobs"
     },
     {
         name: "Research Gig Jobs",
-        route: "/"
+        route: "/guide-freelance-gig-job-platforms"
     }]
 }]
 

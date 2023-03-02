@@ -24,7 +24,7 @@ const Filter = () => {
                     active = {isActive === index}
                 />)
             }
-            <a href="javascript:;" className="reset-filter">Clear</a>
+            <a href="" className="reset-filter">Clear</a>
         </FilterWrap>
     )
 }

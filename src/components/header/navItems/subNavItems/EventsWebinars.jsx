@@ -1,6 +1,6 @@
 const EventsWebinars = [{
     name: "Events & Webinars",
-    route: "javascript:;",
+    route: "",
 }]
 
 export default EventsWebinars[0];

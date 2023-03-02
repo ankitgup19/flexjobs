@@ -4,7 +4,7 @@ import { AdvSearchLink } from "../../../styles/components/header/AdvancedSearch.
 
 const AdvancedSearch = () => {
     return (
-        <AdvSearchLink href="/">Advanced</AdvSearchLink>
+        <AdvSearchLink href="">Advanced</AdvSearchLink>
     )
 }
 

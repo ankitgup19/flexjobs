@@ -16,8 +16,8 @@ const ButtonGroup = (props) => {
     const getFilterOptions = (filters, child) => {
         return (
             <ul>
-                { filters.map(item => (
-                    <li>
+                { filters.map((item, index) => (
+                    <li key = {item.name + index}>
                         { child && 
                             <a href="/"><Checkbox type="checkbox" value={item.name} onChange={changeHandler}/>
                                 {item.name}

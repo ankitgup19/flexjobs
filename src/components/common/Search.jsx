@@ -25,7 +25,7 @@ const Search = (props) => {
                     props.country && 
                     <Select>
                         {
-                            COUNTRY_LIST.map((country) => <option>{country}</option>)
+                            COUNTRY_LIST.map((country, index) => <option key={country + index}>{country}</option>)
                         }
                     </Select>
                 }
