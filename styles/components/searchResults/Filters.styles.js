@@ -2,12 +2,24 @@ import styled from "styled-components";
 
 export const FilterWrap = styled.div`
     display: flex;
+    align-items: center;
     .btn-group{
         position: relative;
         &.active{
             .dropdown{
                 display: block;
             }
+        }
+    }
+    .reset-filter{
+        font-size: 1.3rem;
+        text-decoration: none;
+        margin-left: 0.8rem;
+        color: #007CAD;
+        text-decoration: none;
+        &:hover{
+            color: #23527c;
+            text-decoration: underline;
         }
     }
 `
@@ -25,9 +37,16 @@ export const Button = styled.button`
     cursor: pointer;
     display: flex;
     align-items: center;
+    &.active{
+        background: #00506d;
+        color: #fff;
+    }
+    .count{
+        margin-left: 3px;
+    }
     &::after{
         content: "";
-        border-top: 4px solid #212529;
+        border-top: 4px solid;
         border-left: 4px solid transparent;
         border-right: 4px solid transparent;
         display: flex;

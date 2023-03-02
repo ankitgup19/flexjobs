@@ -5,14 +5,14 @@ import { FILTER_OPTIONS } from "../../helper/Common";
 import { FilterWrap } from "../../../styles/components/searchResults/Filters.styles";
 
 const Filter = () => {
-    const [clicked, setClicked] = useState("0");
-
+    const [isActive, setIsActive] = useState(null);
     const handleToggle = (index) => {
-        if(clicked === index){
-            return setClicked("0");
+        if(isActive === index){
+            return setIsActive(null);
         }
-        setClicked(index);
+        setIsActive(index);
     }
+
     return (
         <FilterWrap>
             {
@@ -21,9 +21,10 @@ const Filter = () => {
                     key={index} 
                     {...item} 
                     onToggle = {() => handleToggle(index)}
-                    active = {clicked === index}
+                    active = {isActive === index}
                 />)
             }
+            <a href="javascript:;" className="reset-filter">Clear</a>
         </FilterWrap>
     )
 }
