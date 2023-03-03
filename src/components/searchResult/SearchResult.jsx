@@ -9,7 +9,7 @@ import { SearchResultsWrap } from "../../../styles/components/searchResults/Sear
 const SearchResult = () => {
     return (
         <SearchResultsWrap>
-            <FlexLayout filter>
+            <FlexLayout filter="true">
                 <>
                     <Breadcrumb/>
                     <Search type="transparent" country/>

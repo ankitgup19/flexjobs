@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const StyledContainerMd = styled.div`
-    max-width: 1170px;
+    max-width: ${({fullwidth}) => fullwidth ? null : "1170px"};
     margin: 0 auto;
     padding: ${({layout}) => layout ? "132px 15px 0" : "0 15px"};
     @media all and (max-width:1024px){
         padding: ${({layout}) => layout ? "135px 15px 0" : "0 15px"};
     }
     @media (min-width: 1400px) {
-        max-width: 1320px;
+        max-width: ${({fullwidth}) => fullwidth ? null : "1320px"};
     }
 `
 

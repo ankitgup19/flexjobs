@@ -10,7 +10,7 @@ import EventsWebinars from "./subNavItems/EventsWebinars";
 import Blog from "./subNavItems/Blog";
 
 import { AUTH_USER } from "../../../helper/Common";
-
+import { StyledContainerMd } from "../../../../styles/components/common/Common.styles";
 import { StyledNav, StyledWrap, StyledInnerWrap, StyledSubmenu, StyledSubmenuWrap, StyledLink } from "../../../../styles/components/header/nav.styles";
 
 const navigation = [RemoteJobs, About, CareerAdvice, EventsWebinars, Blog];
@@ -58,10 +58,12 @@ const NavMenu = () => {
     }
     return (
         <StyledNav>
-            <StyledWrap>
-                { generateNav(navigation, false) }
-                { AUTH_USER ? <AuthNav/> : <UnAuthNavItems/> }
-            </StyledWrap>
+            <StyledContainerMd fullwidth="true">
+                <StyledWrap>
+                    { generateNav(navigation, false) }
+                    { AUTH_USER ? <AuthNav/> : <UnAuthNavItems/> }
+                </StyledWrap>
+            </StyledContainerMd>
         </StyledNav>
     )
 }

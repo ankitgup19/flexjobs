@@ -7,7 +7,7 @@ import { StyledLink, StyledWrap } from "../../../styles/components/header/Logo.s
 
 const Logo = (props) => {
     return (
-        <StyledContainerMd>
+        <StyledContainerMd fullwidth = "true">
             <StyledWrap>
                 <StyledLink href="/">
                     <BrandLogo width={133} height={60} className="logo-img"/>

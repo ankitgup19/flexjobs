@@ -26,6 +26,7 @@ const CardWrap = styled.div`
     .img-link{
         display: inline-block;
         width: ${props => props.className=="right-thumbnail" ? "41.67%" : "100%"};
+        padding-right: ${props => props.className=="right-thumbnail" ? "12px" : "0"};
     }
     .card-img{
         width: 100%;
@@ -35,7 +36,7 @@ const CardWrap = styled.div`
     .card-body{
         border: ${props => props.className=="right-thumbnail" ? "none" : "1px solid rgba(0,0,0,0.125)"};
         border-width: 0 1px 1px;
-        padding: ${props => props.className=="right-thumbnail" ? "0 0 0 12px" : "0 16px"};
+        padding: ${props => props.className=="right-thumbnail" ? "0" : "0 16px"};
         width: ${props => props.className=="right-thumbnail" ? "58.33%" : "100%"};
         .h4{
             font-weight: 500;

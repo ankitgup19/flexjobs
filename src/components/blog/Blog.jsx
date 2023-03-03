@@ -8,7 +8,7 @@ const Blog = () => {
     return (
         <BlogWrap>
             <BlogSearch/>
-            <FlexLayout blog>
+            <FlexLayout blog="true">
                 <>
                     <BlogCard 
                         href="/blog/post/100-top-companies-with-remote-jobs-2023/"

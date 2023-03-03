@@ -6,9 +6,6 @@ export const StyledNav = styled.nav`
 `
 export const StyledWrap = styled.div`
     display: flex;
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 0 15px;
     justify-content: space-between;
 `
 export const StyledInnerWrap = styled.ul`
@@ -19,6 +16,9 @@ export const StyledInnerWrap = styled.ul`
     justify-content: space-between;
     align-items: center;
     flex-grow: 1;
+    @media (min-width: 1400px) {
+        max-width: ${props => props.unAuth ? "325px" : "960px" }
+    }
 `
 
 export const StyledSubmenu = styled.div`
