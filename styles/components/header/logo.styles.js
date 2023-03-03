@@ -18,7 +18,7 @@ export const StyledLink = styled.a`
 `
 
 export const StyledWrap = styled.div`
-    padding: ${props => props.innerWrap ? null : "14px 0"};
+    padding: ${props => props.innerWrap ? null : "8px 0"};
     display: flex;
     align-items: center;
     justify-content: ${props => props.innerWrap ? null : "space-between"};

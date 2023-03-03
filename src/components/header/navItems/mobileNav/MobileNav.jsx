@@ -12,7 +12,7 @@ const MobileNavItem = () => {
         <MbHeadWrap>
             <NavButton className="toggleButton" onClick={() => isMobileNav(!mobileNav)}><FontAwesomeIcon icon={faBars}/></NavButton>
             <div className="logo">
-                <a href="/" class="link">
+                <a href="/" className="link">
                     <BrandLogo width={102} height={46}/>
                 </a>
             </div>

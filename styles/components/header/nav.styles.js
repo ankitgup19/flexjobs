@@ -37,7 +37,7 @@ export const StyledSubmenuWrap = styled.ul`
     max-width: 1170px;
     margin: 0 auto;
     a{
-        padding: 12px 5px 12px 15px;
+        padding: 11px 5px 11px 15px;
         display: inline-block;
         color: ${props => props.theme.colors.primaryLight};
         text-decoration: none;
@@ -61,6 +61,7 @@ export const StyledLink = styled.a`
     background-color: ${props => props.button ? props.theme.colors.secondary : "transparent"};
     border-radius: ${props => props.button ? "4px" : ""};
     font-weight: ${({button}) => button ? 500 : 400};
+    cursor: pointer;
     &:hover{
         text-decoration: underline;
     }

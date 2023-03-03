@@ -7,6 +7,9 @@ export const StyledContainerMd = styled.div`
     @media all and (max-width:1024px){
         padding: ${({layout}) => layout ? "135px 15px 0" : "0 15px"};
     }
+    @media (min-width: 1400px) {
+        max-width: 1320px;
+    }
 `
 
 export const FeaturedWrap = styled.div`
