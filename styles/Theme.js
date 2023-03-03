@@ -14,6 +14,7 @@ const Variables = () => {
                 tertiaryDark: "#d4d4d4",
                 tertiaryDarker: "#3e3d3f",
                 tertiaryDarkest: "#333",
+                TertiartyMedium: "#ced4da",
                 white: "#fff",
                 black: "#000",
                 danger: '#d2322d',

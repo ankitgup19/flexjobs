@@ -6,7 +6,7 @@ export const StyleFormGroup = styled.div`
 `
 export const Input = styled.input`
     padding: 6px 12px;
-    border: 1px solid #ced4da;
+    border: 1px solid ${props => props.theme.colors.TertiartyMedium};
     border-radius: 4px;
     outline: 0;
     line-height: ${props => props.theme.fontSize.lg};

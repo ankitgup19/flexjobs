@@ -15,7 +15,7 @@ export const ImgWrap = styled.div`
         content: "";
         width: 100%;
         display: block;
-        border-bottom: 1px solid #ced4da;
+        border-bottom: 1px solid ${props => props.theme.colors.TertiartyMedium};
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
