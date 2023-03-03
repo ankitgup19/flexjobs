@@ -1,6 +1,4 @@
 import React from "react";
-// import Breadcrumb from "./components/common/Breadcrumb";
-import SearchHeader from "./components/common/SearchHeader";
 import Login from "./components/common/Login";
 import SignUp from "./components/common/SignUp";
 import PasswordRecovery from "./components/common/PasswordRecovery";
@@ -11,14 +9,12 @@ import Blog from "./components/blog/Blog";
 const App = () => {
     return (
         <Layout>
-            <StyledContainerMd layout>
-                {/* <Breadcrumb/>*/}                
+            <StyledContainerMd layout>             
                 <Blog/>
                 <Login/>
                 <SignUp/>
                 <PasswordRecovery/>
-                <SearchResult/>   
-                <SearchHeader />
+                <SearchResult/>
                 {/* <Blog/> */}
             </StyledContainerMd>
         </Layout>
