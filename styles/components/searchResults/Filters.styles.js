@@ -15,17 +15,17 @@ export const FilterWrap = styled.div`
         font-size: 1.3rem;
         text-decoration: none;
         margin-left: 0.8rem;
-        color: #007CAD;
+        color: ${props => props.theme.colors.primaryLight};
         text-decoration: none;
         &:hover{
-            color: #23527c;
+            color: ${props => props.theme.colors.primaryDark};
             text-decoration: underline;
         }
     }
 `
 
 export const Button = styled.button`
-    background-color: #fff;
+    background-color: ${props => props.theme.colors.white};
     border: 1px solid #ccc;
     font-weight: 500;
     font-size: 13px;
@@ -39,7 +39,7 @@ export const Button = styled.button`
     align-items: center;
     &.active{
         background: #00506d;
-        color: #fff;
+        color: ${props => props.theme.colors.white};
     }
     .count{
         margin-left: 3px;
@@ -60,7 +60,7 @@ export const DropdownList = styled.div`
     top: 35px;
     max-height: 300px;
     overflow: auto;
-    background-color: #fff;
+    background-color: ${props => props.theme.colors.white};;
     border-radius: 4px;
     width: 250px;
     padding: 15px;
@@ -75,7 +75,7 @@ export const DropdownList = styled.div`
             a{
                 display: flex;
                 padding: 4px 0;
-                color: #007CAD;
+                color: ${props => props.theme.colors.primaryLight};
                 text-decoration: none;
                 &:hover{
                     color: #004f6d;

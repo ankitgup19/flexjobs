@@ -21,11 +21,11 @@ export const InputCheck = styled.input`
 
 export const Label = styled.label`
     .linked-url{
-        color: #007CAD;
+        color: ${props => props.theme.colors.primaryLight};
         font-weight: 600;
         text-decoration: none;
         &:hover{
-            color: #23527c;
+            color: ${props => props.theme.colors.primaryDark};
             text-decoration: underline;
         }
     }

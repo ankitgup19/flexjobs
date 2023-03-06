@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledNav = styled.nav`
-    background-color: ${({theme}) => theme.colors.primary};
+    background-color: ${({ theme }) => theme.colors.primary};
     position: relative;
 `
 export const StyledWrap = styled.div`
@@ -10,14 +10,14 @@ export const StyledWrap = styled.div`
 `
 export const StyledInnerWrap = styled.ul`
     margin: 0;
-    padding: ${props => props.unAuth ? "0 0 0 25px" : 0 };
+    padding: ${props => props.unAuth ? "0 0 0 25px" : 0};
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-grow: 1;
     @media (min-width: 1400px) {
-        max-width: ${props => props.unAuth ? "325px" : "960px" }
+        max-width: ${props => props.unAuth ? "325px" : "960px"}
     }
 `
 
@@ -60,7 +60,7 @@ export const StyledLink = styled.a`
     padding: ${props => props.button ? "6px 12px" : props.icon ? "10px 0" : "12px 0"};
     background-color: ${props => props.button ? props.theme.colors.secondary : "transparent"};
     border-radius: ${props => props.button ? "4px" : ""};
-    font-weight: ${({button}) => button ? 500 : 400};
+    font-weight: ${({ button }) => button ? 500 : 400};
     cursor: pointer;
     &:hover{
         text-decoration: underline;
@@ -72,7 +72,7 @@ export const StyledLink = styled.a`
             display: inline-block;
             border-left: 14px solid transparent;
             border-right: 14px solid transparent;
-            border-bottom: 8px solid #fff;
+            border-bottom: 8px solid ${props => props.theme.colors.white};;
             position: absolute;
             left: 50%;
             bottom: 0;
