@@ -54,7 +54,7 @@ export const StyledSubmenuWrap = styled.ul`
 export const StyledLink = styled.a`
     color: ${props => props.theme.colors.white};
     text-decoration: none;
-    font-size: ${props => props.icon ? props.theme.fontSize.lg : props.theme.fontSize.sm} ;
+    font-size: ${props => props.icon ? props.theme.fontSize.lg : props.theme.fontSize.sm};
     line-height: ${props => props.button ? props.theme.lineHeight.lg : props.theme.lineHeight.md};
     display: inline-block;
     padding: ${props => props.button ? "6px 12px" : props.icon ? "10px 0" : "12px 0"};

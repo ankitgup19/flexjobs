@@ -43,6 +43,7 @@ const CardWrap = styled.div`
   .card-img {
     width: 100%;
     height: auto;
+    max-height: 318px;
     border-radius: ${(props) =>
       props.className == "right-thumbnail" ? "4px" : "4px 4px 0 0"};
   }
@@ -53,7 +54,7 @@ const CardWrap = styled.div`
         : "1px solid rgba(0,0,0,0.125)"};
     border-width: 0 1px 1px;
     padding: ${(props) =>
-      props.className == "right-thumbnail" ? "0" : "0 16px"};
+      props.className == "right-thumbnail" ? "0" : "0 16px 20px"};
     width: ${(props) =>
       props.className == "right-thumbnail" ? "58.33%" : "100%"};
     .h4 {
