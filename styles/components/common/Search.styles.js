@@ -30,13 +30,13 @@ export const SearchWrap = styled.div`
         padding: 16px 0 8px;
         .search-box{
             background-color: transparent;
-            border: 1px solid ${props => props.theme.colors.TertiartyMedium};
+            border: 1px solid ${props => props.theme.colors.tertiartyMedium};
             min-width: auto;
             flex-basis: 0;
             flex-grow: 1;
             height: auto;
             &:focus{
-                border: 1px solid ${props => props.theme.colors.TertiartyMedium};
+                border: 1px solid ${props => props.theme.colors.tertiartyMedium};
             }
         }
         .submit-btn{
@@ -74,7 +74,7 @@ export const Select = styled.select`
     min-width: 0;
     color: #212529;
     padding: 6px 36px 6px 12px;
-    border: 1px solid ${props => props.theme.colors.TertiartyMedium};
+    border: 1px solid ${props => props.theme.colors.tertiartyMedium};
     margin-left: 4px;
     position: relative;
     &:focus{

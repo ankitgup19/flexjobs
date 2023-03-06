@@ -4,7 +4,7 @@ export const InputSearch = styled.input`
     &[type='text'] {
         min-width: 28.5rem;
         padding: .6rem 1.2rem;
-        border: 1px solid ${props => props.theme.colors.TertiartyMedium};
+        border: 1px solid ${props => props.theme.colors.tertiartyMedium};
         border-top-left-radius: ${({bdrcurve}) => bdrcurve ? "4px" : ""};
         border-bottom-left-radius: ${({bdrcurve}) => bdrcurve ? "4px" : ""};
         outline: none;
