@@ -6,8 +6,8 @@ export const InputSearch = styled.input`
     height: 46px;
     padding: 6px 12px;
     border-width: 0 1px 0 0;
-    border-top-left-radius: ${({bdrcurve}) => bdrcurve ? "4px" : ""};
-    border-bottom-left-radius: ${({bdrcurve}) => bdrcurve ? "4px" : ""};
+    border-top-left-radius: ${({ bdrcurve }) => bdrcurve ? "4px" : ""};
+    border-bottom-left-radius: ${({ bdrcurve }) => bdrcurve ? "4px" : ""};
     outline: none;
     &:focus{
         border: 3px solid ${props => props.theme.colors.primaryLight};
@@ -51,7 +51,7 @@ export const SearchWrap = styled.div`
     }
 `
 
-export const SearchBtn =  styled.button`
+export const SearchBtn = styled.button`
     background-color: #FF6843;
     border: none;
     padding: 0 12px;
@@ -64,7 +64,7 @@ export const SearchBtn =  styled.button`
         padding: 8px 6px;
     }
 `
-export const Styledform =  styled.form`
+export const Styledform = styled.form`
     margin: 0;
 `
 

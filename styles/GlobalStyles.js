@@ -16,6 +16,9 @@ const GlobalStyle = createGlobalStyle`
     html {
         font-size: 62.5%;
     }
+    html,body{
+        scroll-behavior: smooth;
+    }
     body,
     button,
     input,
@@ -36,6 +39,8 @@ const GlobalStyle = createGlobalStyle`
         margin: 0 0 1.2rem;
     }
     img{
+        max-width: 100%;
+        height: auto;
         vertical-align: middle;
     }
     strong{

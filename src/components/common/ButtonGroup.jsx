@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import { Button } from "../../../styles/components/common/ButtonGroup.styles";
 import {
-  Button,
   DropdownList,
   Checkbox,
 } from "../../../styles/components/searchResults/Filters.styles";
@@ -46,7 +46,7 @@ const ButtonGroup = (props) => {
       {props.name && (
         <Button
           onClick={props.onToggle}
-          className={activeCount > 0 && "active"}
+          className={`${props.className} ${activeCount > 0 ? "active" : ""}`}
         >
           {props.name}
           {activeCount > 1 && <span className="count">({activeCount})</span>}

@@ -8,3 +8,9 @@ export const BlogWrap = styled.div`
         margin: 5.1rem -1.5rem 0;
     }
 `
+
+export const BlogFooter = styled.div`
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 1.6rem;
+`
