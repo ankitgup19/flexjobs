@@ -2,6 +2,7 @@ import React from "react";
 import { FlexLayout } from "../layout/Layout"; 
 import BlogCard from "./BlogCard";
 import BlogSearch from "./BlogSearch";
+import BlogTabs from "./BlogTabs.jsx";
 import { BlogWrap } from "../../../styles/components/blog/Blog.styles";
 
 const Blog = () => {
@@ -55,6 +56,7 @@ const Blog = () => {
                     />
                 </>
             </FlexLayout>
+            <BlogTabs/>
         </BlogWrap>
     )
 }

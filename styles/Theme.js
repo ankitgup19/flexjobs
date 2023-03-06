@@ -14,7 +14,7 @@ const Variables = () => {
                 tertiaryDark: "#d4d4d4",
                 tertiaryDarker: "#3e3d3f",
                 tertiaryDarkest: "#333",
-                TertiartyMedium: "#ced4da",
+                tertiartyMedium: "#ced4da",
                 white: "#fff",
                 black: "#000",
                 danger: '#d2322d',
@@ -22,6 +22,10 @@ const Variables = () => {
                 dangerLighter: '#f8d7da',
                 //border: 1px solid #ced4da;FormGroup Input
                 //#f0f0f0 PopoverHeader bg
+                // border-top: 1px solid #c0c0c0;
+                // border-bottom: 1px solid #dee2e6;
+                // color: #6c757d;
+                // rgba(0,0,0,0.125)
             },
             fontSize:{
                 xxxs: "1.2rem",
