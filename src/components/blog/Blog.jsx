@@ -3,6 +3,7 @@ import { FlexLayout } from "../layout/Layout";
 import ButtonGroup from "../common/ButtonGroup";
 import BlogCard from "./BlogCard";
 import BlogSearch from "./BlogSearch";
+import BlogTabs from "./BlogTabs";
 import {
   BlogWrap,
   BlogFooter,
@@ -65,6 +66,7 @@ const Blog = () => {
           />
         </>
       </FlexLayout>
+      <BlogTabs />
       <BlogFooter>
         <ButtonGroup
           name="More Posts"
