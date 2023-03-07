@@ -46,6 +46,15 @@ const GlobalStyle = createGlobalStyle`
     strong{
         font-weight: 600;
     }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+        color: ${props => props.theme.colors.primary};
+        font-weight: 500;
+    }
     @font-face {
         font-family: 'halcyon';
         src: url(${HalcyonRegularWoff}) format("woff2"), url(${HalcyonRegular});

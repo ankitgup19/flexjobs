@@ -7,6 +7,7 @@ import {
   BlogWrap,
   BlogFooter,
 } from "../../../styles/components/blog/Blog.styles";
+import BlogTabs from "./BlogTabs";
 
 const loadMorePosts = () => {};
 
