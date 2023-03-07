@@ -32,6 +32,7 @@ const Variables = () => {
                 xxs: "1.3rem",
                 xs: "1.4rem",
                 sm: "1.6rem",
+                md1: "1.8rem",
                 md: "2.2rem",
                 lg: "2.4rem",
                 xl: "2.8rem"
