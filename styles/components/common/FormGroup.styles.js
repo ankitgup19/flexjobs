@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const StyleFormGroup = styled.div`
-    margin: 0 0 16px;
+    margin: 0 0 1.6rem;
     position: relative;
 `
 export const Input = styled.input`
-    padding: 6px 12px;
+    padding: 0.6rem 1.2rem;
     border: 1px solid ${props => props.theme.colors.tertiartyMedium};
     border-radius: 4px;
     outline: 0;

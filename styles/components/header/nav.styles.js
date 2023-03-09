@@ -10,7 +10,7 @@ export const StyledWrap = styled.div`
 `
 export const StyledInnerWrap = styled.ul`
     margin: 0;
-    padding: ${props => props.unAuth ? "0 0 0 25px" : 0};
+    padding: ${props => props.unAuth ? "0 0 0 2.5rem" : 0};
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -37,7 +37,7 @@ export const StyledSubmenuWrap = styled.ul`
     max-width: 1170px;
     margin: 0 auto;
     a{
-        padding: 11px 5px 11px 15px;
+        padding: 1.1rem .5rem 1.1rem 1.5rem;
         display: inline-block;
         color: ${props => props.theme.colors.primaryLight};
         text-decoration: none;
@@ -57,7 +57,7 @@ export const StyledLink = styled.a`
     font-size: ${props => props.icon ? props.theme.fontSize.lg : props.theme.fontSize.sm};
     line-height: ${props => props.button ? props.theme.lineHeight.lg : props.theme.lineHeight.md};
     display: inline-block;
-    padding: ${props => props.button ? "6px 12px" : props.icon ? "10px 0" : "12px 0"};
+    padding: ${props => props.button ? ".6rem 1.2rem" : props.icon ? "1rem 0" : "1.2rem 0"};
     background-color: ${props => props.button ? props.theme.colors.secondary : "transparent"};
     border-radius: ${props => props.button ? "4px" : ""};
     font-weight: ${({ button }) => button ? 500 : 400};

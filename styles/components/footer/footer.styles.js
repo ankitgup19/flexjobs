@@ -5,7 +5,7 @@ export const StyledFooter = styled.footer`
     @media all and (max-width:1024px){
         .logoWrap{
             display: flex;
-            padding: 22px 0;
+            padding: 2.2rem 0;
             justify-content: center;
         }
     }
@@ -15,7 +15,7 @@ export const StyledListWrap = styled.ul`
     padding: 0;
     list-style: none;
     li{
-        margin-bottom: 8px;
+        margin-bottom: .8rem;
         a{
             color: ${props => props.theme.colors.tertiaryDarker};
             text-decoration: none;
@@ -37,14 +37,14 @@ export const StyledH5 = styled.h5`
 export const StyledWrap = styled.div`
     max-width: 1170px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 1.5rem;
     display: flex;
     justify-content: space-between;
     .col{
-        padding: 20px 0;
+        padding: 2rem 0;
         h5{
-            line-height: 24px;
-            margin: 0 0 14px;
+            line-height: ${props => props.theme.lineHeight.lg};
+            margin: 0 0 1.4rem;
             color: #3d3e3f;
         }
     }
@@ -55,7 +55,7 @@ export const StyledWrap = styled.div`
             padding: 0;
             h5{
                 margin: 0;
-                padding: 15px 0;
+                padding: 1.5rem 0;
                 position: relative;
                 &::after{
                     content: "";
@@ -78,7 +78,7 @@ export const StyledWrap = styled.div`
                     }
                 }
                 ul{
-                    padding: 7px 0 15px;
+                    padding: .7rem 0 1.5rem;
                     display: block;
                 }
             }
@@ -87,16 +87,16 @@ export const StyledWrap = styled.div`
 `
 
 export const StyledCopyrightWrap = styled.div`
-    padding: 25px 0;
+    padding: 2.5rem 0;
     justify-content: center;
     text-align: center;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: ${props => props.theme.fontSize.xs};
+    line-height: ${props => props.theme.lineHeight.md};
     .mb-20{
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
     }
     .mr-20{
-        margin-right: 20px;
+        margin-right: 2rem;
     }
     a{
         color: ${props => props.theme.colors.primaryLight};
@@ -109,18 +109,18 @@ export const StyledCopyrightWrap = styled.div`
 `
 
 export const EqDiv = styled.div`
-    margin: 25px 0 0;
+    margin: 2.5rem 0 0;
     width: 33.33%;
     text-align: center;
     h5{
-        margin: 0 0 8px;
+        margin: 0 0 .8rem;
         text-align: center;
-        line-height: 20px;
+        line-height: ${props => props.theme.lineHeight.md};
     }  
     a{
         display: inline-block;
         &.firstLogo{
-            margin-right: 25px;
+            margin-right: 2.5rem;
         }
     }      
     ul{
@@ -130,7 +130,7 @@ export const EqDiv = styled.div`
         list-style: none;
         justify-content: center;
         li{
-            margin: 0 5px;
+            margin: 0 .5rem;
             a{
                 font-size: 3.1rem;
                 display: inline-block;

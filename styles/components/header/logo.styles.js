@@ -10,7 +10,7 @@ export const StyledLink = styled.a`
         text-decoration: underline;
     }
     .logo-img{
-        margin-right: 8px;
+        margin-right: 0.8rem;
     }
     & > .txt-highlight{
         color: ${props => props.theme.colors.secondary};
@@ -18,7 +18,7 @@ export const StyledLink = styled.a`
 `
 
 export const StyledWrap = styled.div`
-    padding: ${props => props.innerWrap ? null : "8px 0"};
+    padding: ${props => props.innerWrap ? null : "0.8rem 0"};
     display: flex;
     align-items: center;
     justify-content: ${props => props.innerWrap ? null : "space-between"};

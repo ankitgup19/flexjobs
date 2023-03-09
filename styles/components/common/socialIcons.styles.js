@@ -9,7 +9,7 @@ export const SocialIconsUl = styled.ul`
 `
 
 export const StyledIconA = styled.a`
-    padding: 12px;
+    padding: 1.2rem;
     color: ${props => props.theme.color};
     display: inline-block;
     font-size: 3rem;

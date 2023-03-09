@@ -8,21 +8,21 @@ export const BlogDescWrap = styled.div`
         margin: 1.6rem 0 0.8rem;
     }
     h2{
-        font-size: 2.4rem;
+        font-size: ${props => props.theme.fontSize.lg};
     }
     h3{
         font-size: 2rem;
     }
     p,
     ol{
-        font-size: 1.8rem;
+        font-size: ${props => props.theme.fontSize.md1};
         line-height: 3.1rem;
     }
     a{
-        color: #007CAD;
+        color: ${props => props.theme.colors.primaryLight};
         text-decoration: none;
         &:hover{
-            color: #23527c;
+            color: ${props => props.theme.colors.primaryDark};
             text-decoration: underline;
         }
     }
@@ -42,7 +42,7 @@ export const BlogDescWrap = styled.div`
     }
 `
 export const H1 = styled.h1`
-    font-size: 2.8rem;
+    font-size: ${props => props.theme.fontSize.xl};
     line-height: 3.4rem;
     font-weight: 500;
     color: ${props => props.theme.colors.primary};

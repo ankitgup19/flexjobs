@@ -5,10 +5,10 @@ export const InputSearch = styled.input`
         min-width: 28.5rem;
         padding: .6rem 1.2rem;
         border: 1px solid ${props => props.theme.colors.tertiartyMedium};
-        border-top-left-radius: ${({bdrcurve}) => bdrcurve ? "4px" : ""};
-        border-bottom-left-radius: ${({bdrcurve}) => bdrcurve ? "4px" : ""};
+        border-top-left-radius: ${({ bdrcurve }) => bdrcurve ? "0.4rem" : ""};
+        border-bottom-left-radius: ${({ bdrcurve }) => bdrcurve ? "0.4rem" : ""};
         outline: none;
-        line-height: 2.4rem;
+        line-height: ${props => props.theme.lineHeight.lg};
         @media all and (max-width: 991px){
             width: 100%;
             height: auto;
@@ -22,25 +22,25 @@ export const SearchWrap = styled.div`
     margin: 0 0 1.6rem; 
 `
 
-export const SearchBtn =  styled.button`
+export const SearchBtn = styled.button`
     background-color: ${props => props.theme.colors.white};
     border: 1px solid ${props => props.theme.colors.primary};
     padding: 0 1.2rem;
     font-size: 1.7rem;
     color: ${props => props.theme.colors.primary};
     cursor: pointer;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
     margin-left: -1px;
     &:hover {
         color: ${props => props.theme.colors.white};
         background-color: ${props => props.theme.colors.primary};
     }
     .fa-search {
-        padding: 9px 0 0;
+        padding: 0.9rem 0 0;
     }
 `
-export const Styledform =  styled.form`
+export const Styledform = styled.form`
     margin: 3rem 0 0;
     padding: 0 1.2rem;
     @media (min-width: 768px) {

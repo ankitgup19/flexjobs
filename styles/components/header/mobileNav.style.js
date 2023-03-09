@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const MbHeadWrap = styled.div`
     display: flex;
     justify-content: space-between;
-    padding: 5px 15px;
+    padding: .5rem 1.5rem;
     align-items: center;
     .logo {
         flex-grow: 1;
@@ -29,7 +29,7 @@ export const SignUpLink = styled.a`
     background-color: ${props => props.theme.colors.secondary};
     border-radius: 4px;
     color: ${props => props.theme.colors.white};
-    padding: 6px 12px;
+    padding: .6rem 1.2rem;
 `
 
 export const MbNavItemsWrap = styled.div`
@@ -41,7 +41,7 @@ export const MbNavItemsWrap = styled.div`
     left: 0;
     top: 58px;
     color: ${props => props.theme.colors.white};
-    padding: 5px 8px;
+    padding: .5rem .8rem;
     .menu{
         list-style: none;
         padding: 0;
@@ -72,7 +72,7 @@ export const MbNavItemsWrap = styled.div`
             > .submenu{
                 display: block;
                 list-style: none;
-                padding: 0 0 0 15px;
+                padding: 0 0 0 1.5rem;
                 margin: 0;
                 > li{
                     border: none;
@@ -95,10 +95,10 @@ export const MbNavItemsWrap = styled.div`
 export const StyledText = styled.span`
     color: ${props => props.theme.colors.white};
     text-decoration: none;
-    padding: ${({childMenu}) => childMenu ? "12px 0" : "12px 8px"};
+    padding: ${({ childMenu }) => childMenu ? "1.2rem 0" : "1.2rem .8rem"};
     display: block;
     .prefix-icon{
-        margin-right: 7px;
+        margin-right: .7rem;
         position: relative;
         bottom: -2px;
     }
@@ -107,7 +107,7 @@ export const StyledText = styled.span`
 export const StyledLink = styled.a`
     color: ${props => props.theme.colors.white};
     text-decoration: none;
-    padding: 12px 0px;
+    padding: 1.2rem 0;
     display: block;
 `
 
@@ -116,7 +116,7 @@ export const EmployerUl = styled.ul`
     padding: 0;
     list-style: none;
     a{
-        padding: 12px 8px;
+        padding: 1.2rem .8rem;
         color: ${props => props.theme.colors.white};
         display: inline-block;
         text-decoration: none;
@@ -128,14 +128,14 @@ export const EmployerUl = styled.ul`
             border-top: 2px solid ${props => props.theme.colors.white};
             border-right: 2px solid ${props => props.theme.colors.white};
             transform: rotate(45deg);
-            margin-left: 8px;
-            margin-bottom: 1px;
+            margin-left: .8rem;
+            margin-bottom: .1rem;
         }
     }
 `
 
 export const SettingsLink = styled.a`
-    font-size: 22px;
+    font-size: ${props => props.theme.fontSize.md};
     color: ${props => props.theme.colors.primary};
     width: 80px;
     text-align: right;

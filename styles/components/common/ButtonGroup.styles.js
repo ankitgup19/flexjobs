@@ -35,7 +35,7 @@ export const Button = styled.button`
             border-left: 4px solid transparent;
             border-right: 4px solid transparent;
             display: flex;
-            margin-left: 3px;
+            margin-left: 0.3rem;
         }
     }
 `

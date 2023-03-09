@@ -4,7 +4,7 @@ export const InputSearch = styled.input`
     background-color: #f1f9fe;
     min-width: 285px;
     height: 46px;
-    padding: 6px 12px;
+    padding: .6rem 1.2rem;
     border-width: 0 1px 0 0;
     border-top-left-radius: ${({ bdrcurve }) => bdrcurve ? "4px" : ""};
     border-bottom-left-radius: ${({ bdrcurve }) => bdrcurve ? "4px" : ""};
@@ -27,7 +27,7 @@ export const SearchWrap = styled.div`
     &.transparent{
         border: none;
         box-shadow: none;
-        padding: 16px 0 8px;
+        padding: 1.6rem 0 .8rem;
         .search-box{
             background-color: transparent;
             border: 1px solid ${props => props.theme.colors.tertiartyMedium};
@@ -40,9 +40,9 @@ export const SearchWrap = styled.div`
             }
         }
         .submit-btn{
-            padding: 6px 12px;
+            padding: .6rem 1.2rem;
             font-size: 1.6rem;
-            background-color: #ff532a;
+            background-color: ${props => props.theme.colors.secondary};
         }
     }
     @media all and (max-width:1024px){
@@ -54,14 +54,14 @@ export const SearchWrap = styled.div`
 export const SearchBtn = styled.button`
     background-color: #FF6843;
     border: none;
-    padding: 0 12px;
+    padding: 0 1.2rem;
     font-size: 2.1rem;
     color: ${props => props.theme.colors.white};
     cursor: pointer;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     @media all and (max-width:1024px){
-        padding: 8px 6px;
+        padding: .8rem .6rem;
     }
 `
 export const Styledform = styled.form`
@@ -73,9 +73,9 @@ export const Select = styled.select`
     width: 1%;
     min-width: 0;
     color: #212529;
-    padding: 6px 36px 6px 12px;
+    padding: .6rem 3.6rem .6rem 1.2rem;
     border: 1px solid ${props => props.theme.colors.tertiartyMedium};
-    margin-left: 4px;
+    margin-left: .4rem;
     position: relative;
     &:focus{
         outline: 0;

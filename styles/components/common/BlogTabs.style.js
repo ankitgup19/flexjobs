@@ -34,7 +34,6 @@ export const STabPanel = styled(TabPanel)`
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 4.5rem;
     grid-row-gap: 2.4rem;
-
     &.is-selected {
         display: grid;
     }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FlexLayout } from "../layout/Layout";
 import ButtonGroup from "../common/ButtonGroup";
 import BlogCard from "./BlogCard";
@@ -8,14 +8,29 @@ import {
   BlogWrap,
   BlogFooter,
 } from "../../../styles/components/blog/Blog.styles";
-import BlogTabs from "./BlogTabs";
 
-const loadMorePosts = () => {};
-
-const backToTop = () => {
-  window.scrollTo(0, 0);
-};
 const Blog = () => {
+  const [latestCount, setLatestCount] = useState(3);
+  const [trendingCount, setTrendingCount] = useState(3);
+  const [activeTabVal, setActiveTabVal] = useState("latest");
+
+  const loadMorePosts = () => {
+    if (activeTabVal === "latest") {
+      setLatestCount(latestCount + 3);
+    } else if (activeTabVal === "trending") {
+      setTrendingCount(trendingCount + 3);
+    } else {
+    }
+  };
+
+  const backToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
+  const activeTab = (e) => {
+    setActiveTabVal(e.target.getAttribute("name"));
+  };
+
   return (
     <BlogWrap>
       <BlogSearch />
@@ -66,7 +81,11 @@ const Blog = () => {
           />
         </>
       </FlexLayout>
-      <BlogTabs />
+      <BlogTabs
+        trendingCount={trendingCount}
+        latestCount={latestCount}
+        getActiveTab={activeTab}
+      />
       <BlogFooter>
         <ButtonGroup
           name="More Posts"

@@ -12,16 +12,16 @@ export const StyledMain = styled.main`
 
 export const StyledAside = styled.aside`
     width: 25%;
-    margin: 10px 0 0 15px;
+    margin: 1rem 0 0 1.5rem;
 `
 
 export const AsideInner = styled.div`
     border: 1px solid rgba(0,0,0,0.125);
-    padding: 16px;
+    padding: 1.6rem;
 `
 
 export const H2 = styled.h2`
-    margin: 16px 0;
+    margin: 1.6rem 0;
     text-align: center;
     color: ${props => props.theme.colors.primary};
 `
@@ -43,17 +43,17 @@ export const StyledLink = styled.a`
 `
 
 export const StyledFormWrap = styled.div`
-    margin: 40px 50px 0;
-    padding: 30px 100px;
-    background: #f5f5f5;
+    margin: 4rem 5rem 0;
+    padding: 3rem 10rem;
+    background: ${props => props.theme.colors.tertiaryLight};
     .fieldGrp{
-        margin: 0 0 24px;
+        margin: 0 0 2.4rem;
         label{
             position: absolute;
             font-weight: 400;
             line-height: 3px;
             left: 12px;
-            background-color: #f5f5f5;
+            background-color: ${props => props.theme.colors.tertiaryLight};
         }
         .pwd-mask{
             top: 37px;
@@ -70,8 +70,8 @@ export const SubHeading = styled.h2`
     color: ${props => props.theme.colors.primary};
     font-size: ${props => props.theme.fontSize.lg};
     line-height: 2.8rem;
-    margin: 0 0 20px;
-    padding: 8px 0;
+    margin: 0 0 2rem;
+    padding: .8rem 0;
     display: flex;
     align-items: center;
     img{
@@ -86,19 +86,19 @@ export const SignUpBtn = styled.button`
     color: ${props => props.theme.colors.white};
     font-size: 2rem;
     line-height: 2.8rem;
-    padding: 8px 48px;
+    padding: .8rem 4.8rem;
     border-radius: 4px;
     cursor: pointer;
 `
 
 export const FormFooterWrap = styled.div`
     text-align: center;
-    margin: 24px 0 0;
+    margin: 2.4rem 0 0;
 `
 
 export const EmployerLink = styled.a`
     display: block;
-    margin-top: 10px;
+    margin-top: 1rem;
     color: ${props => props.theme.colors.primaryLight};
     text-decoration: none;
     &:hover{
