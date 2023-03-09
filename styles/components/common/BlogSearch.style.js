@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const InputSearch = styled.input`
     &[type='text'] {
-        min-width: 28.5rem;
+        min-width: ${props => props.separateRow ? "28.5rem" : null};
         padding: .6rem 1.2rem;
         border: 1px solid ${props => props.theme.colors.tertiartyMedium};
         border-top-left-radius: ${({ bdrcurve }) => bdrcurve ? "0.4rem" : ""};
@@ -19,7 +19,6 @@ export const InputSearch = styled.input`
 export const SearchWrap = styled.div`
     display: flex;
     overflow: hidden; 
-    margin: 0 0 1.6rem; 
 `
 
 export const SearchBtn = styled.button`
@@ -40,17 +39,18 @@ export const SearchBtn = styled.button`
         padding: 0.9rem 0 0;
     }
 `
-export const Styledform = styled.form`
-    margin: 3rem 0 0;
+export const Styledform =  styled.form`
+    margin: ${props => props.col ? "3rem 0 0" : "3.7rem 0 0"};
     padding: 0 1.2rem;
-    @media (min-width: 768px) {
-        flex: 0 0 auto;
-        width: 41.66666667%;
-        margin-left: 58.33333333%;
-    }
-    @media (min-width: 992px) {
-        flex: 0 0 auto;
-        width: 33.33333333%;
-        margin-left: 66.66666667%;
-    }
+    flex: 0 0 auto;
+    ${props => props.col && css`
+        @media (min-width: 768px) {
+            width: 41.66666667%;
+            margin-left: 58.33333333%;
+        }
+        @media (min-width: 992px) {
+            width: 33.33333333%;
+            margin-left: 66.66666667%;
+        }
+    `}
 `

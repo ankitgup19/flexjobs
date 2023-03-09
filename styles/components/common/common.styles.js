@@ -15,6 +15,7 @@ export const StyledContainerMd = styled.div`
 export const FeaturedWrap = styled.div`
     display: grid;
     grid-template-columns: ${props => props.gridCol || (props.blog ? "58.33% auto" : props.filter ? "75% auto" : "1fr 1fr")};
+    margin: 1.6rem 0 0;
     .left,
     .right{
         padding: ${props => props.blog ? "0 1.2rem" : ""};

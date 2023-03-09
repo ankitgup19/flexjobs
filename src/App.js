@@ -10,9 +10,15 @@ import BlogPost from "./components/blog/BlogPost";
 const App = () => {
     return (
         <Layout>
+<<<<<<< HEAD
             <StyledContainerMd layout>
                 <Blog />
                 <BlogPost />
+=======
+            <StyledContainerMd layout>                
+                <BlogDescription />
+                <Blog />
+>>>>>>> 247137cdaa6af6e3e6d6b411db01e8e5f32d0d28
                 <Login />
                 <SignUp />
                 <PasswordRecovery />
