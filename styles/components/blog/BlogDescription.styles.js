@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const BlogDescWrap = styled.div`
+export const BlogPostWrap = styled.div`
     box-shadow: rgb(0 0 0 / 3%) 0 2px 0 2px;
     padding: 0 1.2rem 1.5rem;
     h2, 
@@ -40,6 +40,13 @@ export const BlogDescWrap = styled.div`
             color: #6c757d;
         }
     }
+    center{
+        margin: 0 0 50px;
+    }
+    .btn-wrap{
+        margin: 4.8rem 0;
+        text-align: center;
+    }
 `
 export const H1 = styled.h1`
     font-size: ${props => props.theme.fontSize.xl};
@@ -51,4 +58,20 @@ export const H1 = styled.h1`
 export const SPAN = styled.span`
     font-size: ${props => props.fontsize};
     color: ${props => props.color};
+`
+
+export const Link = styled.a`
+    &.btn-secondry{
+        font-weight: 500;
+        background-color: ${props => props.theme.colors.secondary};
+        color: ${props => props.theme.colors.white};
+        font-size: ${props => props.type = "sm" ? "1.6rem" : "2rem"};
+        border-radius: 4px;
+        padding: ${props => props.type = "sm" ? ".6rem 2.4rem" : ".8rem 1.6rem"};
+        display: inline-block;
+        line-height: ${props => props.type = "sm" ? "2.4rem" : "3rem"};;
+        &:hover{
+            color: ${props => props.theme.colors.white};
+        }
+    }
 `
