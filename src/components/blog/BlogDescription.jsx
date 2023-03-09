@@ -1,6 +1,8 @@
 import React from "react";
 import { FlexLayout } from "../layout/Layout";
 import BlogHeader from "./BlogHeader";
+import BlogSearch from "./BlogSearch";
+import BlogPromo from "./BlogPromo.jsx";
 import {
   BlogDescWrap,
   SPAN,
@@ -231,7 +233,10 @@ const BlogDescription = (props) => {
           </li>
         </ol>
       </BlogDescWrap>
-      <></>
+      <>
+        <BlogSearch />
+        <BlogPromo />
+      </>
     </FlexLayout>
   );
 };

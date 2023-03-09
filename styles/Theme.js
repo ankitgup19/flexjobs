@@ -35,6 +35,7 @@ const Variables = () => {
                 // color: #606470 border color
                 // color: #1877f2 fbicon
                 // color: #2867b2 linkedinIcon 
+                // #E7EDF3 Promo card-body bg
             },
             fontSize: {
                 xxxs: "1.2rem",

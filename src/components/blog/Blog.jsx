@@ -33,7 +33,7 @@ const Blog = () => {
 
   return (
     <BlogWrap>
-      <BlogSearch />
+      <BlogSearch col />
       <FlexLayout blog>
         <>
           <BlogCard
