@@ -3,6 +3,8 @@ import { FlexLayout } from "../layout/Layout";
 import BlogImage from "./BlogImage";
 import BlogHeader from "./BlogHeader";
 import BlogDescription from "./BlogDescription";
+import BlogSearch from "./BlogSearch";
+import BlogPromo from "./BlogPromo";
 import PromoBanner from "../common/PromoBanner";
 import { BlogPostWrap } from "../../../styles/components/blog/BlogDescription.styles";
 
@@ -27,7 +29,10 @@ const BlogPost = () => {
         <BlogDescription />
         <PromoBanner />
       </BlogPostWrap>
-      <></>
+      <>
+        <BlogSearch />
+        <BlogPromo />
+      </>
     </FlexLayout>
   );
 };

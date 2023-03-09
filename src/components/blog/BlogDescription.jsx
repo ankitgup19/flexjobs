@@ -140,7 +140,7 @@ const BlogDescription = () => {
       </p>
       <h3>
         <strong>
-          <span style={{ color: "#fc563c;" }}>— </span>
+          <span style={{ color: "#fc563c" }}>— </span>
         </strong>
         Top Remote Career Categories
       </h3>
@@ -594,7 +594,7 @@ const BlogDescription = () => {
           >
             CVS Health
           </a>
-          <span style={{ color: "#fc563c;" }}>*</span>
+          <span style={{ color: "#fc563c" }}>*</span>
         </li>
         <li>
           <a
@@ -604,7 +604,7 @@ const BlogDescription = () => {
           >
             Kelly
           </a>
-          <span style={{ color: "#fc563c;" }}>*</span>
+          <span style={{ color: "#fc563c" }}>*</span>
         </li>
         <li>
           <a
@@ -668,7 +668,7 @@ const BlogDescription = () => {
           >
             UnitedHealth Group
           </a>
-          <span style={{ color: "#fc563c;" }}>*</span>
+          <span style={{ color: "#fc563c" }}>*</span>
         </li>
         <li>
           <a
@@ -903,7 +903,7 @@ const BlogDescription = () => {
           >
             Elevance Health
           </a>
-          <span style={{ color: "#fc563c;" }}>*</span>
+          <span style={{ color: "#fc563c" }}>*</span>
         </li>
         <li>
           <a
@@ -931,7 +931,7 @@ const BlogDescription = () => {
           >
             SAP
           </a>
-          <span style={{ color: "#fc563c;" }}>*</span>
+          <span style={{ color: "#fc563c" }}>*</span>
         </li>
         <li>
           <a
@@ -968,7 +968,7 @@ const BlogDescription = () => {
           >
             Stride, Inc.
           </a>
-          <span style={{ color: "#fc563c;" }}>*</span>
+          <span style={{ color: "#fc563c" }}>*</span>
         </li>
         <li>
           <a
@@ -1505,7 +1505,7 @@ const BlogDescription = () => {
       </p>
       <p>
         <em>
-          <span style={{ color: "#fc563c;" }}>—</span>Amy Bouque, Chief People
+          <span style={{ color: "#fc563c" }}>—</span>Amy Bouque, Chief People
           Officer at{" "}
           <a
             href="https://www.flexjobs.com/remote-jobs/company/kelly"
@@ -1539,8 +1539,8 @@ const BlogDescription = () => {
       </p>
       <p>
         <em>
-          <span style={{ color: "#fc563c;" }}>—</span>Chris Harty, VP of
-          Customer Success at{" "}
+          <span style={{ color: "#fc563c" }}>—</span>Chris Harty, VP of Customer
+          Success at{" "}
           <a
             href="https://www.flexjobs.com/remote-jobs/company/literably"
             target="_blank"
@@ -1593,7 +1593,7 @@ const BlogDescription = () => {
       </p>
       <p>
         <em>
-          <span style={{ color: "#fc563c;" }}>—</span>Mercedes B., Prevention
+          <span style={{ color: "#fc563c" }}>—</span>Mercedes B., Prevention
           &amp; Wellness Coordinator at{" "}
           <a
             href="https://www.flexjobs.com/remote-jobs/company/cvs_health"
@@ -1624,7 +1624,7 @@ const BlogDescription = () => {
       </p>
       <p>
         <em>
-          <span style={{ color: "#fc563c;" }}>—</span>Patricia H.,
+          <span style={{ color: "#fc563c" }}>—</span>Patricia H.,
           Copyeditor/Proofreader at{" "}
           <a
             href="https://www.flexjobs.com/remote-jobs/company/robert_half_international"
@@ -1656,7 +1656,7 @@ const BlogDescription = () => {
       </p>
       <p>
         <em>
-          <span style={{ color: "#fc563c;" }}>—</span>Jillian D., Test Score
+          <span style={{ color: "#fc563c" }}>—</span>Jillian D., Test Score
           Evaluator at{" "}
           <a
             href="https://www.flexjobs.com/remote-jobs/company/kelly"
@@ -1688,7 +1688,7 @@ const BlogDescription = () => {
       </p>
       <p>
         <em>
-          <span style={{ color: "#fc563c;" }}>—</span>Sheri C., Customer Service
+          <span style={{ color: "#fc563c" }}>—</span>Sheri C., Customer Service
           Representative &amp; Insurance Processor at{" "}
           <a
             href="https://www.flexjobs.com/remote-jobs/company/unitedhealth_group"
