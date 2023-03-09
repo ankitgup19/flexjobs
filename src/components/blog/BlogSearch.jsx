@@ -7,7 +7,7 @@ const BlogSearch = (props) => {
     return (
         <Styledform action="/blog/search/" method="get" {...props}>
             <SearchWrap>
-                <InputSearch bdrcurve type="text" placeholder="Search Articles & Content" 
+                <InputSearch bdrcurve separateRow={props.col} type="text" placeholder="Search Articles & Content" 
                 onChange={(e) => setSearchText(e.target.value)} value={searchText} aria-label="Search article content" />
                 <SearchBtn type="submit" className="submit-btn"><i className="fa fa-search"/></SearchBtn>
             </SearchWrap>

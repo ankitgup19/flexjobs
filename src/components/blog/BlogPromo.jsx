@@ -6,7 +6,7 @@ const BlogPromo = () => {
     return (
         <BlogPromoWrap>
             <div id="rocket-promo" className="card">
-                <img src="https://www.flexjobs.com/images/img-sidebar-cta.svg" className="card-img-top rounded-0" alt="rocket ship image" aria-hidden="true" title="rocket ship image" />
+                <img src="https://www.flexjobs.com/images/img-sidebar-cta.svg" className="card-img" alt="rocket ship image" aria-hidden="true" title="rocket ship image" />
                 <div className="card-body">
                     <h3 className="promo-title">Want a Great Remote<br/>or Flexible Job?</h3>
                     <p className="promo-text">Save time and find higher-quality jobs than on other sites, guaranteed.</p>

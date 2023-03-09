@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const InputSearch = styled.input`
     &[type='text'] {
-        min-width: 28.5rem;
+        min-width: ${props => props.separateRow ? "28.5rem" : null};
         padding: .6rem 1.2rem;
         border: 1px solid ${props => props.theme.colors.tertiartyMedium};
         border-top-left-radius: ${({ bdrcurve }) => bdrcurve ? "0.4rem" : ""};
