@@ -50,7 +50,11 @@ const PromoBanner = () => {
             </ul>
           </InnerWrap>
           <div className="text-center">
-            <Link href="/registration/signup" className="btn-secondry">
+            <Link
+              href="/registration/signup"
+              className="btn-secondry"
+              type="sm"
+            >
               Join FlexJobs Now!
             </Link>
           </div>

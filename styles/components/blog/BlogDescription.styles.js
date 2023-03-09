@@ -65,11 +65,11 @@ export const Link = styled.a`
         font-weight: 500;
         background-color: ${props => props.theme.colors.secondary};
         color: ${props => props.theme.colors.white};
-        font-size: ${props => props.type = "sm" ? "1.6rem" : "2rem"};
+        font-size: ${props => props.type == "sm" ? "1.6rem" : "2rem"};
         border-radius: 4px;
-        padding: ${props => props.type = "sm" ? ".6rem 2.4rem" : ".8rem 1.6rem"};
+        padding: ${props => props.type == "sm" ? ".6rem 2.4rem" : ".8rem 1.6rem"};
         display: inline-block;
-        line-height: ${props => props.type = "sm" ? "2.4rem" : "3rem"};;
+        line-height: ${props => props.type == "sm" ? "2.4rem" : "3rem"};;
         &:hover{
             color: ${props => props.theme.colors.white};
         }
