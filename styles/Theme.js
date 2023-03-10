@@ -36,6 +36,9 @@ const Variables = () => {
                 // color: #1877f2 fbicon
                 // color: #2867b2 linkedinIcon 
                 // #E7EDF3 Promo card-body bg
+                // border: 1px solid #e1e8ef; BlogRecommendedJobsLi
+                // background: #e8edf1 JobTag
+                // color: #818181; JobLocation
             },
             fontSize: {
                 xxxs: "1.2rem",
