@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const BlogCard = (props) => {
   return (
-    <CardWrap className={props.className}>
+    <CardWrap className={props.className} {...props}>
       <a href={props.href} className="img-link">
         <img
           className="card-img"
@@ -58,8 +58,8 @@ const CardWrap = styled.div`
     width: ${(props) =>
       props.className == "right-thumbnail" ? "58.33%" : "100%"};
     .h4 {
-      font-weight: 500;
-      font-size: 18px;
+      font-weight: ${props => props.small ? '400' : '500'};
+      font-size: ${props => props.small ? props.theme.fontSize.sm : props.theme.fontSize.md1};
       line-height: 22px;
       margin: ${(props) =>
         props.className == "right-thumbnail" ? 0 : "20px 0 12px"};
