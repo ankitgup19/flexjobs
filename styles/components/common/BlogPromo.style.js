@@ -1,11 +1,8 @@
 import styled from "styled-components";
 
-export const BlogPromoWrap = styled.form`
+export const BlogPromoWrap = styled.div`
     margin: .8rem 0 0;
-    padding: 0 1.2rem;
-    flex: 0 0 auto;
-    height: 300px;
-    img {
+    .card-img {
         width: 100%;
     }
     .card-body {
@@ -24,14 +21,17 @@ export const BlogPromoWrap = styled.form`
         padding: 0 .5rem;
     }
 `
-export const LinkBtn = styled.button`
+export const LinkBtn = styled.a`
     background-color: ${props => props.theme.colors.secondary};
     border: 0;
     padding: 0.7rem 1.2rem;
     font-size: ${props => props.theme.fontSize.sm};
     font-weight: 700;
     line-height: 1.5;
-    color: ${props => props.theme.colors.white};
+    color: ${props => props.theme.colors.white};    
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
     cursor: pointer;
     border-radius: 4px;
     width: 100%;

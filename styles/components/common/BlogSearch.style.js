@@ -41,7 +41,7 @@ export const SearchBtn = styled.button`
 `
 export const Styledform =  styled.form`
     margin: ${props => props.col ? "3rem 0 0" : "3.7rem 0 0"};
-    padding: 0 1.2rem;
+    padding: ${props => props.col ? "0 1.2rem" : null};
     flex: 0 0 auto;
     ${props => props.col && css`
         @media (min-width: 768px) {

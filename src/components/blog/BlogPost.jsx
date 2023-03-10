@@ -5,6 +5,8 @@ import BlogHeader from "./BlogHeader";
 import BlogDescription from "./BlogDescription";
 import BlogSearch from "./BlogSearch";
 import BlogPromo from "./BlogPromo";
+import BlogRecommendedJobs from "./BlogRecommendedJobs.jsx";
+import BlogSideHeading from "./BlogSideHeading.jsx";
 import PromoBanner from "../common/PromoBanner";
 import { BlogPostWrap } from "../../../styles/components/blog/BlogDescription.styles";
 
@@ -32,6 +34,9 @@ const BlogPost = () => {
       <>
         <BlogSearch />
         <BlogPromo />
+        <BlogSideHeading text='Recommended Jobs'></BlogSideHeading>
+        <BlogRecommendedJobs/>
+        {/* <BlogSideHeading text='Trending Articles'></BlogSideHeading> */}
       </>
     </FlexLayout>
   );

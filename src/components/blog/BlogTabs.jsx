@@ -52,8 +52,8 @@ const BlogTabs = (props) => {
         </STab>
       </STabList>
       <STabPanel>
-        {latestArticles.map((item) => (
-          <CardDeck>
+        {latestArticles.map((item, index) => (
+          <CardDeck key={index}>
             <Card>
               <CardImgLink href={item.href}>
                 <CardImg
@@ -74,8 +74,8 @@ const BlogTabs = (props) => {
         ))}
       </STabPanel>
       <STabPanel>
-        {trendingArticles.map((item) => (
-          <CardDeck>
+        {trendingArticles.map((item, index) => (
+          <CardDeck key={index}>
             <Card>
               <CardImgLink href={item.href}>
                 <CardImg
@@ -98,8 +98,8 @@ const BlogTabs = (props) => {
       <STabPanel>
         {BLOG_ARTICLES.data
           .filter((article) => article.type.toLowerCase() === "saved")
-          .map((item) => (
-            <CardDeck>
+          .map((item, index) => (
+            <CardDeck key={index}>
               <Card>
                 <CardImgLink href={item.href}>
                   <CardImg
