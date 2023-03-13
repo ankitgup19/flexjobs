@@ -4,9 +4,11 @@ import { BlogSideHeaderWrap, BlogSideHeaderIcon, BlogSideHeading } from "../../.
 const BlogSideHeader = (props) => {
 
   return (
-    <BlogSideHeaderWrap>
-      <BlogSideHeaderIcon src={props.iconSrc} width="25" alt={props.iconTxt} aria-hidden="true" title={props.iconTxt}/>
-      <BlogSideHeading>{props.text}</BlogSideHeading>
+    <BlogSideHeaderWrap center={props.center}>
+      {props.iconSrc &&        
+        <BlogSideHeaderIcon src={props.iconSrc} width="25" alt={props.iconTxt} aria-hidden="true" title={props.iconTxt}/>
+      }
+      <BlogSideHeading center={props.center}>{props.text}</BlogSideHeading>
     </BlogSideHeaderWrap>
   )
 }

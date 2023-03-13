@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const BlogSideHeaderWrap = styled.header`
     display: flex;
@@ -7,11 +7,14 @@ export const BlogSideHeaderWrap = styled.header`
     border-color: ${props => props.theme.colors.primary} #e1e8ef;
     margin: 1.6rem 0 0;
     padding: 1.6rem .8rem 0;
+    ${props => props.center && css`
+        justify-content: center;
+    `}
 `
 export const BlogSideHeaderIcon = styled.img`
     margin: 0 1.3rem 1.2rem 0;
 `
 export const BlogSideHeading = styled.h3`
     font-size: ${props => props.theme.fontSize.md};
-    margin: 0;
+    margin: ${props => props.center ? "0.8rem 0 2.4rem" : "0"};
 `

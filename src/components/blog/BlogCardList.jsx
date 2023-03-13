@@ -12,7 +12,7 @@ const BlogCardList = () => {
             name="16 Common Job Search Scams and How to Protect Yourself"
             width="97"
             height="49"
-            className="right-thumbnail"
+            type="right-thumbnail"
             small
           />
           <BlogCard
@@ -21,7 +21,7 @@ const BlogCardList = () => {
             name="24 Remote and Flexible Companies With a 4-Day Workweek"
             width="97"
             height="49"
-            className="right-thumbnail"
+            type="right-thumbnail"
             small
           />
           <BlogCard
@@ -30,7 +30,7 @@ const BlogCardList = () => {
             name="How to Build Your Job Search Support Team"
             width="97"
             height="49"
-            className="right-thumbnail"
+            type="right-thumbnail"
             small
           />
           <BlogCard
@@ -39,7 +39,7 @@ const BlogCardList = () => {
             name="Best Careers According to Your Myers-Briggs Personality Type"
             width="97"
             height="49"
-            className="right-thumbnail"
+            type="right-thumbnail"
             small
           />
           <BlogCard
@@ -48,7 +48,7 @@ const BlogCardList = () => {
             name="16 Common Job Search Scams and How to Protect Yourself"
             width="97"
             height="49"
-            className="right-thumbnail"
+            type="right-thumbnail"
             small
           />
           <BlogCard
@@ -57,7 +57,7 @@ const BlogCardList = () => {
             name="24 Remote and Flexible Companies With a 4-Day Workweek"
             width="97"
             height="49"
-            className="right-thumbnail"
+            type="right-thumbnail"
             small
           />
         </BlogCardWrap>
