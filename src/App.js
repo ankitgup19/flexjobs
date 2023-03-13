@@ -7,10 +7,12 @@ import SearchResult from "./components/searchResult/SearchResult";
 import { StyledContainerMd } from "../styles/components/common/Common.styles";
 import Blog from "./components/blog/Blog";
 import BlogPost from "./components/blog/BlogPost";
+import BlogCategory from "./components/blog/BlogCategory";
 const App = () => {
     return (
         <Layout>
             <StyledContainerMd layout>
+                <BlogCategory />
                 <BlogPost />
                 <Blog />
                 <Login />

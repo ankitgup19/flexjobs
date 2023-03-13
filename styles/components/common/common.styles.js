@@ -21,7 +21,3 @@ export const FeaturedWrap = styled.div`
         padding: ${props => props.blog ? "0 1.2rem" : ""};
     }
 `
-
-export const RightSection = styled.div`
-    padding: 0 0 0 1.2rem;
-`

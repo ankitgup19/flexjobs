@@ -34,10 +34,9 @@ export const StyledSubmenuWrap = styled.ul`
     list-style: none;
     padding: 0;
     display: flex;
-    max-width: 1170px;
-    margin: 0 auto;
+    margin: 0 -1.5rem;
     a{
-        padding: 1.1rem .5rem 1.1rem 1.5rem;
+        padding: 1.1rem 1rem 1.1rem 1.5rem;
         display: inline-block;
         color: ${props => props.theme.colors.primaryLight};
         text-decoration: none;

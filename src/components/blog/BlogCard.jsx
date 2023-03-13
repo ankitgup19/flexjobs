@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const BlogCard = (props) => {
   return (
-    <CardWrap className={props.className} {...props}>
+    <CardWrap type={props.type}>
       <a href={props.href} className="img-link">
         <img
           className="card-img"
@@ -30,10 +30,16 @@ const CardWrap = styled.div`
   flex-direction: ${(props) =>
     props.type == "right-thumbnail" ? "row" : "column"};
   word-wrap: break-word;
-  margin: ${(props) => (props.type == "right-thumbnail" ? "0 0 16px" : "0")};
+  margin: ${(props) =>
+    props.type == "right-thumbnail"
+      ? "0 0 16px"
+      : props.type == "blog-cat"
+      ? "0 0 2rem"
+      : "0"};
   align-items: center;
   box-shadow: ${(props) =>
     props.type == "rel-article" ? "0px 5px 8px 0px rgba(0,0,0,0.13)" : "none"};
+  max-width: ${(props) => (props.type == "blog-cat" ? "400px" : null)};
   .img-link {
     display: inline-block;
     width: ${(props) => (props.type == "right-thumbnail" ? "41.67%" : "100%")};
@@ -62,6 +68,7 @@ const CardWrap = styled.div`
         ? "16px 8px"
         : "0 16px 20px"};
     width: ${(props) => (props.type == "right-thumbnail" ? "58.33%" : "100%")};
+    height: ${(props) => (props.type == "blog-cat" ? "100%" : null)};
     .h4 {
       font-weight: ${(props) => (props.small ? "400" : "500")};
       font-size: ${(props) =>

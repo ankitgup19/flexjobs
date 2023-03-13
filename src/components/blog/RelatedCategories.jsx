@@ -54,6 +54,9 @@ const RelatedCategorysWrap = styled.div`
     margin: 0;
     flex-wrap: wrap;
     gap: 4px;
+    li {
+      margin-bottom: 1.2rem;
+    }
     a {
       display: inline-block;
       background: #f1f9fe;
