@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Styledform = styled.form`
-    margin: 0;
+    margin: 5rem 0 0;
     background: right 0 url(${props => props.passwordRecovery ? 'https://www.flexjobs.com/images/bg-password.jpg' : 'https://www.flexjobs.com/images/bg-login.jpg'}) no-repeat;
     background-size: contain;
     padding: 0 0 4.8rem;

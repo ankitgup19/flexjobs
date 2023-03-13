@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 const BlogCard = (props) => {
   return (
@@ -36,16 +36,20 @@ const CardWrap = styled.div`
     props.type == "rel-article" ? "0px 5px 8px 0px rgba(0,0,0,0.13)" : "none"};
   .img-link {
     display: inline-block;
-    width: ${(props) => (props.type == "right-thumbnail" ? "41.67%" : "100%")};
     padding-right: ${(props) =>
       props.type == "right-thumbnail" ? "12px" : "0"};
+    ${props => !props.news && css`
+      width: ${(props) => (props.type == "right-thumbnail" ? "41.67%" : "100%")};
+    `}
   }
   .card-img {
-    width: 100%;
     height: auto;
     max-height: 318px;
     border-radius: ${(props) =>
       props.type == "right-thumbnail" ? "4px" : "4px 4px 0 0"};
+    ${props => !props.news && css`
+      width: 100%;
+    `}
   }
   .card-body {
     border: ${(props) =>
@@ -62,6 +66,9 @@ const CardWrap = styled.div`
         ? "16px 8px"
         : "0 16px 20px"};
     width: ${(props) => (props.type == "right-thumbnail" ? "58.33%" : "100%")};
+    ${props => props.news && css`
+      flex: 1 0 0;
+    `}
     .h4 {
       font-weight: ${(props) => (props.small ? "400" : "500")};
       font-size: ${(props) =>

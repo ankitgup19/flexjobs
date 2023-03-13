@@ -7,6 +7,8 @@ import BlogSearch from "./BlogSearch";
 import BlogPromo from "./BlogPromo";
 import BlogRecommendedJobs from "./BlogRecommendedJobs.jsx";
 import BlogCardList from "./BlogCardList.jsx";
+import BlogNews from "./BlogNews.jsx";
+import BlogFooterLink from "./BlogFooterLink.jsx";
 import BlogSideHeader from "./BlogSideHeader.jsx";
 import PromoBanner from "../common/PromoBanner";
 import RelatedArticles from "./RelatedArticles";
@@ -41,12 +43,15 @@ const BlogPost = () => {
         <BlogPromo />
         <BlogSideHeader text='Recommended Jobs'
          iconSrc='https://www.flexjobs.com/images/icons/streamline-thin/streamline-icon-briefcase-star.svg'
-         iconTxt='Similar Jobs icon'></BlogSideHeader>
+         iconTxt='Similar Jobs icon'/>
         <BlogRecommendedJobs />
         <BlogSideHeader text='Trending Articles'
          iconSrc='https://www.flexjobs.com/images/icons/streamline-thin/streamline-icon-global-warming-globe-fire.svg'
-         iconTxt='Trending Articles icon'></BlogSideHeader>
+         iconTxt='Trending Articles icon'/>
         <BlogCardList />
+        <BlogSideHeader text='FlexJobs in the News' center/>
+        <BlogNews />
+        <BlogFooterLink text="More of This Week's News"/>
       </>
     </FlexLayout>
   );
