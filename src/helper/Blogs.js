@@ -210,3 +210,45 @@ export const BLOG_ARTICLES = {
         "type": "Trending"
     }]
 }
+export const RECOMMENDED_JOBS = [
+    {
+        'href': '/publicjobs/salesforce-developer-1755669',
+        'title': 'Corporate Paralegal',
+        'date': 'Mar 9',
+        'tag_list': ['Hybrid Remote Job','Full-Time'],
+        'location': 'Culver City, CA',
+        'icon_title': 'Candidates need to be able to work in the City or State specified'
+    },
+    {
+        'href': '/publicjobs/salesforce-developer-1755669',
+        'title': 'Senior UI-Visual Designer, Product Design System',
+        'date': 'Mar 9',
+        'tag_list': ['100% Remote Job','Full-Time'],
+        'location': 'ME, NH, MA, RI, CT, NY, NJ, DE, MD, VA, NC, SC, GA, FL',
+        'icon_title': 'Candidates need to be able to work in the City or State specified'
+    },
+    {
+        'href': '/publicjobs/salesforce-developer-1755669',
+        'title': 'Corporate Paralegal',
+        'date': 'Mar 9',
+        'tag_list': ['100% Remote Job','Full-Time'],
+        'location': 'Culver City, CA',
+        'icon_title': 'Candidates need to be able to work in the City or State specified'
+    },
+    {
+        'href': '/publicjobs/salesforce-developer-1755669',
+        'title': 'Senior UI-Visual Designer, Product Design System',
+        'date': 'Mar 9',
+        'tag_list': ['100% Remote Job','Full-Time'],
+        'location': 'Culver City, CA',
+        'icon_title': 'Candidates need to be able to work in the City or State specified'
+    },
+    {
+        'href': '/publicjobs/salesforce-developer-1755669',
+        'title': 'Corporate Paralegal',
+        'date': 'Mar 9',
+        'tag_list': ['100% Remote Job','Full-Time'],
+        'location': 'Culver City, CA',
+        'icon_title': 'Candidates need to be able to work in the City or State specified'
+    }
+]

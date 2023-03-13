@@ -11,8 +11,8 @@ const App = () => {
     return (
         <Layout>
             <StyledContainerMd layout>
-                <Blog />
                 <BlogPost />
+                <Blog />
                 <Login />
                 <SignUp />
                 <PasswordRecovery />

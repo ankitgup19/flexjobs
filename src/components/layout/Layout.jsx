@@ -2,7 +2,7 @@ import React, { Children } from "react"
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 
-import { FeaturedWrap } from "../../../styles/components/common/Common.styles";
+import { FeaturedWrap, RightSection } from "../../../styles/components/common/Common.styles";
 
 const Layout = (props) => {
     return(
@@ -19,7 +19,7 @@ export const FlexLayout = (props) => {
     return (
         <FeaturedWrap {...props}>
             <div className="left">{left}</div>
-            <div className="right">{right}</div>
+            <RightSection className="right">{right}</RightSection>
         </FeaturedWrap>
     )
 }
