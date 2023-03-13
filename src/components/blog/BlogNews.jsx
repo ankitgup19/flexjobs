@@ -2,7 +2,7 @@ import React from "react";
 import { BlogCardWrap } from "../../../styles/components/common/BlogCardList.style.js";
 import BlogCard from "./BlogCard";
 
-const BlogCardList = () => {
+const BlogNews = () => {
 
     return (
         <BlogCardWrap news>
@@ -30,4 +30,4 @@ const BlogCardList = () => {
     )
 }
 
-export default BlogCardList;
+export default BlogNews;

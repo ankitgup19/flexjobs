@@ -3,7 +3,9 @@ import styled, { css } from "styled-components";
 
 const BlogCard = (props) => {
   return (
-    <CardWrap type={props.type}>
+    <CardWrap type={props.type}
+      small={props.small}
+      news={props.news}>
       <a href={props.href} className="img-link">
         <img
           className="card-img"
