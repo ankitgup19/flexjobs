@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { HeadWrap, H2 } from "../../../styles/components/blog/Blog.styles";
 
-const RelatedCategories = () => {
+const RelatedCategoriesBadge = () => {
   return (
-    <RelatedCategorysWrap>
+    <RelatedCategoriesWrap>
       <HeadWrap>
         <H2 className="h2">Related Categories</H2>
       </HeadWrap>
@@ -40,13 +40,13 @@ const RelatedCategories = () => {
           </a>
         </li>
       </ul>
-    </RelatedCategorysWrap>
+    </RelatedCategoriesWrap>
   );
 };
 
-export default RelatedCategories;
+export default RelatedCategoriesBadge;
 
-const RelatedCategorysWrap = styled.div`
+const RelatedCategoriesWrap = styled.div`
   ul {
     display: flex;
     list-style: none;

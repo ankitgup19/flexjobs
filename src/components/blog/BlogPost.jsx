@@ -12,7 +12,7 @@ import BlogFooterLink from "./BlogFooterLink.jsx";
 import BlogSideHeader from "./BlogSideHeader.jsx";
 import PromoBanner from "../common/PromoBanner";
 import RelatedArticles from "./RelatedArticles";
-import RelatedCategories from "./RelatedCategories";
+import RelatedCategoriesBadge from "./RelatedCategoriesBadge";
 import { BlogPostWrap } from "../../../styles/components/blog/BlogDescription.styles";
 
 const BlogPost = () => {
@@ -36,22 +36,26 @@ const BlogPost = () => {
         <BlogDescription />
         <PromoBanner />
         <RelatedArticles />
-        <RelatedCategories />
+        <RelatedCategoriesBadge />
       </BlogPostWrap>
       <>
         <BlogSearch />
         <BlogPromo />
-        <BlogSideHeader text='Recommended Jobs'
-         iconSrc='https://www.flexjobs.com/images/icons/streamline-thin/streamline-icon-briefcase-star.svg'
-         iconTxt='Similar Jobs icon'/>
+        <BlogSideHeader
+          text="Recommended Jobs"
+          iconSrc="https://www.flexjobs.com/images/icons/streamline-thin/streamline-icon-briefcase-star.svg"
+          iconTxt="Similar Jobs icon"
+        />
         <BlogRecommendedJobs />
-        <BlogSideHeader text='Trending Articles'
-         iconSrc='https://www.flexjobs.com/images/icons/streamline-thin/streamline-icon-global-warming-globe-fire.svg'
-         iconTxt='Trending Articles icon'/>
+        <BlogSideHeader
+          text="Trending Articles"
+          iconSrc="https://www.flexjobs.com/images/icons/streamline-thin/streamline-icon-global-warming-globe-fire.svg"
+          iconTxt="Trending Articles icon"
+        />
         <BlogCardList />
-        <BlogSideHeader text='FlexJobs in the News' center/>
+        <BlogSideHeader text="FlexJobs in the News" center />
         <BlogNews />
-        <BlogFooterLink text="More of This Week's News"/>
+        <BlogFooterLink text="More of This Week's News" />
       </>
     </FlexLayout>
   );
