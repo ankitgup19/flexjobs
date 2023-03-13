@@ -8,8 +8,6 @@ export const FooterLink = styled.a`
     cursor: pointer;
     font-weight: 600;
     line-height: 2.4rem;
-    border: 1px solid rgba(0,0,0,0.125);
-    border-top: 0;
     padding: 0 0 .8rem;
     .fa-angle-right {
         display: inline-block;

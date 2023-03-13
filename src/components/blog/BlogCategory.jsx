@@ -1,7 +1,9 @@
 import React from "react";
 import BlogCard from "./BlogCard";
+import BlogSearch from "./BlogSearch";
 import Pagination from "../common/Pagination";
 import RelatedCategoryList from "./RelatedCategoryList";
+import RelatedCategoriesBadge from "./RelatedCategoriesBadge";
 import styled from "styled-components";
 import { FlexLayout } from "../layout/Layout";
 import { BLOG_ARTICLES } from "../../helper/Blogs";
@@ -20,7 +22,10 @@ const BlogCategory = () => {
           </BlogCatList>
           <Pagination />
         </>
-        <></>
+        <>
+          <BlogSearch />
+          <RelatedCategoriesBadge />
+        </>
       </FlexLayout>
     </div>
   );

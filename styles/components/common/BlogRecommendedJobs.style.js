@@ -6,9 +6,8 @@ export const BlogRecommendedJobsUl = styled.ul`
     padding: 0;
 `
 export const BlogRecommendedJobsLi = styled.li`
-    border: 1px solid #e1e8ef;
-    border-top: 0;
     padding: 0.8rem;
+    border-bottom: 1px solid rgba(0,0,0,0.125);
     .icn-us, .icn-world, .icn-canada {
         width: 16px;
         height: 14px;
@@ -19,6 +18,9 @@ export const BlogRecommendedJobsLi = styled.li`
     }
     .icn-us {
         background: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iMTRweCIgaGVpZ2h0PSIxMS44MTNweCIgdmlld0JveD0iMCAwIDE0IDExLjgxMyIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTQgMTEuODEzIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHJlY3QgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjExIi8+CjxyZWN0IGZpbGw9IiNFQTA5MjAiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxIi8+CjxyZWN0IHk9IjIiIGZpbGw9IiNFQTA5MjAiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxIi8+CjxyZWN0IHk9IjQiIGZpbGw9IiNFQTA5MjAiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxIi8+CjxyZWN0IHk9IjYiIGZpbGw9IiNFQTA5MjAiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxIi8+CjxyZWN0IHk9IjgiIGZpbGw9IiNFQTA5MjAiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxIi8+CjxyZWN0IHk9IjEwIiBmaWxsPSIjRUEwOTIwIiB3aWR0aD0iMTQiIGhlaWdodD0iMSIvPgo8cmVjdCBmaWxsPSIjMEUwRTZEIiB3aWR0aD0iOCIgaGVpZ2h0PSI2Ljk1OCIvPgo8L3N2Zz4=) no-repeat;
+    }
+    &:last-child{
+        border: none;
     }
 `
 export const JobDetail = styled.div`

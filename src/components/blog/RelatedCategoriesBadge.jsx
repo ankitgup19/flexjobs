@@ -2,12 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { HeadWrap, H2 } from "../../../styles/components/blog/Blog.styles";
 
-const RelatedCategoriesBadge = () => {
+const RelatedCategoriesBadge = (props) => {
   return (
     <RelatedCategoriesWrap>
-      <HeadWrap>
-        <H2 className="h2">Related Categories</H2>
-      </HeadWrap>
+      {props.heading && (
+        <HeadWrap>
+          <H2 className="h2">Related Categories</H2>
+        </HeadWrap>
+      )}
       <ul>
         <li>
           <a href="/blog/category/flexible-work-options/consulting-jobs/">
@@ -64,8 +66,10 @@ const RelatedCategoriesWrap = styled.div`
       padding: 0.4rem 1.6rem;
       text-transform: uppercase;
       color: #004f6d;
+      text-decoration: none;
       &:hover {
         color: #004f6d;
+        text-decoration: underline;
       }
     }
   }
