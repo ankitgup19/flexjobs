@@ -6,6 +6,8 @@ import BlogDescription from "./BlogDescription";
 import BlogSearch from "./BlogSearch";
 import BlogPromo from "./BlogPromo";
 import PromoBanner from "../common/PromoBanner";
+import RelatedArticles from "./RelatedArticles";
+import RelatedCategories from "./RelatedCategories";
 import { BlogPostWrap } from "../../../styles/components/blog/BlogDescription.styles";
 
 const BlogPost = () => {
@@ -28,6 +30,8 @@ const BlogPost = () => {
         />
         <BlogDescription />
         <PromoBanner />
+        <RelatedArticles />
+        <RelatedCategories />
       </BlogPostWrap>
       <>
         <BlogSearch />

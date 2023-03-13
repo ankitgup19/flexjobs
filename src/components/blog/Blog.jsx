@@ -43,7 +43,7 @@ const Blog = () => {
             description="Explore FlexJobs’ Top 100 Companies list! Find companies offering the most remote jobs and research the fastest-growing careers for remote work."
             width="635"
             height="318"
-            className="left-thumbnail"
+            type="left-thumbnail"
           />
         </>
         <>
@@ -53,7 +53,7 @@ const Blog = () => {
             name="16 Common Job Search Scams and How to Protect Yourself"
             width="168"
             height="84"
-            className="right-thumbnail"
+            type="right-thumbnail"
           />
           <BlogCard
             href="/blog/post/remote-flexible-companies-with-4-day-workweek/"
@@ -61,7 +61,7 @@ const Blog = () => {
             name="24 Remote and Flexible Companies With a 4-Day Workweek"
             width="168"
             height="84"
-            className="right-thumbnail"
+            type="right-thumbnail"
           />
           <BlogCard
             href="/blog/post/building-job-search-support-team/"
@@ -69,7 +69,7 @@ const Blog = () => {
             name="How to Build Your Job Search Support Team"
             width="168"
             height="84"
-            className="right-thumbnail"
+            type="right-thumbnail"
           />
           <BlogCard
             href="/blog/post/infographic-flexible-career-options-personality/"
@@ -77,7 +77,7 @@ const Blog = () => {
             name="Best Careers According to Your Myers-Briggs Personality Type"
             width="168"
             height="84"
-            className="right-thumbnail"
+            type="right-thumbnail"
           />
         </>
       </FlexLayout>
