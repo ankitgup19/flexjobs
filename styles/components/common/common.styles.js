@@ -36,6 +36,7 @@ export const LinkBtn = styled.a`
     cursor: pointer;
     border-radius: 4px;
     width: 100%;
+    outline: 0;
     &:hover,
     &:focus {
         text-decoration: underline;
