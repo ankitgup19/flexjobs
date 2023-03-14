@@ -7,7 +7,7 @@ const BlogNewsletter = () => {
   return (
     <>
       <P>Get new job postings, the latest job search tips, trends, news, and exclusive promotions!</P>
-      <LinkBtn href="/newsletters" fontWeight='500'>Sign Up Today!</LinkBtn>
+      <LinkBtn href="/newsletters" fWeight='500'>Sign Up Today!</LinkBtn>
     </>
   )
 }

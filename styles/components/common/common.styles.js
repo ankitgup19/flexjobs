@@ -27,7 +27,7 @@ export const LinkBtn = styled.a`
     border: 0;
     padding: 0.7rem 1.2rem;
     font-size: ${props => props.theme.fontSize.sm};
-    font-weight: ${props => props.fontWeight || '700'};
+    font-weight: ${props => props.fWeight || '700'};
     line-height: 1.5;
     color: ${props => props.theme.colors.white};    
     display: flex;
