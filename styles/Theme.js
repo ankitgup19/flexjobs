@@ -39,6 +39,7 @@ const Variables = () => {
                 // border: 1px solid #e1e8ef; BlogRecommendedJobsLi
                 // background: #e8edf1 JobTag
                 // color: #818181; JobLocation
+                // color: #656565;
             },
             fontSize: {
                 xxxs: "1.2rem",

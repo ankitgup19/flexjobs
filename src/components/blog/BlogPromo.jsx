@@ -1,5 +1,6 @@
 import React from "react";
-import { BlogPromoWrap, LinkBtn } from "../../../styles/components/common/BlogPromo.style.js";
+import { BlogPromoWrap } from "../../../styles/components/common/BlogPromo.style.js";
+import { LinkBtn } from "../../../styles/components/common/Common.styles.js";
 
 const BlogPromo = () => {
 

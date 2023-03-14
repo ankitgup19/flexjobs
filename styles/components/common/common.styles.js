@@ -21,3 +21,23 @@ export const FeaturedWrap = styled.div`
         padding: ${props => props.blog ? "0 1.2rem" : ""};
     }
 `
+
+export const LinkBtn = styled.a`
+    background-color: ${props => props.theme.colors.secondary};
+    border: 0;
+    padding: 0.7rem 1.2rem;
+    font-size: ${props => props.theme.fontSize.sm};
+    font-weight: ${props => props.fontWeight || '700'};
+    line-height: 1.5;
+    color: ${props => props.theme.colors.white};    
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+`
