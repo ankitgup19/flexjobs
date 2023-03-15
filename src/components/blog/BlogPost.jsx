@@ -12,6 +12,7 @@ import BlogCompanyLogos from "./BlogCompanyLogos.jsx";
 import BlogFooterLink from "./BlogFooterLink.jsx";
 import BlogSidebarWidgets from "./BlogSidebarWidgets.jsx";
 import BlogNewsletter from "./BlogNewsletter.jsx";
+import BlogStoriesSlider from "./BlogStoriesSlider.jsx";
 import PromoBanner from "../common/PromoBanner";
 import RelatedArticles from "./RelatedArticles";
 import RelatedCategoriesBadge from "./RelatedCategoriesBadge";
@@ -40,7 +41,14 @@ const BlogPost = () => {
         <RelatedArticles />
         <RelatedCategoriesBadge heading />
       </BlogPostWrap>
-      <>
+      <>        
+        <BlogSidebarWidgets
+          text="Success Stories Just In!"
+          center
+        >
+          <BlogStoriesSlider/>          
+          <BlogFooterLink text="Read More Success Stories" extraSpacing />
+        </BlogSidebarWidgets>
         <BlogSearch />
         <BlogPromo />
         <BlogSidebarWidgets

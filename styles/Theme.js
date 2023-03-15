@@ -40,6 +40,7 @@ const Variables = () => {
                 // background: #e8edf1 JobTag
                 // color: #818181; JobLocation
                 // color: #656565;
+                // #7f7f7f slider dots
             },
             fontSize: {
                 xxxs: "1.2rem",

@@ -8,7 +8,7 @@ export const FooterLink = styled.a`
     cursor: pointer;
     font-weight: 600;
     line-height: 2.4rem;
-    padding: 0 0 .8rem;
+    padding: ${props => props.extraSpacing ? "1rem 0 1rem" : "0 0 .8rem"};
     .fa-angle-right {
         display: inline-block;
         /* font-weight: 400; */

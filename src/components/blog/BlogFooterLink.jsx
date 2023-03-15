@@ -4,7 +4,7 @@ import { FooterLink } from "../../../styles/components/common/BlogFooterLink.sty
 const BlogFooterLink = (props) => {
 
   return (
-    <FooterLink>
+    <FooterLink extraSpacing={props.extraSpacing}>
       {props.text}
       <i className="fas fa-angle-right" aria-hidden="true"/>
     </FooterLink>
