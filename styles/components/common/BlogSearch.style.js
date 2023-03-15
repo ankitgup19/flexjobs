@@ -22,26 +22,26 @@ export const SearchWrap = styled.div`
 `
 
 export const SearchBtn = styled.button`
-    background-color: ${props => props.theme.colors.white};
-    border: 1px solid ${props => props.theme.colors.primary};
+    background-color: ${props => props.jobSearch ? props.theme.colors.secondary : props.theme.colors.white};
+    border: 1px solid ${props => props.jobSearch ? props.theme.colors.secondary : props.theme.colors.primary};
     padding: 0 1.2rem;
     font-size: 1.7rem;
-    color: ${props => props.theme.colors.primary};
+    color: ${props => props.jobSearch ? props.theme.colors.white : props.theme.colors.primary};
     cursor: pointer;
     border-top-right-radius: 0.4rem;
     border-bottom-right-radius: 0.4rem;
     margin-left: -1px;
     &:hover {
         color: ${props => props.theme.colors.white};
-        background-color: ${props => props.theme.colors.primary};
+        background-color: ${props => props.jobSearch ? props.theme.colors.secondary : props.theme.colors.primary};
     }
     .fa-search {
         padding: 0.9rem 0 0;
     }
 `
-export const Styledform =  styled.form`
-    margin: ${props => props.col ? "3rem 0 0" : "3.7rem 0 0"};
-    padding: ${props => props.col ? "0 1.2rem" : null};
+export const Styledform = styled.form`
+    margin: ${props => props.col ? "3rem 0 0" : props.jobSearch ? ".4rem 0 0" : "3.7rem 0 0"};
+    padding: ${props => (props.col || props.jobSearch) ? "0 1.2rem" : null};
     flex: 0 0 auto;
     ${props => props.col && css`
         @media (min-width: 768px) {
