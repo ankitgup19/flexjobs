@@ -22,6 +22,7 @@ const BlogSidebarWidget = (props) => {
               alt={props.iconTxt}
               aria-hidden="true"
               title={props.iconTxt}
+              center={props.center}
             />
           )}
           {props.noBorderTop ? (
@@ -94,7 +95,7 @@ const BlogSidebarTitle = styled.header`
 `;
 
 const BlogSideHeaderIcon = styled.img`
-  margin: 0 1.3rem 0 0;
+  margin: ${(props) => (props.center ? "0 0 1.6rem" : "0 1.3rem 0 0")};
 `;
 
 const BlogSideHeading = styled.h3`

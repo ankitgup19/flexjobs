@@ -215,7 +215,7 @@ export const RECOMMENDED_JOBS = [
         'href': '/publicjobs/salesforce-developer-1755669',
         'title': 'Corporate Paralegal',
         'date': 'Mar 9',
-        'tag_list': ['Hybrid Remote Job','Full-Time'],
+        'tag_list': ['Hybrid Remote Job', 'Full-Time'],
         'location': 'Culver City, CA',
         'icon_title': 'Candidates need to be able to work in the City or State specified'
     },
@@ -223,7 +223,7 @@ export const RECOMMENDED_JOBS = [
         'href': '/publicjobs/salesforce-developer-1755669',
         'title': 'Senior UI-Visual Designer, Product Design System',
         'date': 'Mar 9',
-        'tag_list': ['100% Remote Job','Full-Time'],
+        'tag_list': ['100% Remote Job', 'Full-Time'],
         'location': 'ME, NH, MA, RI, CT, NY, NJ, DE, MD, VA, NC, SC, GA, FL',
         'icon_title': 'Candidates need to be able to work in the City or State specified'
     },
@@ -231,7 +231,7 @@ export const RECOMMENDED_JOBS = [
         'href': '/publicjobs/salesforce-developer-1755669',
         'title': 'Corporate Paralegal',
         'date': 'Mar 9',
-        'tag_list': ['100% Remote Job','Full-Time'],
+        'tag_list': ['100% Remote Job', 'Full-Time'],
         'location': 'Culver City, CA',
         'icon_title': 'Candidates need to be able to work in the City or State specified'
     },
@@ -239,7 +239,7 @@ export const RECOMMENDED_JOBS = [
         'href': '/publicjobs/salesforce-developer-1755669',
         'title': 'Senior UI-Visual Designer, Product Design System',
         'date': 'Mar 9',
-        'tag_list': ['100% Remote Job','Full-Time'],
+        'tag_list': ['100% Remote Job', 'Full-Time'],
         'location': 'Culver City, CA',
         'icon_title': 'Candidates need to be able to work in the City or State specified'
     },
@@ -247,8 +247,111 @@ export const RECOMMENDED_JOBS = [
         'href': '/publicjobs/salesforce-developer-1755669',
         'title': 'Corporate Paralegal',
         'date': 'Mar 9',
-        'tag_list': ['100% Remote Job','Full-Time'],
+        'tag_list': ['100% Remote Job', 'Full-Time'],
         'location': 'Culver City, CA',
         'icon_title': 'Candidates need to be able to work in the City or State specified'
+    }
+]
+
+export const REMOTE_JOBS = [
+    {
+        title: "Accounting Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/accounting"
+    },
+    {
+        title: "Customer Service Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/customer-service-call-center"
+    },
+    {
+        title: "Data Entry Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/data-entry"
+    },
+    {
+        title: "Executive Assistant Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/executive-assistant"
+    },
+    {
+        title: "Marketing Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/marketing"
+    },
+    {
+        title: "Online Teaching Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/education-online-teaching"
+    },
+    {
+        title: "Part-Time Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/part-time"
+    },
+    {
+        title: "Project Management Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/project-management"
+    },
+    {
+        title: "Proofreading Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/online-proofreading"
+    },
+    {
+        title: "Virtual Assistant Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/virtual-assistant"
+    },
+    {
+        title: "Attorney Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/attorney"
+    },
+    {
+        title: "Cissp Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/cissp"
+    },
+    {
+        title: "Client Manager Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/client-manager"
+    },
+    {
+        title: "CMS Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/cms"
+    },
+    {
+        title: "Controller Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/controller"
+    },
+    {
+        title: "Customer Service Representative Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/customer-service-representative"
+    },
+    {
+        title: "Customer Support Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/customer-support"
+    },
+    {
+        title: "Event Manager Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/event-manager"
+    },
+    {
+        title: "Flexible Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/flexible"
+    },
+    {
+        title: "Internship Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/internship"
+    },
+    {
+        title: "Investigator Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/investigator"
+    },
+    {
+        title: "Nonprofit Outreach Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/nonprofit-outreach"
+    },
+    {
+        title: "PPC Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/ppc"
+    },
+    {
+        title: "Project Coordinator Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/project-coordinator"
+    },
+    {
+        title: "Special Education Jobs",
+        href: "https://www.flexjobs.com/remote-jobs/special-education"
     }
 ]

@@ -8,6 +8,7 @@ import RelatedCategoryList from "./RelatedCategoryList";
 import RelatedCategoriesBadge from "./RelatedCategoriesBadge";
 import BlogFlexibleJobs from "./BlogFlexibleJobs";
 import BlogRecommendedJobs from "./BlogRecommendedJobs";
+import RemoteJobs from "./RemoteJobs";
 import BlogNewsletter from "./BlogNewsletter";
 import styled from "styled-components";
 import { FlexLayout } from "../layout/Layout";
@@ -54,7 +55,7 @@ const BlogCategory = () => {
             iconTxt="Popular Remote Jobs Icon"
             iconWidth="22"
           >
-            <BlogFlexibleJobs />
+            <RemoteJobs />
           </BlogSidebarWidgets>
           <BlogSidebarWidgets
             text="Recommended Jobs"
