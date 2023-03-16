@@ -53,7 +53,6 @@ const BlogSidebar = styled.div`
   border-style: solid;
   border-color: ${(props) => props.theme.colors.primary} #e1e8ef #e1e8ef;
   margin: ${(props) => (props.noBorderTop ? "0" : "1.6rem 0 0")};
-  /* margin: ${(props) => (props.noBorderTop ? "0" : "2.7rem 0 0")}; */
   ${(props) =>
     props.headerDirectionColumn &&
     css`
@@ -63,7 +62,6 @@ const BlogSidebar = styled.div`
     !props.headerDirectionColumn &&
     css`
       padding: ${(props) => props.noBorderTop ? "1.6rem 0 .9rem" : props.center ? "0" : "1.6rem 0 0"};
-      /* padding: ${(props) => props.noBorderTop ? "1.6rem 0 .9rem" : "0"}; */
     `}
   ${(props) =>
     props.center &&
