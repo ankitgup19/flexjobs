@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import { TESTIMONIALS } from "../../helper/Blogs.js";
 
-const BlogStoriesSlider = () => {
+const BlogTestimonialSlider = () => {
   return (
     <SwiperWrap>
       <Swiper
@@ -25,15 +25,16 @@ const BlogStoriesSlider = () => {
           <SwiperSlide key={index}>
             <div>
               <SidebarTestimonialsQuote>
-                <i className="fa fa-quote-left"></i>
+                <i className="fa fa-quote-left"/>
                 {item.quote}
-                <i className="fa fa-quote-right"></i>
+                <i className="fa fa-quote-right"/>
               </SidebarTestimonialsQuote>
               <SidebarTestimonialsByline>{item.by}</SidebarTestimonialsByline>
               <SidebarTestimonialsDetails>{item.detail}</SidebarTestimonialsDetails>
-              <SidebarTestimonialsDate>
-                <i className="fa fa-calendar-alt" aria-hidden="true"></i> <span className="testimonial-date">{item.date}</span>
-              </SidebarTestimonialsDate>
+              <SidebarTestimonialsDateRow>
+                <i className="fa fa-calendar-alt" aria-hidden="true"/>
+                <SidebarTestimonialsDate>{item.date}</SidebarTestimonialsDate>
+              </SidebarTestimonialsDateRow>
             </div>
           </SwiperSlide>
         ))}
@@ -41,12 +42,12 @@ const BlogStoriesSlider = () => {
     </SwiperWrap>
   );
 }
-export default BlogStoriesSlider;
+export default BlogTestimonialSlider;
 
 const SwiperWrap = styled.div`
   width: 30.8rem;
   height: 22.3rem;
-  font-size: 1.4rem;
+  font-size: ${props => props.theme.fontSize.xs};
   border-bottom: 1px solid #e1e8ef;
   --swiper-pagination-bullet-size: 1.4rem;
   --swiper-pagination-bullet-inactive-color: ${props => props.theme.colors.white};
@@ -84,7 +85,7 @@ const SwiperWrap = styled.div`
 `;
 const SidebarTestimonialsQuote = styled.div`
   .fa {
-      color: #FF6843;
+      color: #ff6843;
       font-size: 1.6rem;
       padding: 0 .4rem;
     }
@@ -94,9 +95,12 @@ const SidebarTestimonialsByline = styled.div`
 `;
 const SidebarTestimonialsDetails = styled.div`
   font-weight: 700;
-  margin: 0 0 0.3rem;
+  margin: 0 0 .3rem;
 `;
-const SidebarTestimonialsDate = styled.div`
+const SidebarTestimonialsDateRow = styled.div`
   color: #7f7f7f;
   font-style: italic;
+`;
+const SidebarTestimonialsDate = styled.span`
+  margin: 0 0 0 .5rem;
 `;

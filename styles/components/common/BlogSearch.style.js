@@ -40,7 +40,7 @@ export const SearchBtn = styled.button`
     }
 `
 export const Styledform = styled.form`
-    margin: ${props => props.col ? "3rem 0 0" : props.jobSearch ? ".4rem 0 0" : "3.7rem 0 0"};
+    margin: ${props => props.col ? "3rem 0 0" : props.jobSearch ? ".4rem 0 0" : "0"};
     padding: ${props => (props.col || props.jobSearch) ? "0 1.2rem" : null};
     flex: 0 0 auto;
     ${props => props.col && css`

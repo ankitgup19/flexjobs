@@ -12,7 +12,7 @@ import BlogCompanyLogos from "./BlogCompanyLogos.jsx";
 import BlogFooterLink from "./BlogFooterLink.jsx";
 import BlogSidebarWidgets from "./BlogSidebarWidgets.jsx";
 import BlogNewsletter from "./BlogNewsletter.jsx";
-import BlogStoriesSlider from "./BlogStoriesSlider.jsx";
+import BlogTestimonialSlider from "./BlogTestimonialSlider.jsx";
 import PromoBanner from "../common/PromoBanner";
 import RelatedArticles from "./RelatedArticles";
 import RelatedCategoriesBadge from "./RelatedCategoriesBadge";
@@ -70,7 +70,7 @@ const BlogPost = () => {
           text="Success Stories Just In!"
           center
         >
-          <BlogStoriesSlider/>          
+          <BlogTestimonialSlider/>          
           <BlogFooterLink text="Read More Success Stories" extraSpacing />
         </BlogSidebarWidgets>
         <BlogSidebarWidgets
