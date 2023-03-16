@@ -13,7 +13,7 @@ const App = () => {
         <Layout>
             <StyledContainerMd layout>
                 <center>
-                    <h1 style={{ background: '#f1f9fe', padding: '2rem 0' }}>Blog Category</h1>
+                    <h1 style={{ background: '#f1f9fe', padding: '2rem 0' }}>Page Blog Category</h1>
                 </center>
                 <BlogCategory />
                 <center>
