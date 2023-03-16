@@ -5,7 +5,7 @@ export const StyledHeader = styled.header`
     top: 0;
     width: 100%;
     background-color: ${props => props.theme.colors.white};
-    z-index: 1;
+    z-index: 12;
 `
 export const SearchWrap = styled.div`
     padding: 1.6rem 0;

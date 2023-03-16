@@ -2,6 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styled from "styled-components";
 import { Autoplay, Pagination, Navigation } from "swiper";
+import { TESTIMONIALS } from "../../helper/Blogs.js";
 
 const BlogStoriesSlider = () => {
   return (
@@ -10,7 +11,7 @@ const BlogStoriesSlider = () => {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -20,94 +21,22 @@ const BlogStoriesSlider = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <div>
-            <div className="sidebar-testimonials-quote">
-              <i className="fa fa-quote-left"></i>Thank you, FlexJobs, for assisting me in finding this amazing employment opportunity!
-              <i className="fa fa-quote-right ps-1"></i>
+        {TESTIMONIALS.map((item, index) => (
+          <SwiperSlide key={index}>
+            <div>
+              <SidebarTestimonialsQuote>
+                <i className="fa fa-quote-left"></i>
+                {item.quote}
+                <i className="fa fa-quote-right"></i>
+              </SidebarTestimonialsQuote>
+              <SidebarTestimonialsByline>{item.by}</SidebarTestimonialsByline>
+              <SidebarTestimonialsDetails>{item.detail}</SidebarTestimonialsDetails>
+              <SidebarTestimonialsDate>
+                <i className="fa fa-calendar-alt" aria-hidden="true"></i> <span className="testimonial-date">{item.date}</span>
+              </SidebarTestimonialsDate>
             </div>
-            <div className="sidebar-testimonials-byline">Rebecca T., Brigham City, UT</div>
-            <div className="sidebar-testimonials-details">Inbound Customer Service Representative at Discover Financial Services</div>
-            <div className="sidebar-testimonials-date">
-              <i className="fa fa-calendar-alt" aria-hidden="true"></i> <span className="testimonial-date">Mar 13, 2023</span>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <div className="sidebar-testimonials-quote">
-              <i className="fa fa-quote-left"></i>I was out of a job for a while and wanted to break into the work-from-home job market, and FlexJobs worked wonders!<i className="fa fa-quote-right ps-1"></i>
-            </div>
-            <div className="sidebar-testimonials-byline">Christine A., Middletown, MD</div>
-            <div className="sidebar-testimonials-details">Call Center Agent at Working Solutions</div>
-            <div className="sidebar-testimonials-date">
-              <i className="fa fa-calendar-alt" aria-hidden="true"></i> <span className="testimonial-date">Mar 8, 2023</span>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <div className="sidebar-testimonials-quote">
-              <i className="fa fa-quote-left"></i>Thank you, FlexJobs, for assisting me in finding this amazing employment opportunity!
-              <i className="fa fa-quote-right ps-1"></i>
-            </div>
-            <div className="sidebar-testimonials-byline">Rebecca T., Brigham City, UT</div>
-            <div className="sidebar-testimonials-details">Inbound Customer Service Representative at Discover Financial Services</div>
-            <div className="sidebar-testimonials-date">
-              <i className="fa fa-calendar-alt" aria-hidden="true"></i> <span className="testimonial-date">Mar 13, 2023</span>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <div className="sidebar-testimonials-quote">
-              <i className="fa fa-quote-left"></i>I was out of a job for a while and wanted to break into the work-from-home job market, and FlexJobs worked wonders!<i className="fa fa-quote-right ps-1"></i>
-            </div>
-            <div className="sidebar-testimonials-byline">Christine A., Middletown, MD</div>
-            <div className="sidebar-testimonials-details">Call Center Agent at Working Solutions</div>
-            <div className="sidebar-testimonials-date">
-              <i className="fa fa-calendar-alt" aria-hidden="true"></i> <span className="testimonial-date">Mar 8, 2023</span>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <div className="sidebar-testimonials-quote">
-              <i className="fa fa-quote-left"></i>Thank you, FlexJobs, for assisting me in finding this amazing employment opportunity!
-              <i className="fa fa-quote-right ps-1"></i>
-            </div>
-            <div className="sidebar-testimonials-byline">Rebecca T., Brigham City, UT</div>
-            <div className="sidebar-testimonials-details">Inbound Customer Service Representative at Discover Financial Services</div>
-            <div className="sidebar-testimonials-date">
-              <i className="fa fa-calendar-alt" aria-hidden="true"></i> <span className="testimonial-date">Mar 13, 2023</span>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <div className="sidebar-testimonials-quote">
-              <i className="fa fa-quote-left"></i>I was out of a job for a while and wanted to break into the work-from-home job market, and FlexJobs worked wonders!<i className="fa fa-quote-right ps-1"></i>
-            </div>
-            <div className="sidebar-testimonials-byline">Christine A., Middletown, MD</div>
-            <div className="sidebar-testimonials-details">Call Center Agent at Working Solutions</div>
-            <div className="sidebar-testimonials-date">
-              <i className="fa fa-calendar-alt" aria-hidden="true"></i> <span className="testimonial-date">Mar 8, 2023</span>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <div className="sidebar-testimonials-quote">
-              <i className="fa fa-quote-left"></i>Thank you, FlexJobs, for assisting me in finding this amazing employment opportunity!
-              <i className="fa fa-quote-right ps-1"></i>
-            </div>
-            <div className="sidebar-testimonials-byline">Rebecca T., Brigham City, UT</div>
-            <div className="sidebar-testimonials-details">Inbound Customer Service Representative at Discover Financial Services</div>
-            <div className="sidebar-testimonials-date">
-              <i className="fa fa-calendar-alt" aria-hidden="true"></i> <span className="testimonial-date">Mar 13, 2023</span>
-            </div>
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </SwiperWrap>
   );
@@ -126,7 +55,7 @@ const SwiperWrap = styled.div`
   --swiper-pagination-bottom: .7rem;
   --swiper-pagination-bullet-horizontal-gap: .2rem;
   --swiper-navigation-size: 1rem;
-  --swiper-navigation-top-offset: 90%;
+  --swiper-navigation-top-offset: 90.5%;
   --swiper-navigation-sides-offset: 7.7rem;
   .swiper {
     width: 100%;
@@ -134,38 +63,40 @@ const SwiperWrap = styled.div`
   }
   
   .swiper-slide {
-    text-align: center;
     background: #fff;
     display: flex;
-    justify-content: center;
     align-items: flex-start;
     padding: 0 2.2rem;
-  }
-  .sidebar-testimonials-quote {
-    .fa {
-      color: #FF6843;
-      font-size: 1.6rem;
-      padding: 0 .4rem;
-    }
-  }
-  .sidebar-testimonials-byline {
-    color: #7f7f7f;
-  }
-  .sidebar-testimonials-details {
-    font-weight: 700;
-    margin: 0 0 0.3rem;
-  }
-  .testimonial-date {
-      color: #7f7f7f;
-      font-style: italic;
-  }
-  .swiper-pagination {
+    text-align: center;
   }
   .swiper-pagination-bullet {
     border: 1px solid #7f7f7f;
   }
+  .swiper-button-next,
+  .swiper-button-prev {
+    z-index: 11;
+  }
   .swiper-button-next.swiper-button-disabled,
   .swiper-button-prev.swiper-button-disabled {
     opacity: 1;
+    pointer-events: all;
   }
+`;
+const SidebarTestimonialsQuote = styled.div`
+  .fa {
+      color: #FF6843;
+      font-size: 1.6rem;
+      padding: 0 .4rem;
+    }
+`;
+const SidebarTestimonialsByline = styled.div`
+  color: #7f7f7f;
+`;
+const SidebarTestimonialsDetails = styled.div`
+  font-weight: 700;
+  margin: 0 0 0.3rem;
+`;
+const SidebarTestimonialsDate = styled.div`
+  color: #7f7f7f;
+  font-style: italic;
 `;

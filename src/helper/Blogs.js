@@ -210,6 +210,50 @@ export const BLOG_ARTICLES = {
         "type": "Trending"
     }]
 }
+export const TESTIMONIALS = [
+    {
+        'quote': 'Thank you, FlexJobs, for assisting me in finding this amazing employment opportunity!',
+        'by': 'Rebecca T., Brigham City, UT',
+        'detail': 'Inbound Customer Service Representative at Discover Financial Services',
+        'date': 'Mar 13, 2023',
+    },
+    {
+        'quote': 'I was out of a job for a while and wanted to break into the work-from-home job market, and FlexJobs worked wonders!',
+        'by': 'Christine A., Middletown, MD',
+        'detail': 'Call Center Agent at Working Solutions',
+        'date': 'Mar 8, 2023',
+    },
+    {
+        'quote': 'Thank you, FlexJobs, for assisting me in finding this amazing employment opportunity!',
+        'by': 'Rebecca T., Brigham City, UT',
+        'detail': 'Inbound Customer Service Representative at Discover Financial Services',
+        'date': 'Mar 13, 2023',
+    },
+    {
+        'quote': 'I was out of a job for a while and wanted to break into the work-from-home job market, and FlexJobs worked wonders!',
+        'by': 'Christine A., Middletown, MD',
+        'detail': 'Call Center Agent at Working Solutions',
+        'date': 'Mar 8, 2023',
+    },
+    {
+        'quote': 'Thank you, FlexJobs, for assisting me in finding this amazing employment opportunity!',
+        'by': 'Rebecca T., Brigham City, UT',
+        'detail': 'Inbound Customer Service Representative at Discover Financial Services',
+        'date': 'Mar 13, 2023',
+    },
+    {
+        'quote': 'I was out of a job for a while and wanted to break into the work-from-home job market, and FlexJobs worked wonders!',
+        'by': 'Christine A., Middletown, MD',
+        'detail': 'Call Center Agent at Working Solutions',
+        'date': 'Mar 8, 2023',
+    },
+    {
+        'quote': 'Thank you, FlexJobs, for assisting me in finding this amazing employment opportunity!',
+        'by': 'Rebecca T., Brigham City, UT',
+        'detail': 'Inbound Customer Service Representative at Discover Financial Services',
+        'date': 'Mar 13, 2023',
+    }
+]
 export const RECOMMENDED_JOBS = [
     {
         'href': '/publicjobs/salesforce-developer-1755669',
