@@ -41,14 +41,7 @@ const BlogPost = () => {
         <RelatedArticles />
         <RelatedCategoriesBadge heading />
       </BlogPostWrap>
-      <>        
-        <BlogSidebarWidgets
-          text="Success Stories Just In!"
-          center
-        >
-          <BlogStoriesSlider/>          
-          <BlogFooterLink text="Read More Success Stories" extraSpacing />
-        </BlogSidebarWidgets>
+      <> 
         <BlogSearch />
         <BlogPromo />
         <BlogSidebarWidgets
@@ -72,6 +65,13 @@ const BlogPost = () => {
         <BlogSidebarWidgets noBorderTop text='Currently Hiring on FlexJobs' center>
           <BlogCompanyLogos />
           <BlogFooterLink text="See All New Jobs" />
+        </BlogSidebarWidgets>               
+        <BlogSidebarWidgets
+          text="Success Stories Just In!"
+          center
+        >
+          <BlogStoriesSlider/>          
+          <BlogFooterLink text="Read More Success Stories" extraSpacing />
         </BlogSidebarWidgets>
         <BlogSidebarWidgets
           text="Weekly Newsletter"
