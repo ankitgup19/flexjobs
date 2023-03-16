@@ -62,7 +62,7 @@ const BlogSidebar = styled.div`
   ${(props) =>
     !props.headerDirectionColumn &&
     css`
-      padding: ${(props) => props.noBorderTop ? "1.6rem 0 .9rem" : "1.6rem 0 0"};
+      padding: ${(props) => props.noBorderTop ? "1.6rem 0 .9rem" : props.center ? "0" : "1.6rem 0 0"};
       /* padding: ${(props) => props.noBorderTop ? "1.6rem 0 .9rem" : "0"}; */
     `}
   ${(props) =>
