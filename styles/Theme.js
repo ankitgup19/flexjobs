@@ -41,6 +41,8 @@ const Variables = () => {
                 // color: #818181; JobLocation
                 // color: #656565;
                 // #7f7f7f slider dots
+                // #C6DAE5 bg color Career Advice Header
+                // #C5DAE4 Featured Questions Border Color
             },
             fontSize: {
                 xxxs: "1.2rem",
