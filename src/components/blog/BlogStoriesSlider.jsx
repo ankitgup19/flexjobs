@@ -44,12 +44,12 @@ const BlogStoriesSlider = () => {
 export default BlogStoriesSlider;
 
 const SwiperWrap = styled.div`
-  width: 308px;
-  height: 223px;
+  width: 30.8rem;
+  height: 22.3rem;
   font-size: 1.4rem;
   border-bottom: 1px solid #e1e8ef;
   --swiper-pagination-bullet-size: 1.4rem;
-  --swiper-pagination-bullet-inactive-color: #fff;
+  --swiper-pagination-bullet-inactive-color: ${props => props.theme.colors.white};
   --swiper-theme-color: #7f7f7f;
   --swiper-pagination-bullet-inactive-opacity: 1;
   --swiper-pagination-bottom: .7rem;
@@ -63,7 +63,7 @@ const SwiperWrap = styled.div`
   }
   
   .swiper-slide {
-    background: #fff;
+    background: ${props => props.theme.colors.white};
     display: flex;
     align-items: flex-start;
     padding: 0 2.2rem;
