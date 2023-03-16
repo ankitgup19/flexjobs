@@ -8,10 +8,12 @@ import { StyledContainerMd } from "../styles/components/common/Common.styles";
 import Blog from "./components/blog/Blog";
 import BlogPost from "./components/blog/BlogPost";
 import BlogCategory from "./components/blog/BlogCategory";
+import JobSearch from "./components/careerAdvice/JobSearch";
 const App = () => {
     return (
         <Layout>
             <StyledContainerMd layout>
+                <JobSearch />
                 <BlogCategory />
                 <BlogPost />
                 <Blog />
