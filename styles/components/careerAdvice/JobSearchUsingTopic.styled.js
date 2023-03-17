@@ -34,4 +34,4 @@ const Styled = {
     `
 }
 
-export default Styled
+export default Styled;
