@@ -9,11 +9,19 @@ import Blog from "./components/blog/Blog";
 import BlogPost from "./components/blog/BlogPost";
 import BlogCategory from "./components/blog/BlogCategory";
 import JobSearch from "./components/careerAdvice/JobSearch";
+import SelectedTopic from "./components/careerAdvice/SelectedTopic.jsx";
 const App = () => {
     return (
         <Layout>
             <StyledContainerMd layout>
+                <center>
+                    <h1 style={{ background: '#f1f9fe', padding: '2rem 0' }}>Page Job Search Career Advice</h1>
+                </center>
                 <JobSearch />
+                <center>
+                    <h1 style={{ background: '#f1f9fe', padding: '2rem 0' }}>Page Career Advice Selected Topic </h1>
+                </center>
+                <SelectedTopic />
                 <center>
                     <h1 style={{ background: '#f1f9fe', padding: '2rem 0' }}>Page Blog Category</h1>
                 </center>
