@@ -10,10 +10,13 @@ import BlogPost from "./components/blog/BlogPost";
 import BlogCategory from "./components/blog/BlogCategory";
 import JobSearch from "./components/careerAdvice/JobSearch";
 import SelectedTopic from "./components/careerAdvice/SelectedTopic.jsx";
+import CareerCoaches from "./components/careerCoaching/CareerCoaches";
+
 const App = () => {
     return (
         <Layout>
             <StyledContainerMd layout>
+                <CareerCoaches />
                 <center>
                     <h1 style={{ background: '#f1f9fe', padding: '2rem 0' }}>Page Job Search Career Advice</h1>
                 </center>
