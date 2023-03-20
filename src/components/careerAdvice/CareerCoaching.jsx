@@ -6,6 +6,7 @@ import CareerCoachingMain from "./CareerCoachingMain.jsx";
 import BlogPromo from "../blog/BlogPromo";
 import BlogSidebarWidgets from "../blog/BlogSidebarWidgets";
 import BlogTestimonialSlider from "../blog/BlogTestimonialSlider";
+import CareerCoachingTestimonialCarousel from "./CareerCoachingTestimonialCarousel.jsx";
 import BlogFooterLink from "../blog/BlogFooterLink";
 import BlogNewsletter from "../blog/BlogNewsletter";
 import CareerCoaches from "../careerCoaching/CareerCoaches";
@@ -20,6 +21,7 @@ const CareerCoaching = () => {
             text="Career Coaching - "
             textEmphasized="Temporarily Sold Out"
           ></CareerCoachingHeaderContent>
+          <CareerCoachingTestimonialCarousel/>
         </CareerCoachingMain>
         <CareerCoaches />
       </>
