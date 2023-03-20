@@ -11,6 +11,10 @@ const CareerCoachingTestimonialCarousel = () => {
       <Styled.SwiperWrap>
         <Swiper
           spaceBetween={70}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
           centeredSlides={true}
           navigation={true}
           modules={[Autoplay, Navigation]}

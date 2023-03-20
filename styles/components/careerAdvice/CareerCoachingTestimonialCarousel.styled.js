@@ -65,6 +65,7 @@ const Styled = {
     SidebarTestimonialsByline: styled.div`
         font-size: 1.6rem;
         font-weight: 700;
+        margin: .5rem 0 0;
   `,
 }
 
