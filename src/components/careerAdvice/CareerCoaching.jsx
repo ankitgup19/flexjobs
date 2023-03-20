@@ -8,39 +8,40 @@ import BlogSidebarWidgets from "../blog/BlogSidebarWidgets";
 import BlogTestimonialSlider from "../blog/BlogTestimonialSlider";
 import BlogFooterLink from "../blog/BlogFooterLink";
 import BlogNewsletter from "../blog/BlogNewsletter";
-
+import CareerCoaches from "../careerCoaching/CareerCoaches";
 const CareerCoaching = () => {
-    return (
-        <FlexLayout filter>
-            <>
-                <p style={{margin: '2rem 0 0'}}>&nbsp;</p>
-                <Breadcrumb />
-                <CareerCoachingMain>
-                    <CareerCoachingHeader
-                        text='Career Coaching - '
-                        textEmphasized='Temporarily Sold Out'>
-                    </CareerCoachingHeader>
-                </CareerCoachingMain>
-            </>
-            <>
-                <BlogPromo />
-                <BlogSidebarWidgets text="Success Stories Just In!" center>
-                    <BlogTestimonialSlider />
-                    <BlogFooterLink text="Read More Success Stories" extraSpacing />
-                </BlogSidebarWidgets>
-                <BlogSidebarWidgets
-                    text="Weekly Newsletter"
-                    center
-                    iconSrc="https://www.flexjobs.com/images/icons/newletter-graphic.svg"
-                    iconTxt="Weekly Newsletter icon"
-                    iconWidth="64"
-                    headerDirectionColumn
-                >
-                    <BlogNewsletter />
-                </BlogSidebarWidgets>
-            </>
-        </FlexLayout>
-    );
+  return (
+    <FlexLayout filter>
+      <>
+        <p style={{ margin: "2rem 0 0" }}>&nbsp;</p>
+        <Breadcrumb />
+        <CareerCoachingMain>
+          <CareerCoachingHeader
+            text="Career Coaching - "
+            textEmphasized="Temporarily Sold Out"
+          ></CareerCoachingHeader>
+        </CareerCoachingMain>
+        <CareerCoaches />
+      </>
+      <>
+        <BlogPromo />
+        <BlogSidebarWidgets text="Success Stories Just In!" center>
+          <BlogTestimonialSlider />
+          <BlogFooterLink text="Read More Success Stories" extraSpacing />
+        </BlogSidebarWidgets>
+        <BlogSidebarWidgets
+          text="Weekly Newsletter"
+          center
+          iconSrc="https://www.flexjobs.com/images/icons/newletter-graphic.svg"
+          iconTxt="Weekly Newsletter icon"
+          iconWidth="64"
+          headerDirectionColumn
+        >
+          <BlogNewsletter />
+        </BlogSidebarWidgets>
+      </>
+    </FlexLayout>
+  );
 };
 
 export default CareerCoaching;
