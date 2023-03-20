@@ -2,6 +2,7 @@ import React from "react";
 import { FlexLayout } from "../layout/Layout";
 import Breadcrumb from "../common/Breadcrumb";
 import CareerCoachingHeader from "./CareerCoachingHeader.jsx";
+import CareerCoachingMain from "./CareerCoachingMain.jsx";
 import BlogPromo from "../blog/BlogPromo";
 import BlogSidebarWidgets from "../blog/BlogSidebarWidgets";
 import BlogTestimonialSlider from "../blog/BlogTestimonialSlider";
@@ -12,12 +13,14 @@ const CareerCoaching = () => {
     return (
         <FlexLayout filter>
             <>
-                <p style={{ margin: '0rem 0 0' }}>&nbsp;</p>
+                <p style={{margin: '2rem 0 0'}}>&nbsp;</p>
                 <Breadcrumb />
-                <CareerCoachingHeader
-                    text='Career Coaching - '
-                    textEmphasized='Temporarily Sold Out'>
-                </CareerCoachingHeader>
+                <CareerCoachingMain>
+                    <CareerCoachingHeader
+                        text='Career Coaching - '
+                        textEmphasized='Temporarily Sold Out'>
+                    </CareerCoachingHeader>
+                </CareerCoachingMain>
             </>
             <>
                 <BlogPromo />

@@ -9,12 +9,16 @@ export const StyledContainerMd = styled.div`
     }
     @media (min-width: 1400px) {
         max-width: ${({ fullwidth }) => fullwidth ? null : "1320px"};
+        /* padding-left: 0;
+        padding-right: 0;
+        margin: 0 -15px; */
     }
 `
 
 export const FeaturedWrap = styled.div`
     display: grid;
-    grid-template-columns: ${props => props.gridCol || (props.blog ? "58.33% auto" : props.filter ? "75% auto" : "1fr 1fr")};
+    grid-template-columns: ${props => props.gridCol || (props.blog ? "58.33% auto" : props.filter ? "75% 25%" : "1fr 1fr")};
+    /* margin: ${props => props.filter ? "1.6rem -1.5rem 0" : "1.6rem -1.5rem 0"}; */
     margin: 1.6rem 0 0;
     .left,
     .right{
