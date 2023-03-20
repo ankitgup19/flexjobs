@@ -43,6 +43,7 @@ const Variables = () => {
                 // #7f7f7f slider dots
                 // #C6DAE5 bg color Career Advice Header
                 // #C5DAE4 Featured Questions Border Color
+                //color: #f00;
             },
             fontSize: {
                 xxxs: "1.2rem",

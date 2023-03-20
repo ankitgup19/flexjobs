@@ -45,7 +45,7 @@ const BlogTestimonialSlider = () => {
 export default BlogTestimonialSlider;
 
 const SwiperWrap = styled.div`
-  width: 30.8rem;
+  width: 100%;
   height: 22.3rem;
   font-size: ${props => props.theme.fontSize.xs};
   border-bottom: 1px solid #e1e8ef;
@@ -56,8 +56,6 @@ const SwiperWrap = styled.div`
   --swiper-pagination-bottom: .7rem;
   --swiper-pagination-bullet-horizontal-gap: .2rem;
   --swiper-navigation-size: 1rem;
-  --swiper-navigation-top-offset: 90.5%;
-  --swiper-navigation-sides-offset: 7.7rem;
   .swiper {
     width: 100%;
     height: 100%;
@@ -76,6 +74,17 @@ const SwiperWrap = styled.div`
   .swiper-button-next,
   .swiper-button-prev {
     z-index: 11;
+    top: auto;
+    bottom: 1.4rem;
+    @media (min-height: 769px) {
+      bottom: 1.6rem;
+    }
+  }
+  .swiper-button-prev {
+    left: calc(50% - 7.5rem);
+  }  
+  .swiper-button-next {
+    right: calc(50% - 7.5rem);
   }
   .swiper-button-next.swiper-button-disabled,
   .swiper-button-prev.swiper-button-disabled {
