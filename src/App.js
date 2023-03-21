@@ -11,13 +11,18 @@ import BlogCategory from "./components/blog/BlogCategory";
 import JobSearch from "./components/careerAdvice/JobSearch";
 import SelectedTopic from "./components/careerAdvice/SelectedTopic.jsx";
 import CareerCoaching from "./components/careerAdvice/CareerCoaching.jsx";
+import CareerAdvice from "./components/careerAdvice/CareerAdvice.jsx";
 const App = () => {
     return (
         <Layout>
             <StyledContainerMd layout>
                 {/* <center>
-                    <h1 style={{ background: '#f1f9fe', padding: '2rem 0' }}>Page - Job Search Career Advice</h1>
+                    <h1 style={{ background: '#f1f9fe', padding: '2rem 0' }}>Page - Career Advice</h1>
                 </center> */}
+                <CareerAdvice />
+                <center>
+                    <h1 style={{ background: '#f1f9fe', padding: '2rem 0' }}>Page - Career Coaching</h1>
+                </center>
                 <CareerCoaching />
                 <center>
                     <h1 style={{ background: '#f1f9fe', padding: '2rem 0' }}>Page - Job Search Career Advice</h1>

@@ -8,7 +8,9 @@ const JobSearchHeader = (props) => {
         <Styled.InnerWrapper {...props}>
           <Styled.ContentWrap>
             <h1>{props.heading}</h1>
-            <p>{props.description}</p>
+            {props.description &&
+              <p>{props.description}</p>
+            }
           </Styled.ContentWrap>
         </Styled.InnerWrapper>
       )}

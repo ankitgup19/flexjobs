@@ -21,7 +21,7 @@ const CareerCoaching = () => {
   return (
     <FlexLayout filter>
       <>
-        <p style={{ margin: "2rem 0 0" }}>&nbsp;</p>
+        {/* <p style={{ margin: "2rem 0 0" }}>&nbsp;</p> */}
         <Breadcrumb />
         <CareerCoachingMain>
           <CareerCoachingHeaderContent
