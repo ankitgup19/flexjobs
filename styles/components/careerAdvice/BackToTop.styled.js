@@ -7,7 +7,7 @@ const Styled = {
     Link: styled.a`
         justify-self: end;
         text-decoration: none;
-        color: #007CAD;
+        color: ${props => props.theme.colors.primaryLight};
         outline: none;
         margin: 0 1.5rem 0 0;
         

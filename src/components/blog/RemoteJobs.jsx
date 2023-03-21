@@ -67,7 +67,7 @@ const SPAN = styled.span`
   text-align: center;
   font-weight: 600;
   margin: 0 0 1.2rem;
-  color: #007cad;
+  color: ${props => props.theme.colors.primaryLight};
   cursor: pointer;
   &:hover {
     text-decoration: underline;
@@ -83,12 +83,12 @@ const AllJobsLink = styled.a`
   display: inline-block;
   text-decoration: none;
   padding: 0.4rem 1.6rem;
-  color: #007cad;
-  border: 1px solid #007cad;
+  color: ${props => props.theme.colors.primaryLight};
+  border: 1px solid ${props => props.theme.colors.primaryLight};
   border-radius: 0.4rem;
   font-weight: 600;
   &:hover {
-    background-color: #007cad;
+    background-color: ${props => props.theme.colors.primaryLight};
     color: #fff;
   }
 `;

@@ -13,6 +13,7 @@ import CareerCoaches from "../careerCoaching/CareerCoaches";
 import HeaderWithIcon from "../careerCoaching/HeaderWithIcon.jsx";
 import SectionHIW from "../careerCoaching/SectionHIW.jsx";
 import BackToTop from "../common/BackToTop.jsx";
+import WidgetFreeMonth from "../common/WidgetFreeMonth.jsx";
 import Pricing from "../../../styles/components/careerAdvice/CareerCoachingPricing.styled.js";
 import s from "../../../styles/components/careerAdvice/CareerCoaching.styled.js";
 
@@ -130,6 +131,7 @@ const CareerCoaching = () => {
         >
           <BlogNewsletter />
         </BlogSidebarWidgets>
+        <WidgetFreeMonth/>
       </>
     </FlexLayout>
   );
