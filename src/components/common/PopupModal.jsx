@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 
 const PopupModal = (props) => {
+  let popupRef = useRef();
+  useEffect(() => {
+    let clickHandler = (event) => {
+      if (!popupRef.current.contains(event.target)) {
+        props.setIsActive(null);
+      }
+    };
+    document.addEventListener("mousedown", clickHandler);
+    return () => {
+      document.removeEventListener("mousedown", clickHandler);
+    };
+  });
+
   return (
     <Styled.Wrapper>
-      <Styled.Content>
+      <Styled.Content ref={popupRef}>
         <Styled.Header bgColor="#004F6D" textcolor="#fff">
           <h5>{props.heading}</h5>
           <button
@@ -41,6 +54,7 @@ const Styled = {
   Header: styled.div`
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1.6rem;
     background-color: ${(props) => props.bgColor};
     color: ${(props) => props.textcolor};
@@ -52,11 +66,22 @@ const Styled = {
     .close-modal {
       background-color: transparent;
       border: none;
-      color: ${(props) => props.textcolor};
+      filter: invert(1) grayscale(100%) brightness(200%);
       font-size: 2rem;
       padding: 0;
       line-height: 2.4rem;
       cursor: pointer;
+      opacity: 0.5;
+      &:hover {
+        opacity: 0.75;
+      }
+      &:focus {
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+        opacity: 1;
+        padding: 0.8rem;
+        margin: -0.8rem;
+        border-radius: 0.4rem;
+      }
     }
   `,
   Content: styled.div`

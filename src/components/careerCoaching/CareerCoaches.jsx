@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Coach from "./Coach";
 import Styled from "../../../styles/components/careerCoaching/CareerCoaching.styled";
 import PopupModal from "../common/PopupModal";
@@ -10,9 +10,11 @@ const CareerCoaches = () => {
       setIsActive(null);
     }
     setIsActive(e.target.title);
+    document.body.style.overflow = "hidden";
   };
   const closeModal = () => {
     setIsActive(null);
+    document.body.style.overflow = "auto";
   };
   return (
     <Styled.Wrapper>
@@ -46,6 +48,7 @@ const CareerCoaches = () => {
           <PopupModal
             heading="Betsy Andrews, Team Lead and Career Coach"
             closeModal={closeModal}
+            setIsActive={setIsActive}
           >
             <div class="modal-body">
               <ul>
@@ -93,6 +96,7 @@ const CareerCoaches = () => {
           <PopupModal
             heading="Anne Alcorn, Career Coach"
             closeModal={closeModal}
+            setIsActive={setIsActive}
           >
             <div class="modal-body">
               <ul>
@@ -138,6 +142,7 @@ const CareerCoaches = () => {
           <PopupModal
             heading="Keith Spencer, Career Coach"
             closeModal={closeModal}
+            setIsActive={setIsActive}
           >
             <div class="modal-body">
               <ul>
