@@ -44,12 +44,14 @@ const Variables = () => {
                 // #C6DAE5 bg color Career Advice Header
                 // #C5DAE4 Featured Questions Border Color
                 //color: #f00;
+                // border: 1px solid #e3e3e3;
             },
             fontSize: {
                 xxxs: "1.2rem",
                 xxs: "1.3rem",
                 xs: "1.4rem",
                 sm: "1.6rem",
+                //1.7rem
                 md1: "1.8rem",
                 md: "2.2rem",
                 lg: "2.4rem",

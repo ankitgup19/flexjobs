@@ -10,6 +10,8 @@ import CareerCoachingTestimonialCarousel from "./CareerCoachingTestimonialCarous
 import BlogFooterLink from "../blog/BlogFooterLink";
 import BlogNewsletter from "../blog/BlogNewsletter";
 import CareerCoaches from "../careerCoaching/CareerCoaches";
+import HeaderWithIcon from "../careerCoaching/HeaderWithIcon.jsx";
+import SectionHIW from "../careerCoaching/SectionHIW.jsx";
 const CareerCoaching = () => {
   return (
     <FlexLayout filter>
@@ -22,6 +24,11 @@ const CareerCoaching = () => {
             textEmphasized="Temporarily Sold Out"
           ></CareerCoachingHeaderContent>
           <CareerCoachingTestimonialCarousel/>
+          <SectionHIW>
+            <HeaderWithIcon src='https://www.flexjobs.com/images/icons/streamline-bold/get-started.svg' text='How It Works' />
+          </SectionHIW>        
+          <HeaderWithIcon src='https://www.flexjobs.com/images/icons/streamline-bold/we-have-proof.svg' text='Benefits' />
+          <HeaderWithIcon src='https://www.flexjobs.com/images/icons/streamline-bold/special-savings-deals.svg' text='Pricing' />
         </CareerCoachingMain>
         <CareerCoaches />
       </>

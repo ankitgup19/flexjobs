@@ -9,7 +9,6 @@ const Styled = {
         width: 100%;
         height: 22.3rem;
         font-size: ${props => props.theme.fontSize.xs};
-        border-bottom: 1px solid #e1e8ef;
         text-align: center;
         --swiper-theme-color: #7f7f7f;
         --swiper-navigation-size: 2rem;
