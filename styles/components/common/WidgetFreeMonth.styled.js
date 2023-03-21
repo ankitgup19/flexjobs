@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Styled = {
     P: styled.p`
-        color: #ff532a;
+        color: ${props => props.theme.colors.secondary};
         font-size: ${props => props.theme.fontSize.lg};
         margin: .8rem 0;
     `,
@@ -28,7 +28,7 @@ const Styled = {
         font-style: italic;
     `,    
     Button: styled.button`
-        color: #007CAD;
+        color: ${props => props.theme.colors.primaryLight};
         outline: none ;
         text-decoration: none;
         background: transparent;

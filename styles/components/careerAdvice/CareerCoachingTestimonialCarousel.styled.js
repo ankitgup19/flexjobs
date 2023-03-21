@@ -31,7 +31,7 @@ const Styled = {
         .swiper-button-next,
         .swiper-button-prev {
             z-index: 11;
-            color: #007CAD;
+            color: ${props => props.theme.colors.primaryLight};
         }
         .swiper-button-prev {
             left: 3rem;

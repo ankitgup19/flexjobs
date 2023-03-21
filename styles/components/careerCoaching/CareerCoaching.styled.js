@@ -3,8 +3,8 @@ import styled from "styled-components";
 const Styled = {
     Wrapper: styled.div`
         background-color: #e7edf3;
-        padding: 2.4rem 3.6rem;
-        img{
+        padding: 2.4rem 3.6rem 4.8rem;
+        .headImg{
             display: block;
             margin: 0 auto 1.5rem;
         }
@@ -16,6 +16,23 @@ const Styled = {
     `,
     InnerWrap: styled.div`
         margin: 2.4rem 0 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+    `,
+    BottomWrap: styled.div`
+        margin: 1.6rem 0 0;
+        p{
+            margin: ${props => props.noMargin && 0};
+        }
+        a{
+            color: #007CAD;
+            text-decoration: none;
+            &:hover{
+                color: #23527c;
+                text-decoration: underline;
+            }
+        }
     `
 }
 

@@ -94,7 +94,7 @@ const BannerWrap = styled.div`
           display: inline-block;
           position: absolute;
           left: 0;
-          background-color: #ff532a;
+          background-color: ${props => props.theme.colors.secondary};
           height: 3px;
           width: 100%;
           bottom: 0;
@@ -125,7 +125,7 @@ const InnerWrap = styled.div`
       display: flex;
       align-items: center;
       i {
-        color: #007cad;
+        color: ${props => props.theme.colors.primaryLight};
         margin-right: 0.4rem;
       }
     }
