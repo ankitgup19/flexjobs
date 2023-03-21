@@ -15,6 +15,7 @@ const Variables = () => {
                 tertiaryDarker: "#3e3d3f",
                 tertiaryDarkest: "#333",
                 tertiartyMedium: "#ced4da",
+                lightBlue1: '#c6dae5',
                 white: "#fff",
                 black: "#000",
                 danger: '#d2322d',
@@ -41,7 +42,6 @@ const Variables = () => {
                 // color: #818181; JobLocation
                 // color: #656565;
                 // #7f7f7f slider dots
-                // #C6DAE5 bg color Career Advice Header
                 // #C5DAE4 Featured Questions Border Color
                 //color: #f00;
                 // border: 1px solid #e3e3e3;

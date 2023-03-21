@@ -7,7 +7,7 @@ const Styled = {
         margin: .8rem 0;
     `,
     Link: styled.a`
-        background-color: #C6DAE5;
+        background-color: ${props => props.theme.colors.lightBlue1};
         display: grid;
         justify-items: center;
         margin: 1.6rem 0;
