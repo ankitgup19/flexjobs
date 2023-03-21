@@ -67,7 +67,7 @@ const PromoBanner = () => {
 export default PromoBanner;
 
 const BannerWrap = styled.div`
-  background-color: #c6dae5;
+  background-color: ${props => props.theme.colors.lightBlue1};
   .img-wrap {
     background: url("https://www.flexjobs.com/images/img-rocket-bg-dark.svg")
       no-repeat right center;

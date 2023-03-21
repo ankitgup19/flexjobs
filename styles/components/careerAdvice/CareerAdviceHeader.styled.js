@@ -5,7 +5,7 @@ const Styled = {
         display: flex;
         flex-direction: column;
         background: url(${(props) => props.bgImgUrl});
-        background-color: #C6DAE5;
+        background-color: ${props => props.theme.colors.lightBlue1};
         background-size: 125%;
         background-position: center center;
     `,
