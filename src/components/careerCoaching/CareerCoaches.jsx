@@ -6,10 +6,13 @@ import PopupModal from "../common/PopupModal";
 const CareerCoaches = () => {
   const [isActive, setIsActive] = useState(null);
   const handleClick = (e) => {
-    if (isActive == e.target.name) {
+    if (isActive === e.target.title) {
       setIsActive(null);
     }
-    setIsActive(e.target.name);
+    setIsActive(e.target.title);
+  };
+  const closeModal = () => {
+    setIsActive(null);
   };
   return (
     <Styled.Wrapper>
