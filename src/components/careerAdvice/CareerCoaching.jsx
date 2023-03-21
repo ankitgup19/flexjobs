@@ -12,6 +12,8 @@ import BlogNewsletter from "../blog/BlogNewsletter";
 import CareerCoaches from "../careerCoaching/CareerCoaches";
 import HeaderWithIcon from "../careerCoaching/HeaderWithIcon.jsx";
 import SectionHIW from "../careerCoaching/SectionHIW.jsx";
+import BackToTop from "../common/BackToTop.jsx";
+import s from "../../../styles/components/careerAdvice/CareerCoaching.styled.js";
 const CareerCoaching = () => {
   return (
     <FlexLayout filter>
@@ -28,10 +30,20 @@ const CareerCoaching = () => {
             <HeaderWithIcon src='https://www.flexjobs.com/images/icons/streamline-bold/get-started.svg' text='How It Works' />
           </SectionHIW>        
           <HeaderWithIcon src='https://www.flexjobs.com/images/icons/streamline-bold/we-have-proof.svg' text='Benefits' />
+          <s.P center>Here are just some of the many reasons to consider Career Coaching:</s.P>
+          <s.Ul2col>
+            <s.Ul2colLi>Develop a job search action plan</s.Ul2colLi>
+            <s.Ul2colLi>Build confidence and find your strengths</s.Ul2colLi>
+            <s.Ul2colLi>Get support for career changes and transitions</s.Ul2colLi>
+            <s.Ul2colLi>Get answers to your questions</s.Ul2colLi>
+            <s.Ul2colLi>Learn how to land a remote or flexible job</s.Ul2colLi>
+            <s.Ul2colLi>Re-enter the workforce with best practices</s.Ul2colLi>
+          </s.Ul2col>
+          <BackToTop />
           <HeaderWithIcon src='https://www.flexjobs.com/images/icons/streamline-bold/special-savings-deals.svg' text='Pricing' />
         </CareerCoachingMain>
         <CareerCoaches />
-      </>
+      </> 
       <>
         <BlogPromo />
         <BlogSidebarWidgets text="Success Stories Just In!" center>

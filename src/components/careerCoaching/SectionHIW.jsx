@@ -37,9 +37,8 @@ const SectionHIW = (props) => {
                         <Styled.P>Submit your intake form and your coach will email you to schedule your session via Calendly and Zoom. Sessions are generally held Monday through Friday between 8:00 a.m. and 6:00 p.m. (Eastern Time).</Styled.P>
                     </Styled.StepBox>
                 </Styled.StepBoxWrap>
-                <BackToTop />
-
             </Styled.SectionHIW>
+            <BackToTop />
         </>
     );
 };

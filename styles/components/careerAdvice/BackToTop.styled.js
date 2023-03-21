@@ -9,6 +9,7 @@ const Styled = {
         text-decoration: none;
         color: #007CAD;
         outline: none;
+        margin: 0 1.5rem 0 0;
         
         &:hover,
         &:focus,
