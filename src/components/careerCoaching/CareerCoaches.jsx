@@ -49,6 +49,8 @@ const CareerCoaches = () => {
             heading="Betsy Andrews, Team Lead and Career Coach"
             closeModal={closeModal}
             setIsActive={setIsActive}
+            headBgColor="#004f6d"
+            textColor="#fff"
           >
             <div class="modal-body">
               <ul>
@@ -97,6 +99,8 @@ const CareerCoaches = () => {
             heading="Anne Alcorn, Career Coach"
             closeModal={closeModal}
             setIsActive={setIsActive}
+            headBgColor="#004f6d"
+            textColor="#fff"
           >
             <div class="modal-body">
               <ul>
@@ -143,6 +147,8 @@ const CareerCoaches = () => {
             heading="Keith Spencer, Career Coach"
             closeModal={closeModal}
             setIsActive={setIsActive}
+            headBgColor="#004f6d"
+            textColor="#fff"
           >
             <div class="modal-body">
               <ul>

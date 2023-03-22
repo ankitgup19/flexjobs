@@ -9,11 +9,15 @@ export const Button = styled.button`
     &.btn-primary{
         font-size: 1.6rem;
         line-height: 2.4rem;
-        border: none;
+        border: ${props => props.bgColor ? "1px solid #fff" : "none"};
         color: ${props => props.theme.colors.white};
-        background-color: ${props => props.theme.colors.primaryLight};
-        box-shadow: 0 4px 4px rgb(0 0 0 / 20%);
-        margin: 0 0.2rem;
+        background-color: ${props => props.bgColor || props.theme.colors.primaryLight};
+        box-shadow: ${props => props.boxShadow || "0 4px 4px rgb(0 0 0 / 20%)"};
+        margin: ${props => props.position == "center" ? "0 auto" : "0 0.2rem"};
+        &:hover{
+            background-color: ${props => props.bgColor && props.theme.colors.white};
+            color: ${props => props.bgColor && props.theme.colors.black};
+        }
     }
     &.toggle-btn{
         margin: 0 4px 0 0;

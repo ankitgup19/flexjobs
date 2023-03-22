@@ -52,7 +52,7 @@ const Styled = {
     PriceCardVertWrap: styled.div`
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
+        grid-gap: 2.4rem;
         padding: 1.6rem 0;
     `,
     PriceCardVert: styled.div`

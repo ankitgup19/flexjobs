@@ -7,6 +7,7 @@ const PopupModal = (props) => {
     let clickHandler = (event) => {
       if (!popupRef.current.contains(event.target)) {
         props.setIsActive(null);
+        document.body.style.overflow = "auto";
       }
     };
     document.addEventListener("mousedown", clickHandler);
@@ -17,13 +18,17 @@ const PopupModal = (props) => {
 
   return (
     <Styled.Wrapper>
-      <Styled.Content ref={popupRef}>
-        <Styled.Header bgColor="#004F6D" textcolor="#fff">
-          <h5>{props.heading}</h5>
+      <Styled.Content ref={popupRef} bgColor={props.bgColor}>
+        <Styled.Header
+          headBgColor={props.headBgColor}
+          textColor={props.textColor}
+          heading={props.heading}
+        >
+          {props.heading && <h5>{props.heading}</h5>}
           <button
             type="button"
             className="close-modal"
-            textcolor="#fff"
+            textcolor={props.textColor}
             onClick={props.closeModal}
           >
             <i className="fa fa-times"></i>
@@ -53,11 +58,13 @@ const Styled = {
   `,
   Header: styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: ${(props) =>
+      !props.heading ? "flex-end" : "space-between"};
     align-items: center;
     padding: 1.6rem;
-    background-color: ${(props) => props.bgColor};
-    color: ${(props) => props.textcolor};
+    background-color: ${(props) => props.headBgColor};
+    color: ${(props) => props.textColor};
+    border-bottom: 1px solid #dee2e6;
     h5 {
       margin: 0;
       color: inherit;
@@ -85,7 +92,7 @@ const Styled = {
     }
   `,
   Content: styled.div`
-    background-color: ${(props) => props.theme.colors.white};
+    background-color: ${(props) => props.bgColor || props.theme.colors.white};
     .modal-body {
       padding: 1.6rem;
       ul {

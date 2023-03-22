@@ -45,8 +45,12 @@ const ButtonGroup = (props) => {
     <div className={`btn-group ${props.active ? "active" : ""}`}>
       {props.name && (
         <Button
+          type={props.type || "button"}
           onClick={props.onToggle}
           className={`${props.className} ${activeCount > 0 ? "active" : ""}`}
+          bgColor={props.bgColor}
+          boxShadow={props.boxShadow}
+          position={props.position}
         >
           {props.name}
           {activeCount > 1 && <span className="count">({activeCount})</span>}
