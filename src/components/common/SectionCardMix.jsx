@@ -35,7 +35,7 @@ const SectionCardMix = () => {
                             </s.PriceInfo>
                         </s.PriceCardVertDesc>
                         <s.ToggleLink className='toggle-upsell-details' href='#collapseExample' aria-expanded='false' aria-controls='collapseTxt1' onClick={toggleDetail}>
-                            <span class="toggle-text">Show Details</span>
+                            <span className="toggle-text">Show Details</span>
                             <i className='fa fa-angle-down' />
                         </s.ToggleLink>
                         <s.ToggleP className='collapse' id='collapseTxt1'>Connect with one of our career experts who can answer your questions, offer guidance, and help you get your job search on the right track.</s.ToggleP>
