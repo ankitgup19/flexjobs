@@ -18,7 +18,7 @@ const BlogRecommendedJobs = () => {
                         ))}
                     </JobTagWrap>
                     <JobLocation>
-                        <i className="fa fa-map-marker-alt" title={item.icon_title} />
+                        <i className="fa fa-map-marker" title={item.icon_title} />
                         {item.location}
                     </JobLocation>
                 </BlogRecommendedJobsLi>

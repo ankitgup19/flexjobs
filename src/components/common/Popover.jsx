@@ -19,7 +19,7 @@ const Popover = () => {
           </IconGuideList>
           <p><strong>Job is for local candidate of:</strong></p>
           <IconGuideList>
-            <Li><i className="fa fa-map-marker-alt" aria-hidden="true"></i><VisuallyHidden>Candidates need to be able to work in the City or State specified</VisuallyHidden> a Certain City or State</Li>
+            <Li><i className="fa fa-map-marker" aria-hidden="true"></i><VisuallyHidden>Candidates need to be able to work in the City or State specified</VisuallyHidden> a Certain City or State</Li>
           </IconGuideList>
           <p><strong>FlexJobs logos:</strong></p>
           <IconGuideList flex>

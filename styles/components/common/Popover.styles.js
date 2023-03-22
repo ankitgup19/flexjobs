@@ -18,7 +18,7 @@ export const PopoverWrap = styled.div`
     .visually-hidden {
         display: none;
     }
-    .fa-map-marker-alt {
+    .fa-map-marker {
         margin: 0 1rem 0 .2rem;
     }
 `

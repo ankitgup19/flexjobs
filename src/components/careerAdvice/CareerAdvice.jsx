@@ -7,8 +7,10 @@ import BlogSidebarWidgets from "../blog/BlogSidebarWidgets";
 import BlogTestimonialSlider from "../blog/BlogTestimonialSlider";
 import BlogFooterLink from "../blog/BlogFooterLink";
 import BlogNewsletter from "../blog/BlogNewsletter";
+import SectionListButton from "../common/SectionListButton.jsx";
+import SectionCardMix from "../common/SectionCardMix.jsx";
 
-const JobSearch = () => {
+const CareerAdvice = () => {
   return (
     <FlexLayout filter>
       <>
@@ -18,6 +20,8 @@ const JobSearch = () => {
           rightImgUrl="https://www.flexjobs.com/images/bg-glasses-laptop.png"
           bgImgUrl="https://www.flexjobs.com/images/bg-75.png"
         />
+        <SectionListButton/>
+        <SectionCardMix/>
       </>
       <>
         <BlogPromo />
@@ -40,4 +44,4 @@ const JobSearch = () => {
   );
 };
 
-export default JobSearch;
+export default CareerAdvice;

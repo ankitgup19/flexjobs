@@ -58,7 +58,7 @@ export const JobTag = styled.span`
 export const JobLocation = styled.div`
     color: #818181;
     font-size: ${props => props.theme.fontSize.xxs};
-    .fa-map-marker-alt {
+    .fa-map-marker {
         margin: 0 .4rem 0 0;
         font-size: 1.1rem;
     }

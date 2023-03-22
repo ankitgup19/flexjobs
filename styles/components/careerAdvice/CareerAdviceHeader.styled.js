@@ -23,7 +23,7 @@ const Styled = {
             font-weight: ${props => props.description ? '600' : '500'};
             font-size: ${props => props.description ? props.theme.fontSize.xl : props.theme.fontSize.xxl};
             line-height: ${props => props.description ? '3.4rem' : '4.3rem'};
-            margin:  ${props => props.description ? '0 0 2.4rem' : '2.4rem 0'};
+            margin: ${props => props.description ? '0 0 2.4rem' : '2.4rem 0'};
         }
     `
 }
