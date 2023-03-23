@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const Styled = {
     SectionCardMix: styled.div`
@@ -40,6 +40,7 @@ const Styled = {
         cursor: pointer;
         border-radius: 0.4rem;
         display: inline-grid;
+        position: relative;
     `,
     Heading: styled.h2`
         text-align: center;
@@ -60,7 +61,46 @@ const Styled = {
         border: 1px solid rgba(0,0,0,0.125);
         border-radius: 0.25rem;
         background: ${props => props.theme.colors.white};
-        text-align: center;
+        text-align: ${props => props.block ? null : "center"};
+        ${props => props.block && css`
+            margin: 0 0 1.6rem;
+            display: flex;
+            .img-col {
+                background-size: cover;
+                background-repeat: no-repeat;
+                @media (min-width: 768px) {
+                    flex: 0 0 auto;
+                    width: 25%;
+                }
+            }
+            .career-change-col {
+                background-image: url(https://www.flexjobs.com/images/img-career-change.jpeg);
+                background-position: center right;
+                min-height: 195px;
+            }
+            .mock-col {
+                background-image: url(https://www.flexjobs.com/images/img-mock.jpg);                
+                background-position: center left;
+                min-height: 148px; 
+            }
+            .card-body {
+                padding: 0 0 0 2.8rem;
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                @media (min-width: 768px) {
+                    flex: 0 0 auto;
+                    width: 50%;
+                }
+            }
+            .detail {
+                margin: 0;
+            }
+            .price-col {
+                text-align: center;
+                padding: 4rem 1.6rem 0;
+            }
+        `}
     `,
     PriceCardVertImg: styled.img`
         width: 100%;
@@ -80,6 +120,10 @@ const Styled = {
     PriceInfo: styled.p`
         font-size: ${props => props.theme.fontSize.lg};
         color: #6c757d;
+        ${props => props.block && css`
+            margin: 0;
+            text-align: right;
+        `}
     `,
     Price: styled.span`
         color: ${props => props.theme.colors.secondary};
@@ -91,6 +135,9 @@ const Styled = {
     `,
     PriceText: styled.span`
         font-size: ${props => props.theme.fontSize.xxs};
+        ${props => props.block && css`
+            line-height: 1;
+        `}
     `,
 }
 
