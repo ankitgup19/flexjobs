@@ -1,9 +1,9 @@
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledContainerMd = styled.div`
     max-width: ${({ fullwidth }) => fullwidth ? null : "1170px"};
     margin: 0 auto;
-    padding: ${({ layout }) => layout ? "13.2rem 1.5rem 0" : "0 1.5rem"};
+    padding: ${({ layout }) => layout ? "16.2rem 1.5rem 0" : "0 1.5rem"};
     @media all and (max-width:1024px){
         padding: ${({ layout }) => layout ? "13.5rem 1.5rem 0" : "0 1.5rem"};
     }

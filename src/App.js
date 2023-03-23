@@ -3,7 +3,7 @@ import Login from "./components/common/Login";
 import SignUp from "./components/common/SignUp";
 import PasswordRecovery from "./components/common/PasswordRecovery";
 import Layout from "./components/layout/Layout";
-import SearchResult from "./components/searchResult/SearchResult";
+import SearchResultWrapper from "./components/searchResult/SearchResultContainer";
 import { StyledContainerMd } from "../styles/components/common/Common.styles";
 import Blog from "./components/blog/Blog";
 import BlogPost from "./components/blog/BlogPost";
@@ -65,7 +65,7 @@ const App = () => {
                     <h1>&nbsp;</h1>
                     <h1 style={{ background: '#f1f9fe', padding: '2rem 0' }}>Page - Search Result</h1>
                 </center>
-                <SearchResult />
+                <SearchResultWrapper />
             </StyledContainerMd>
         </Layout>
     )
