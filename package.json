@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --hot --open --mode development",
     "build": "webpack --config webpack.config.js --mode production",
-    "eslint": "eslint \"**/*.{js,jsx,ts,tsx}\""
+    "eslint": "eslint \"**/*.{js,jsx,ts,tsx}\"",    
+    "lint:css":"stylelint '*.js'"
   },
   "author": "",
   "license": "ISC",
@@ -33,6 +34,10 @@
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.3",
     "styled-components": "^5.3.6",
+    "stylelint": "^15.3.0",
+    "stylelint-config-recommended": "^11.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0",
     "svg-inline-loader": "^0.8.2",
     "svg-url-loader": "^8.0.0",
     "webpack": "^5.75.0",
