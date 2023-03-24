@@ -49,14 +49,14 @@ const SectionCardMix = () => {
                                 className='toggle-upsell-details'
                                 href='#collapseExample'
                                 aria-expanded={toggleStatus[index]}
-                                aria-controls='collapseTxt1'
+                                aria-controls={`collapseTxt${index}`}
                                 onClick={toggleDetail}
                                 data-index={index}
                             >
                                 <span className='toggle-text'>{toggleStatus[index] ? 'Hide Details' : 'Show Details'}</span>
                                 <i className={`fa ${toggleStatus[index] ? 'fa-angle-up' : 'fa-angle-down'}`} />
                             </a>
-                            <p className='collapse' id='collapseTxt1'>
+                            <p className='collapse' id={`collapseTxt${index}`}>
                                 {item.detail}
                             </p>
                         </s.PriceCardBody>
