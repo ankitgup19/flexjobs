@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const StyledNav = styled.nav`
     background-color: ${({ theme }) => theme.colors.primary};
     position: relative;
-`
+`;
 export const StyledWrap = styled.div`
     display: flex;
     justify-content: space-between;
-`
+`;
 export const StyledInnerWrap = styled.ul`
     margin: 0;
     padding: ${props => props.unAuth ? "0 0 0 2.5rem" : 0};
@@ -19,7 +19,7 @@ export const StyledInnerWrap = styled.ul`
     @media (min-width: 1400px) {
         max-width: ${props => props.unAuth ? "325px" : "960px"}
     }
-`
+`;
 
 export const StyledSubmenu = styled.div`
     position: absolute;
@@ -28,7 +28,7 @@ export const StyledSubmenu = styled.div`
     left: 0;
     box-shadow: 0 6px 4px 0 rgb(155 155 155 / 19%);
     display: none;
-`
+`;
 
 export const StyledSubmenuWrap = styled.ul`
     list-style: none;
@@ -48,7 +48,7 @@ export const StyledSubmenuWrap = styled.ul`
     &::before{
         content: "";
     }
-`
+`;
 
 export const StyledLink = styled.a`
     color: ${props => props.theme.colors.white};
@@ -71,14 +71,14 @@ export const StyledLink = styled.a`
             display: inline-block;
             border-left: 14px solid transparent;
             border-right: 14px solid transparent;
-            border-bottom: 8px solid ${props => props.theme.colors.white};;
+            border-bottom: 8px solid ${props => props.theme.colors.white};
             position: absolute;
             left: 50%;
             bottom: 0;
             transform: translateX(-50%);
         }
     }
-`
+`;
 
 export const StyledUserWrap = styled.div`
     width: 250px;
@@ -104,7 +104,7 @@ export const StyledUserWrap = styled.div`
             display: block;
         }
     }
-`
+`;
 export const StyledDropdownMenu = styled.div`
     position: absolute;
     background-color: ${props => props.theme.colors.white};

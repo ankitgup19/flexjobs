@@ -7,6 +7,6 @@ const Employer = () => {
             <li><a href="/employers-post-remote-jobs">For Employers</a></li>
         </EmployerUl>
     )
-}
+};
 
 export default Employer;

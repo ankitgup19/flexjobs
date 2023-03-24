@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledFormCheck = styled.div`
     display: flex;
     align-items: center;
-`
+`;
 
 export const InputCheck = styled.input`
     width: 16px;
@@ -17,7 +17,7 @@ export const InputCheck = styled.input`
     &:active{
         filter: brightness(90%);
     }
-`
+`;
 
 export const Label = styled.label`
     .linked-url{

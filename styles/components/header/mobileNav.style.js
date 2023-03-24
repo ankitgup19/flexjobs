@@ -12,7 +12,7 @@ export const MbHeadWrap = styled.div`
             display: inline-block;
         }
     }
-`
+`;
 
 export const NavButton = styled.button`
     padding: 0;
@@ -22,7 +22,7 @@ export const NavButton = styled.button`
     background-color: transparent;
     text-align: left;
     width: 80px;
-`
+`;
 
 export const SignUpLink = styled.a`
     text-decoration: none;
@@ -30,7 +30,7 @@ export const SignUpLink = styled.a`
     border-radius: 4px;
     color: ${props => props.theme.colors.white};
     padding: .6rem 1.2rem;
-`
+`;
 
 export const MbNavItemsWrap = styled.div`
     background-color: ${props => props.theme.colors.primary};
@@ -90,7 +90,7 @@ export const MbNavItemsWrap = styled.div`
     .submenu{
         display: none;
     }
-`
+`;
 
 export const StyledText = styled.span`
     color: ${props => props.theme.colors.white};
@@ -102,14 +102,14 @@ export const StyledText = styled.span`
         position: relative;
         bottom: -2px;
     }
-`
+`;
 
 export const StyledLink = styled.a`
     color: ${props => props.theme.colors.white};
     text-decoration: none;
     padding: 1.2rem 0;
     display: block;
-`
+`;
 
 export const EmployerUl = styled.ul`
     margin: 0;
@@ -132,7 +132,7 @@ export const EmployerUl = styled.ul`
             margin-bottom: .1rem;
         }
     }
-`
+`;
 
 export const SettingsLink = styled.a`
     font-size: ${props => props.theme.fontSize.md};

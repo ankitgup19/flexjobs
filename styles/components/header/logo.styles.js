@@ -15,7 +15,7 @@ export const StyledLink = styled.a`
     & > .txt-highlight{
         color: ${props => props.theme.colors.secondary};
     }
-`
+`;
 
 export const StyledWrap = styled.div`
     padding: ${props => props.innerWrap ? null : "0.8rem 0"};

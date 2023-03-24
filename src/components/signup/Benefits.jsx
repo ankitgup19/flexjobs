@@ -31,6 +31,6 @@ const Benefits = () => {
             </ItemWrap>
         ))
     )
-}
+};
 
 export default Benefits;

@@ -22,7 +22,7 @@ export const FilterWrap = styled.div`
             text-decoration: underline;
         }
     }
-`
+`;
 
 export const DropdownList = styled.div`
     display: none;
@@ -30,7 +30,7 @@ export const DropdownList = styled.div`
     top: 35px;
     max-height: 300px;
     overflow: auto;
-    background-color: ${props => props.theme.colors.white};;
+    background-color: ${props => props.theme.colors.white};
     border-radius: 4px;
     width: 250px;
     padding: 15px;
@@ -58,7 +58,7 @@ export const DropdownList = styled.div`
             }
         }
     }
-`
+`;
 
 export const Checkbox = styled.input`
     margin: 0 7px 0 0;

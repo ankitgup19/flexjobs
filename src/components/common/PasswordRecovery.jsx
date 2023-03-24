@@ -21,6 +21,6 @@ const PasswordRecovery = (props) => {
             </LoginWrap>
         </Styledform>
     )
-}
+};
 
 export default PasswordRecovery;

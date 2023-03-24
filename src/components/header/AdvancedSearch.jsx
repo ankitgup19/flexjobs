@@ -6,6 +6,6 @@ const AdvancedSearch = () => {
     return (
         <AdvSearchLink href="">Advanced</AdvSearchLink>
     )
-}
+};
 
 export default AdvancedSearch;

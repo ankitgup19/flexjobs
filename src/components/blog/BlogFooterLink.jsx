@@ -9,6 +9,6 @@ const BlogFooterLink = (props) => {
       <i className="fas fa-angle-right" aria-hidden="true"/>
     </FooterLink>
   )
-}
+};
 
 export default BlogFooterLink;

@@ -4,7 +4,7 @@ export const BlogRecommendedJobsUl = styled.ul`
     list-style: none;
     margin: 0;
     padding: 0;
-`
+`;
 export const BlogRecommendedJobsLi = styled.li`
     padding: 0.8rem;
     border-bottom: 1px solid rgba(0,0,0,0.125);
@@ -22,10 +22,10 @@ export const BlogRecommendedJobsLi = styled.li`
     &:last-child{
         border: none;
     }
-`
+`;
 export const JobDetail = styled.div`
     display: flex;
-`
+`;
 export const JobLink = styled.a`
     color: ${props => props.theme.colors.primaryLight};
     outline: none;
@@ -38,23 +38,23 @@ export const JobLink = styled.a`
         color: ${props => props.theme.colors.primaryDark};
         text-decoration: underline;
     }
-`
+`;
 export const JobDate = styled.div`
     flex: 0 0 auto;
     width: auto;
     color: #6c757d;
     font-size: ${props => props.theme.fontSize.xs};
-`
+`;
 export const JobTagWrap = styled.div`
     margin: .6rem 0;
-`
+`;
 export const JobTag = styled.span`
     background: #e8edf1;
     padding: .3rem .5rem;
     font-size: ${props => props.theme.fontSize.xxs};
     color: #000;
     margin-right: .8rem;
-`
+`;
 export const JobLocation = styled.div`
     color: #818181;
     font-size: ${props => props.theme.fontSize.xxs};

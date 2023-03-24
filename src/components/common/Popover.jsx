@@ -30,6 +30,6 @@ const Popover = () => {
       </PopoverWrap>
     </>
   )
-}
+};
 
 export default Popover;

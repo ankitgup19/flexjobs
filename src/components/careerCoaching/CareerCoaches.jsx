@@ -52,7 +52,7 @@ const CareerCoaches = () => {
             headBgColor="#004f6d"
             textColor="#fff"
           >
-            <div class="modal-body">
+            <div className="modal-body">
               <ul>
                 <li>
                   Experienced career practitioner delivering personalized
@@ -102,7 +102,7 @@ const CareerCoaches = () => {
             headBgColor="#004f6d"
             textColor="#fff"
           >
-            <div class="modal-body">
+            <div className="modal-body">
               <ul>
                 <li>
                   Career specialist providing job seekers with support in all
@@ -150,7 +150,7 @@ const CareerCoaches = () => {
             headBgColor="#004f6d"
             textColor="#fff"
           >
-            <div class="modal-body">
+            <div className="modal-body">
               <ul>
                 <li>
                   Master of Science in Education with extensive experience in

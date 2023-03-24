@@ -47,18 +47,18 @@ export const BlogPostWrap = styled.div`
         margin: 4.8rem 0;
         text-align: center;
     }
-`
+`;
 export const H1 = styled.h1`
     font-size: ${props => props.theme.fontSize.xl};
     line-height: 3.4rem;
     font-weight: 500;
     color: ${props => props.theme.colors.primary};
     margin: 0 0 1.6rem;
-`
+`;
 export const SPAN = styled.span`
     font-size: ${props => props.fontsize};
     color: ${props => props.color};
-`
+`;
 
 export const Link = styled.a`
     &.btn-secondry{
@@ -69,7 +69,7 @@ export const Link = styled.a`
         border-radius: 4px;
         padding: ${props => props.type == "sm" ? ".6rem 2.4rem" : ".8rem 1.6rem"};
         display: inline-block;
-        line-height: ${props => props.type == "sm" ? "2.4rem" : "3rem"};;
+        line-height: ${props => props.type == "sm" ? "2.4rem" : "3rem"};
         &:hover{
             color: ${props => props.theme.colors.white};
         }

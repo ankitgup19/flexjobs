@@ -21,6 +21,6 @@ const AuthNav = () => {
             </StyledDropdownMenu>
         </StyledUserWrap>
     )
-}
+};
 
 export default AuthNav;

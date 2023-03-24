@@ -7,13 +7,13 @@ export const BlogWrap = styled.div`
     @media (min-width: 1400px) {
         margin: 5.1rem -1.5rem 0;
     }
-`
+`;
 
 export const BlogFooter = styled.div`
     display: flex;
     justify-content: center;
     margin: 2rem 0 1.6rem;
-`
+`;
 
 export const H2 = styled.h2`
   &.h2 {

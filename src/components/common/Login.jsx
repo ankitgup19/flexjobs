@@ -24,6 +24,6 @@ const Login = (props) => {
             </LoginWrap>
         </Styledform>
     )
-}
+};
 
 export default Login;

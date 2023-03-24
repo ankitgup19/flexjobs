@@ -27,6 +27,6 @@ const RegisterUser = () => {
             </form>
                 </StyledFormWrap>
     )
-}
+};
 
 export default RegisterUser;

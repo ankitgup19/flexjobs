@@ -9,7 +9,7 @@ export const StyledFooter = styled.footer`
             justify-content: center;
         }
     }
-`
+`;
 export const StyledListWrap = styled.ul`
     margin: 0;
     padding: 0;
@@ -29,11 +29,11 @@ export const StyledListWrap = styled.ul`
     @media all and (max-width:1024px){
         display: none;
     }
-`
+`;
 export const StyledH5 = styled.h5`
     font-size: ${props => props.theme.fontSize.sm};
     font-weight: 500;
-`
+`;
 export const StyledWrap = styled.div`
     max-width: 1170px;
     margin: 0 auto;
@@ -84,7 +84,7 @@ export const StyledWrap = styled.div`
             }
         }
     }
-`
+`;
 
 export const StyledCopyrightWrap = styled.div`
     padding: 2.5rem 0;
@@ -106,7 +106,7 @@ export const StyledCopyrightWrap = styled.div`
             text-decoration: underline;
         }
     }
-`
+`;
 
 export const EqDiv = styled.div`
     margin: 2.5rem 0 0;

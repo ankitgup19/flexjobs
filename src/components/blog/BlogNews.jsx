@@ -28,6 +28,6 @@ const BlogNews = () => {
           />
         </BlogCardWrap>
     )
-}
+};
 
 export default BlogNews;

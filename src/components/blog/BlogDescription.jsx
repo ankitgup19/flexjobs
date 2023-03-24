@@ -1469,7 +1469,7 @@ const BlogDescription = () => {
       </ol>
       <h2>
         <img
-          class="alignnone wp-image-123628"
+          className="alignnone wp-image-123628"
           src="https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2021/09/07145448/career-coach-1.png"
           alt="news icon"
           width="50"
@@ -1486,7 +1486,7 @@ const BlogDescription = () => {
       <p></p>
       <center>
         <img
-          class="alignnone size-full wp-image-123595"
+          className="alignnone size-full wp-image-123595"
           src="https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2020/10/22133110/BLUE-LINE1-1.png"
           alt=""
           width="243"
@@ -1519,7 +1519,7 @@ const BlogDescription = () => {
       <p></p>
       <center>
         <img
-          class="alignnone size-full wp-image-123595"
+          className="alignnone size-full wp-image-123595"
           src="https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2020/10/22133110/BLUE-LINE1-1.png"
           alt=""
           width="243"

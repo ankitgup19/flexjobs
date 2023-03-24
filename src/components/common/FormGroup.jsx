@@ -21,6 +21,6 @@ const FormGroup = (props) => {
             }
         </StyleFormGroup>
     )
-}
+};
 
 export default FormGroup;

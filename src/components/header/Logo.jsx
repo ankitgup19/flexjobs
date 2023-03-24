@@ -23,6 +23,6 @@ const Logo = (props) => {
             </StyledWrap>
         </StyledContainerMd>
     )
-}
+};
 
 export default Logo;

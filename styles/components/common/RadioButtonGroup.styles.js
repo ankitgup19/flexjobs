@@ -4,12 +4,12 @@ export const RadioButtonGroupWrap = styled.div`
     position: relative;
     display: inline-flex;
     vertical-align: middle;
-`
+`;
 export const Radio = styled.input`
     position: absolute;
     clip: rect(0,0,0,0);
     pointer-events: none;
-`
+`;
 
 export const Label = styled.label`
     color: ${props => props.theme.colors.tertiaryDarkest};

@@ -15,11 +15,11 @@ export const InputSearch = styled.input`
             background-color: ${props => props.theme.colors.white};
         }
     }
-`
+`;
 export const SearchWrap = styled.div`
     display: flex;
     overflow: hidden; 
-`
+`;
 
 export const SearchBtn = styled.button`
     background-color: ${props => props.jobSearch ? props.theme.colors.secondary : props.theme.colors.white};
@@ -38,7 +38,7 @@ export const SearchBtn = styled.button`
     .fa-search {
         padding: 0.9rem 0 0;
     }
-`
+`;
 export const Styledform = styled.form`
     margin: ${props => props.col ? "3rem 0 0" : props.jobSearch ? ".4rem 0 0" : "0"};
     padding: ${props => (props.col || props.jobSearch) ? "0 1.2rem" : null};

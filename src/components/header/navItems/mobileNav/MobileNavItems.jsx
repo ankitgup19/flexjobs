@@ -69,6 +69,6 @@ const MobileNavItems = () => {
             {!AUTH_USER ? <Employer/> : null}
         </MbNavItemsWrap>
     )
-}
+};
 
 export default MobileNavItems;

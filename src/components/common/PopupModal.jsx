@@ -28,7 +28,7 @@ const PopupModal = (props) => {
           <button
             type="button"
             className="close-modal"
-            textcolor={props.textColor}
+            // textcolor={props.textColor}
             onClick={props.closeModal}
           >
             <i className="fa fa-times"></i>

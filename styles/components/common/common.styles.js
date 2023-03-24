@@ -13,7 +13,7 @@ export const StyledContainerMd = styled.div`
         padding-right: 0;
         margin: 0 -15px; */
     }
-`
+`;
 
 export const FeaturedWrap = styled.div`
     display: grid;
@@ -23,7 +23,7 @@ export const FeaturedWrap = styled.div`
     .right{
         padding: ${props => props.blog ? "0 1.2rem" : ""};
     }
-`
+`;
 
 export const LinkBtn = styled.a`
     background-color: ${props => props.primary ? props.theme.colors.primaryLight : props.theme.colors.secondary};

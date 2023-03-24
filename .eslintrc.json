@@ -1,0 +1,147 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "settings": {
+        "react": {
+            "pragma": "React",
+            "version": "detect"
+        }
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly",
+        "RDL": false,
+        "mixpanel": false,
+        "BOLD": false,
+        "require": false,
+        "__dirname": false,
+        "process": false,
+        "module": false,
+        "getExperimentVariant": false,
+        "isFeaturePresent": false,
+        "isIPAD": false,
+        "store": false,
+        "animateJS": false,
+        "isIE": false,
+        "isInternetExplorer": false,
+        "SignUpUserRedirect": false,
+        "callAjaxTestBed": false,
+        "loadJs": false,
+        "basePath": false,
+        "versionNumber": false,
+        "hideHIWPage": false,
+        "OpenFreshDesk": false,
+        "privacyPolicy": false,
+        "termConditions": false,
+        "isAffiliateTraffic": false,
+        "isMac": false,
+        "CommonTrackProperties": false,
+        "GetMixpanelProperties": false,
+        "gapi": false,
+        "FB": false,
+        "getGAClientId": false,
+        "dataLayer": false,
+        "clearAndRedirect": false,
+        "html": false,
+        "analytics": false,
+        "appendQueryString": false,
+        "isExcludedTraffic": false,
+        "describe": false,
+        "MetricsUtil": false,
+        "it": false,
+        "expect": false,
+        "RemoveSelectedIndustryFromLocalStorage": false,
+        "PPFWidget": false,
+        "LOGIN": false,
+        "grecaptcha": false,
+        "callAjax": false,
+        "getAdminUiExperiments": false,
+        "NTF": false,
+        "DFW": false,
+        "isProd": false,
+        "isLocal": false,
+        "environment": false,
+        "polyfillArrayFrom": false,
+        "handleClaims": false,
+        "handleAliasAndIdentify": false
+    },
+    "parserOptions": {
+        "allowImportExportEverywhere": false,
+        "codeFrame": true,
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "no-unused-vars": [
+            "error",
+            {
+                "vars": "local",
+                "args": "after-used",
+                "ignoreRestSiblings": false
+            }
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "max-len": [
+            "error",
+            {
+                "code": 1200000,
+                "ignoreComments": true,
+                "ignoreTrailingComments": true,
+                "ignoreUrls": true,
+                "ignoreTemplateLiterals": true
+            }
+        ],
+        "no-console": [
+            "error",
+            {
+                "allow": [
+                    "warn",
+                    "error",
+                    "info"
+                ]
+            }
+        ],
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error"
+    },
+    "overrides": [
+        {
+            "files": [
+                "**/*.{js,jsx}"
+            ],
+            "rules": {
+                "react/prop-types": "off", //will turn this on if we required
+                "no-control-regex": "off",
+                "no-mixed-spaces-and-tabs": "off",
+                "react/no-unescaped-entities": "off",
+                "no-unused-vars": "off",
+                "react/no-direct-mutation-state": "off",
+                //"no-empty": "off",
+                "no-useless-escape": "off", //regex issue
+                "react/jsx-key": "off",                
+                "react/jsx-no-target-blank": "off",
+                "object-curly-spacing": "off"
+            }
+        }
+    ]
+}

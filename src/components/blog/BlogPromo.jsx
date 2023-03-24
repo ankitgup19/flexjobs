@@ -16,6 +16,6 @@ const BlogPromo = () => {
             </div>
         </BlogPromoWrap>
     )
-}
+};
 
 export default BlogPromo;

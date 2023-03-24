@@ -17,7 +17,7 @@ export const InputSearch = styled.input`
         height: auto;
         background-color: ${props => props.theme.colors.white};
     }
-`
+`;
 export const SearchWrap = styled.div`
     box-shadow: 0 3px 6px rgb(0 0 0 / 25%);
     display: flex;
@@ -49,7 +49,7 @@ export const SearchWrap = styled.div`
         border: none;
         box-shadow: none;
     }
-`
+`;
 
 export const SearchBtn = styled.button`
     background-color: #FF6843;
@@ -63,10 +63,10 @@ export const SearchBtn = styled.button`
     @media all and (max-width:1024px){
         padding: .8rem .6rem;
     }
-`
+`;
 export const Styledform = styled.form`
     margin: 0;
-`
+`;
 
 export const Select = styled.select`
     flex: 1 1 auto;

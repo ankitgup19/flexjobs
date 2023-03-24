@@ -15,6 +15,6 @@ const SectionListButton = () => {
             </s.LinkBtnWrap>
         </s.SectionListButton>
     )
-}
+};
 
 export default SectionListButton;

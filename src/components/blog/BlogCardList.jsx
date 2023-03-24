@@ -62,6 +62,6 @@ const BlogCardList = () => {
           />
         </BlogCardWrap>
     )
-}
+};
 
 export default BlogCardList;

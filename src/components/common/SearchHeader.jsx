@@ -41,6 +41,6 @@ const SearchHeader = () => {
             </CountSortWrap>
         </>
     )
-}
+};
 
 export default SearchHeader;

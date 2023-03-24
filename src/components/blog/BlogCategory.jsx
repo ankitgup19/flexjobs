@@ -22,8 +22,8 @@ const BlogCategory = () => {
           <CategoryH1>Find A Job</CategoryH1>
           <RelatedCategoryList />
           <BlogCatList>
-            {BLOG_ARTICLES.data.map((blog) => (
-              <BlogCard {...blog} name={blog.title} type="blog-cat" />
+            {BLOG_ARTICLES.data.map((blog, i) => (
+              <BlogCard key={i} {...blog} name={blog.title} type="blog-cat" />
             ))}
           </BlogCatList>
           <Pagination />

@@ -17,7 +17,7 @@ const PromoBanner = () => {
         </div>
         <div className="content-wrap">
           <h2>
-            FlexJobs Is <span class="underline">SO Much More</span> Than Just a
+            FlexJobs Is <span className="underline">SO Much More</span> Than Just a
             Job Board
           </h2>
           <p>

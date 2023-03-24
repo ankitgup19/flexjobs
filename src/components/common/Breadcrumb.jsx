@@ -9,6 +9,6 @@ const Breadcrumb = () => {
             <li className="active">Job Listings </li>
         </StyledbcrumbWrap>
     )
-}
+};
 
 export default Breadcrumb;

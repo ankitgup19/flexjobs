@@ -21,14 +21,14 @@ const Styled = {
             display: inline-block;
             padding: .6rem 1.2rem;
             color: ${(props) => props.theme.colors.primaryLight};
-            border: .1rem solid ${(props) => props.theme.colors.primaryLight};;
+            border: .1rem solid ${(props) => props.theme.colors.primaryLight};
             font-weight: 500;
             border-radius: 0.4rem;
             text-decoration: none;
             &:hover{
                 text-decoration: underline;
-                color: ${(props) => props.theme.colors.white};;
-                background-color: ${(props) => props.theme.colors.primaryLight};;
+                color: ${(props) => props.theme.colors.white};
+                background-color: ${(props) => props.theme.colors.primaryLight};
             }
         }
     `

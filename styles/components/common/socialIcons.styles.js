@@ -6,7 +6,7 @@ export const SocialIconsUl = styled.ul`
     list-style: none;
     display: flex;
     justify-content: center;
-`
+`;
 
 export const StyledIconA = styled.a`
     padding: 1.2rem;

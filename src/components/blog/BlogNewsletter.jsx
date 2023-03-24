@@ -10,7 +10,7 @@ const BlogNewsletter = () => {
       <LinkBtn href="/newsletters" fWeight='500'>Sign Up Today!</LinkBtn>
     </>
   )
-}
+};
 
 export default BlogNewsletter;
 

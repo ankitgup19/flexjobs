@@ -25,6 +25,6 @@ const BlogRecommendedJobs = () => {
             ))}
         </BlogRecommendedJobsUl>
     )
-}
+};
 
 export default BlogRecommendedJobs;

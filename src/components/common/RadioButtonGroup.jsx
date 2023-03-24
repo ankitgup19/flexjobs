@@ -17,6 +17,6 @@ const RadioButtonGroup = () => {
             </RadioButtonGroupWrap>
         </>
     )
-}
+};
 
 export default RadioButtonGroup;

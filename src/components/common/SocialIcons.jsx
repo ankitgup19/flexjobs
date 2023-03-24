@@ -10,6 +10,6 @@ const SocialIcons = (props) => {
             </StyledIconA>
         </li>
     )
-}
+};
 
 export default SocialIcons

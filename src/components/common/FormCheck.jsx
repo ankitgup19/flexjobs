@@ -10,6 +10,6 @@ const FormCheck = (props) => {
             {props.label && <Label>{props.label}</Label>}
         </StyledFormCheck>
     )
-}
+};
 
 export default FormCheck

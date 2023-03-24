@@ -5,27 +5,27 @@ const Pagination = () => {
   return (
     <PaginationWrap>
       <PageItem disabled prev>
-        <a class="page-link" href="/">
+        <a className="page-link" href="/">
           Prev
         </a>
       </PageItem>
       <PageItem active>
-        <a class="page-link" href="/">
+        <a className="page-link" href="/">
           1
         </a>
       </PageItem>
       <PageItem>
-        <a class="page-link" rel="next" href="/">
+        <a className="page-link" rel="next" href="/">
           2
         </a>
       </PageItem>
       <PageItem>
-        <a class="page-link" href="/">
+        <a className="page-link" href="/">
           3
         </a>
       </PageItem>
       <PageItem next>
-        <a class="page-link" rel="next" href="/">
+        <a className="page-link" rel="next" href="/">
           Next
         </a>
       </PageItem>

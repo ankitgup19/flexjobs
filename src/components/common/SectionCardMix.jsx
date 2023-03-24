@@ -33,7 +33,12 @@ const SectionCardMix = () => {
                         {item.bestValue &&
                             <>
                                 <span className='text-warning'>Best Value!</span>
-                                <img className='img-star' width='20' src='https://www.flexjobs.com/images/icons/streamline-bold/award_banner_orange.svg' alt='Award banner' title='Award banner'/>
+                                <img
+                                    className='img-star'
+                                    width='20'
+                                    src='https://www.flexjobs.com/images/icons/streamline-bold/award_banner_orange.svg'
+                                    alt='Award banner'
+                                    title='Award banner' />
                             </>
                         }
                         <s.PriceCardBody>

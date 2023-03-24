@@ -12,7 +12,7 @@ const SearchResult = (props) => {
       <Styled.HeadWrap>
         <a className="job-title">{props.title}</a>
         <div className="job-age">
-          {props.newjob && <span class="new-job">New!</span>}
+          {props.newjob && <span className="new-job">New!</span>}
           <span>{props.age.join(" ")}</span>
         </div>
       </Styled.HeadWrap>

@@ -22,6 +22,6 @@ const SignUp = () => {
             </StyledAside>
         </StyledWrap>
     )
-}
+};
 
 export default SignUp

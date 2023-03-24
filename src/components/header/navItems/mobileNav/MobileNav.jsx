@@ -29,6 +29,6 @@ const MobileNavItem = () => {
             }
         </MbHeadWrap>
     )
-}
+};
 
 export default MobileNavItem;

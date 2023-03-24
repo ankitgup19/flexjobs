@@ -15,6 +15,6 @@ const UnAuthNavItems = () => {
             <li><StyledLink button href="/">Sign Up</StyledLink></li>
         </StyledInnerWrap>
     )
-}
+};
 
 export default UnAuthNavItems;
