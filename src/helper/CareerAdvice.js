@@ -25,6 +25,7 @@ export const COACHING_PRICE_LIST = [
         'imgSrc': 'https://www.flexjobs.com/images/img-bundle-horiz.jpg',
         'imgInfo': 'Career Coaching & Resume Review Bundle photo',
         'moreHref': '/career-coaching-resume-review-bundle',
+        'bestValue': true,
     },
     {
         'service': 'Career Change Coaching',

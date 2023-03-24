@@ -7,40 +7,40 @@ const Styled = {
         padding: 1.6rem;
         .collapse {
             height: 0;
-            opacity: 0;
-            transition: all .3s ease;
+            transition: height .3s ease;
+            text-align: left;
+            display: none;
         }
-        .toggle-upsell-details[aria-expanded='true']+.collapse {
-            height: auto;
-            opacity: 1;
+        .toggle-upsell-details {
+            color: ${props => props.theme.colors.primaryLight};
+            text-decoration: none;
+            display: block;
+            margin: 0 0 1.2rem;
+            &:hover,
+            &:focus {
+                text-decoration: underline;
+            }
+            .fa {
+                padding: 0 .8rem;
+            }
+            &[aria-expanded='true']+.collapse {
+                height: auto;
+                display: block;
+            }
         }
-    `,
-    ToggleLink: styled.a`
-        color: ${props => props.theme.colors.primaryLight};
-        text-decoration: none;
-        display: block;
-        margin: 0 0 1.2rem;
-        &:hover,
-        &:focus {
-            text-decoration: underline;
-        }
-        .fa {
-            padding: 0 .8rem;
-        }
-    `,
-    ToggleP: styled.p`
-        text-align: left;
     `,
     LinkMore: styled.a`
         color: ${props => props.theme.colors.primaryLight};
         text-decoration: none;
         border: 1px solid ${props => props.theme.colors.primaryLight};
         padding: 0.6rem 0.8rem;
-        margin: 1.6rem 0 0;
         cursor: pointer;
         border-radius: 0.4rem;
         display: inline-grid;
         position: relative;
+        ${props => props.block && css`
+            margin: 1.6rem 0 0;
+        `}
     `,
     Heading: styled.h2`
         text-align: center;
@@ -55,16 +55,34 @@ const Styled = {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 2.4rem;
         padding: 1.6rem 0;
+        .card-footer {
+            padding: 0 .8rem .8rem;
+        }
     `,
-    PriceCardVert: styled.div`
+    PriceCard: styled.div`
         box-shadow: 0 3px 6px rgba(0,0,0,0.25);
         border: 1px solid rgba(0,0,0,0.125);
         border-radius: 0.25rem;
         background: ${props => props.theme.colors.white};
         text-align: ${props => props.block ? null : "center"};
+        display: flex;
+        flex-direction: ${props => props.block ? null : 'column'};
+        position: relative;
+        .img-star {
+            position: absolute;
+            right: .5rem;
+            top: 0;
+        }
+        .text-warning {
+            color: ${props => props.theme.colors.secondary};
+            font-weight: 600;
+            position: absolute;
+            top: 7px;
+             right: 40px;
+        }
         ${props => props.block && css`
             margin: 0 0 1.6rem;
-            display: flex;
+            align-items: center;
             .img-col {
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -98,22 +116,25 @@ const Styled = {
             }
             .price-col {
                 text-align: center;
-                padding: 4rem 1.6rem 0;
+                padding: 0 1.6rem 0;
             }
         `}
     `,
-    PriceCardVertImg: styled.img`
+    PriceCardImg: styled.img`
         width: 100%;
     `,
-    PriceCardVertBody: styled.div`
+    PriceCardBody: styled.div`
         padding: 1.6rem;
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column;
     `,
-    PriceCardVertDesc: styled.div`
+    PriceCardDesc: styled.div`
         @media (min-width: 992px) {
             min-height: 125px;
         }
     `,
-    PriceCardVertHeading: styled.h4`
+    PriceCardHeading: styled.h4`
         font-size: ${props => props.theme.fontSize.md1};
         margin: 0 0 .8rem;
     `,
