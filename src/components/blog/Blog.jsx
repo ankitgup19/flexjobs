@@ -19,7 +19,7 @@ const Blog = () => {
       setLatestCount(latestCount + 3);
     } else if (activeTabVal === "trending") {
       setTrendingCount(trendingCount + 3);
-    }
+    };
   };
 
   const backToTop = () => {
