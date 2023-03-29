@@ -38,7 +38,7 @@ export const LinkBtn = styled.a`
     text-decoration: none;
     cursor: pointer;
     border-radius: 4px;
-    width: ${props => props.primary ? null : '100%'};
+    width: ${props => (props.widthNull || props.primary) ? null : '100%'};
     outline: 0;
     /* &:hover,
     &:focus {

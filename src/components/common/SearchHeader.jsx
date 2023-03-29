@@ -30,7 +30,7 @@ const SearchHeader = () => {
     return (
         <>
             <MainHeading>Job Search Results
-                <i className='fa fa-info-circle' onClick={showPopover}></i>{popover}
+                <i className='fa fa-info-circle' onClick={showPopover}/>
                 {popover && <Popover />}
             </MainHeading>
             <CountSortWrap>

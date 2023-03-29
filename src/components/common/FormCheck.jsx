@@ -5,9 +5,9 @@ import { StyledFormCheck, InputCheck, Label} from "../../../styles/components/co
 const FormCheck = (props) => {
     const [check, setCheck] = useState(false);
     return (
-        <StyledFormCheck>
+        <StyledFormCheck spacing={props.spacing}>
             <InputCheck type={props.type} onChange={()=>setCheck(!check)} value={check}/>
-            {props.label && <Label>{props.label}</Label>}
+            {props.label && <Label labelBold={props.labelBold}>{props.label}</Label>}
         </StyledFormCheck>
     )
 };

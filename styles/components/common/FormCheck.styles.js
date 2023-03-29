@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledFormCheck = styled.div`
     display: flex;
     align-items: center;
+    margin: ${props => props.spacing ? "0 0 2.4rem" : null};
 `;
 
 export const InputCheck = styled.input`
@@ -20,6 +21,7 @@ export const InputCheck = styled.input`
 `;
 
 export const Label = styled.label`
+    font-weight: ${props => props.labelBold ? "600" : null};
     .linked-url{
         color: ${props => props.theme.colors.primaryLight};
         font-weight: 600;

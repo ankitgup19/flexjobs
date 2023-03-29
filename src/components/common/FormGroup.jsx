@@ -14,8 +14,8 @@ const FormGroup = (props) => {
 
     return (
         <StyleFormGroup className={props.formGrpClass}>
-            {props.label && <Label htmlFor={props.id}>{props.label}</Label>}
-            <Input type={inputType} onChange={(e) => setInput(e.target.value)} value={input} id={props.id} placeholder={props.placeholder}/>
+            {props.label && <Label htmlFor={props.id} className='ctrl-lbl'>{props.label}</Label>}
+            <Input type={inputType} onChange={(e) => setInput(e.target.value)} value={input} id={props.id} placeholder={props.placeholder} spacing={props.spacing} />
             {props.hasPwMask &&
                 <IcnPwMask className={props.hasPwLabel && "pwd-mask"} onClick={()=> setMask(!mask)}><i className={`fa ${mask ? 'fa-eye' : 'fa-eye-slash'}`}></i>{props.hasPwLabel && pwLabel}</IcnPwMask>
             }

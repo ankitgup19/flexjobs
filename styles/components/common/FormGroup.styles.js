@@ -5,7 +5,7 @@ export const StyleFormGroup = styled.div`
     position: relative;
 `;
 export const Input = styled.input`
-    padding: 0.6rem 1.2rem;
+    padding: ${props => props.spacing ? "0.8rem 1.2rem" : "0.6rem 1.2rem"};
     border: 1px solid ${props => props.theme.colors.tertiartyMedium};
     border-radius: 4px;
     outline: 0;
