@@ -52,7 +52,7 @@ export const JobTag = styled.span`
     background: #e8edf1;
     padding: .3rem .5rem;
     font-size: ${props => props.theme.fontSize.xxs};
-    color: #000;
+    color: ${props => props.theme.colors.black};
     margin-right: .8rem;
 `;
 export const JobLocation = styled.div`

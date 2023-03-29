@@ -45,6 +45,7 @@ const Variables = () => {
                 // #C5DAE4 Featured Questions Border Color
                 //color: #f00;
                 // border: 1px solid #e3e3e3;
+                // #03506c
             },
             fontSize: {
                 xxxs: "1.2rem",

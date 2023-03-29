@@ -20,7 +20,7 @@ export const H2 = styled.h2`
     margin: 2.4rem 0;
   }
   display: inline-block;
-  background-color: #fff;
+  background-color: ${props => props.theme.colors.white};
   padding-right: 1.2rem;
 `;
 
@@ -28,7 +28,7 @@ export const HeadWrap = styled.div`
   position: relative;
   &::after {
     content: "";
-    border: 1px solid #000;
+    border: 1px solid ${props => props.theme.colors.black};
     display: block;
     opacity: 0.25;
     position: absolute;

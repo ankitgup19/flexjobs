@@ -23,7 +23,7 @@ export default StickyRibbon;
 const Styled = {
   Wrapper: styled.div`
     background-color: #008ec3;
-    color: #fff;
+    color: ${props => props.theme.colors.white};
     display: flex;
     align-items: center;
     justify-content: center;

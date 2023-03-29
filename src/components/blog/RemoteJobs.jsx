@@ -89,6 +89,6 @@ const AllJobsLink = styled.a`
   font-weight: 600;
   &:hover {
     background-color: ${props => props.theme.colors.primaryLight};
-    color: #fff;
+    color: ${props => props.theme.colors.white};
   }
 `;

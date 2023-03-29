@@ -10,6 +10,7 @@ export const InputCheck = styled.input`
     width: 16px;
     height: 16px;
     margin-right: 8px;
+    margin: .3rem .8rem .3rem 0;
     &:focus{
         border-color: #86b7fe;
         outline: 0;
