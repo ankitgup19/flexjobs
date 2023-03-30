@@ -33,7 +33,7 @@ export const LinkBtn = styled.a`
     font-weight: ${props => props.fWeight || '700'};
     line-height: 1.5;
     color: ${props => props.theme.colors.white};    
-    display: ${props => props.primary ? 'inline-grid' : 'flex'};
+    display: ${props => (props.widthNull || props.primary) ? 'inline-grid' : 'flex'};
     justify-content: center;
     text-decoration: none;
     cursor: pointer;

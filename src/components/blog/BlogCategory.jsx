@@ -83,7 +83,7 @@ const BlogCategory = () => {
 export default BlogCategory;
 
 const CategoryH1 = styled.h1`
-  font-size: 2.8rem;
+  font-size: ${props => props.theme.fontSize.xl};
   line-height: 3.4rem;
   margin: 0 0 1.6rem;
 `;

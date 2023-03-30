@@ -40,7 +40,7 @@ const SearchOptionMain = () => {
   return (
     <SearchOptionMainWrap>
       <H1>Advanced Job Search</H1>
-      <H3 className='text-black'>Please fill out ONLY those fields that you really want to narrow down your search.</H3>
+      <H3>Please fill out ONLY those fields that you really want to narrow down your search.</H3>
 
       <form role='form' method='get' action='/search' id='form-advanced-search'>
         <div className='row'>
@@ -319,7 +319,7 @@ const SearchOptionMainWrap = styled.div`
   }
 `
 const H1 = styled.h1`
-  font-size: 2.8rem;
+  font-size: ${props => props.theme.fontSize.xl};
   line-height: 3.4rem;
   margin: 0 0 .8rem;
   padding: 0 1.2rem;

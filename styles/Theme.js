@@ -46,6 +46,8 @@ const Variables = () => {
                 //color: #f00;
                 // border: 1px solid #e3e3e3;
                 // #03506c
+                // #bfbfbf
+                // #e8e8e8
             },
             fontSize: {
                 xxxs: "1.2rem",

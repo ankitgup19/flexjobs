@@ -19,10 +19,10 @@ const Styled = {
             }
         }
         a{
-            color: #007CAD;
+            color: ${props => props.theme.colors.primaryLight};
             text-decoration: none;
             &:hover{
-                color: #23527c;
+                color: ${props => props.theme.colors.primaryDark};
                 text-decoration: underline;
             }
         }

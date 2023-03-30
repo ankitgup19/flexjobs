@@ -11,22 +11,22 @@ import { FlexLayout } from "../layout/Layout";
 const SearchOption = () => {
   return (
     <FlexLayout filter="true">
-        <>
-          <Breadcrumb />
-          <SearchOptionMain />
-        </>
-        <>
-          <BlogPromo />
-          <BlogSidebarWidgets text="FlexJobs in the News" center>
-            <BlogNews />
-            <BlogFooterLink text="More of This Week's News" />
-          </BlogSidebarWidgets>
-          <BlogSidebarWidgets noBorderTop text='Currently Hiring on FlexJobs' center>
-            <BlogCompanyLogos />
-            <BlogFooterLink text="See All New Jobs" />
-          </BlogSidebarWidgets>
-        </>
-      </FlexLayout>
+      <>
+        <Breadcrumb />
+        <SearchOptionMain />
+      </>
+      <>
+        <BlogPromo />
+        <BlogSidebarWidgets text="FlexJobs in the News" center>
+          <BlogNews />
+          <BlogFooterLink text="More of This Week's News" />
+        </BlogSidebarWidgets>
+        <BlogSidebarWidgets noBorderTop text='Currently Hiring on FlexJobs' center>
+          <BlogCompanyLogos />
+          <BlogFooterLink text="See All New Jobs" />
+        </BlogSidebarWidgets>
+      </>
+    </FlexLayout>
   );
 };
 

@@ -65,12 +65,12 @@ const Styled = {
     display: flex;
     justify-content: space-between;
     .job-title {
-      color: #007cad;
+      color: ${props => props.theme.colors.primaryLight};
       font-size: 2rem;
       font-weight: 500;
       line-height: 3rem;
       &:hover {
-        color: #23527c;
+        color: ${props => props.theme.colors.primaryDark};
         text-decoration: underline;
       }
     }

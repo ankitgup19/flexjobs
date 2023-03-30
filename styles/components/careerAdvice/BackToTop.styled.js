@@ -15,7 +15,7 @@ const Styled = {
         &:focus,
         &:active {
             text-decoration: underline;
-            color: #23527c;
+            color: ${props => props.theme.colors.primaryDark};
         }
         .fa {
             margin: 0 .6rem 0 0;

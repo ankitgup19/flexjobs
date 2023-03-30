@@ -6,7 +6,7 @@ const Styled = {
         border: 1px solid rgba(0,0,0,0.125);
         border-radius: 0.4rem;
         overflow: hidden;
-        color: #007CAD;
+        color: ${props => props.theme.colors.primaryLight};
         text-decoration: none;
         cursor: pointer;
         .coach-link{
@@ -15,7 +15,7 @@ const Styled = {
             text-align: center;
         }
         &:hover{
-            color: #23527c;
+            color: ${props => props.theme.colors.primaryDark};
             text-decoration: underline;
         }
     `

@@ -26,10 +26,10 @@ const Styled = {
             margin: ${props => props.noMargin && 0};
         }
         a{
-            color: #007CAD;
+            color: ${props => props.theme.colors.primaryLight};
             text-decoration: none;
             &:hover{
-                color: #23527c;
+                color: ${props => props.theme.colors.primaryDark};
                 text-decoration: underline;
             }
         }
