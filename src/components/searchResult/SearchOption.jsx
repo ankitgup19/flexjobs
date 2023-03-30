@@ -7,12 +7,10 @@ import BlogNews from "../blog/BlogNews.jsx";
 import BlogCompanyLogos from "../blog/BlogCompanyLogos.jsx";
 import BlogFooterLink from "../blog/BlogFooterLink.jsx";
 import { FlexLayout } from "../layout/Layout";
-import { SearchResultsWrap } from "../../../styles/components/searchResults/SearchResults.styles";
 
 const SearchOption = () => {
   return (
-    <SearchResultsWrap>
-      <FlexLayout filter="true">
+    <FlexLayout filter="true">
         <>
           <Breadcrumb />
           <SearchOptionMain />
@@ -29,7 +27,6 @@ const SearchOption = () => {
           </BlogSidebarWidgets>
         </>
       </FlexLayout>
-    </SearchResultsWrap>
   );
 };
 
