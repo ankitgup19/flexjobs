@@ -82,10 +82,10 @@ export const STabPanel = styled(TabPanel)`
         display: grid;
     }
     .job-description {
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
     }
     .unlock-lock {
-      top: -115px;
+      top: -11.5rem;
       left: 35%;
     }
     .card-content {

@@ -6,7 +6,7 @@ const BannerUnlock = (props) => {
   return (
     <>
       <BannerUnlockWrap 
-        href='/Members/Flexers/Register.aspx'
+        href='/Members/Flexers/Register.a.srem'
       >
         <div className='card'>
           <div className='card-content'>
@@ -41,14 +41,14 @@ const BannerUnlockWrap = styled.a`
     }
   }  
   .card {
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: .2rem .2rem 1.0rem rgba(0, 0, 0, 0.25);
     position: relative;
     max-width: 95%;
     padding: 2.4rem;
     img {
       position: absolute;
       right: 3%;
-      bottom: 0px;
+      bottom: 0;
       max-width: 40%;
       max-height: 99%;
     }
@@ -64,11 +64,11 @@ const BannerUnlockWrap = styled.a`
         content: '\f00c';
         color: #ff6843;
         display: inline-block;
-        font: normal normal normal 14px/1 FontAwesome;
+        font: normal normal normal 1.4rem/1 FontAwesome;
         font-size: inherit;
         text-rendering: auto;
         -webkit-font-smoothing: antialiased;
-        margin-right: 8px;
+        margin-right: .8rem;
       }
     }
   }
@@ -85,7 +85,7 @@ const LinkBtn = styled.button`
     justify-content: center;
     text-decoration: none;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: .4rem;
     width: ${props => (props.widthNull || props.primary) ? null : '100%'};
     outline: 0;
     ${props => props.primary && css`
