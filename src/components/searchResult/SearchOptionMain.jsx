@@ -326,7 +326,7 @@ const H1 = styled.h1`
 `;
 const H3 = styled.h3`
   color: ${props => props.theme.colors.black};
-  font-size: 2.2rem;
+  font-size: ${props => props.theme.fontSize.md};
   font-weight: 500;
   padding: 0 1.2rem;
   margin: 0 0 3.2rem;
