@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from 'styled-components';
 import Breadcrumb from "../common/Breadcrumb";
 import Search from "../common/Search";
@@ -11,9 +11,15 @@ import PageHeader from "../common/PageHeader";
 import { SearchResultsWrap } from "../../../styles/components/searchResults/SearchResults.styles";
 
 const SearchResultWrapper = () => {
+  const [flexLayoutFilter, setFlexLayoutFilter] = useState(true);
+
+  const toggleLayout = () => {
+    setFlexLayoutFilter(true);
+  };
+  
   return (
     <SearchResultsWrap>
-      <FlexLayout /* filter="true" */>
+      <FlexLayout filter={flexLayoutFilter}>
         <>
           <Breadcrumb />
           <Search type="transparent" country />
@@ -22,15 +28,17 @@ const SearchResultWrapper = () => {
           <SearchResultList />
         </>
         <>
-          {/* <p>RightSide Bar</p> */}
-          <JobViewInside>
-            <button type="button" className="btn-close" id="close-inset-detail" aria-hidden="true"/>
+          {flexLayoutFilter ? <p>RightSide Bar</p> : 
+          <JobViewInside className="JobViewInside">
+            <button
+              onClick={toggleLayout}
+              type="button" className="btn-close" id="close-inset-detail" aria-hidden="true" />
             <PageHeader
               mainHeading='Manager'
               borderBottom='true'
             />
             <Tabs inside='true' />
-          </JobViewInside>
+          </JobViewInside>}
         </>
       </FlexLayout>
     </SearchResultsWrap>
