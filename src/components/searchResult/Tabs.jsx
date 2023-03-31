@@ -12,8 +12,9 @@ const DetailsTabs = (props) => {
     >
       <STabList className='details-tabs'>
         <STab name='job' onClick={props.getActiveTab}>
-          <i className='fa fa-briefcase fa-fw'></i>
-          Job
+          <i className="fa fa-list"></i>
+          {/* <i className='fa fa-briefcase fa-fw'></i> */}
+          Job Summary
         </STab>
         <STab name='company' onClick={props.getActiveTab}>
           <i className='fa fa-building fa-fw'></i>
@@ -21,7 +22,7 @@ const DetailsTabs = (props) => {
         </STab>
       </STabList>
       <STabPanel>
-        <p className='job-description'>Managers at serve as program and project-level day-to-day leads on up to four accounts. This role works with client and team to consistently implement communications strategies and integrated campaigns that drive results. They have excellent media...</p>
+        {/* <p className='job-description'>Managers at serve as program and project-level day-to-day leads on up to four accounts. This role works with client and team to consistently implement communications strategies and integrated campaigns that drive results. They have excellent media...</p> */}
         <TableHorizontal />
         <BannerUnlock 
           imgSrc='https://www.flexjobs.com/images/bg-join-flexjobs-1.png'
@@ -46,7 +47,7 @@ export default DetailsTabs;
 import { Tabs, TabList, Tab, TabPanel } from 'react-tabs';
 
 export const STabs = styled(Tabs)`
-    padding: 0 1.2rem;
+    padding: 0;//0 1.2rem;
     margin: 1.1rem 0 0;
 `;
 export const STabList = styled(TabList)`
@@ -54,15 +55,15 @@ export const STabList = styled(TabList)`
     display: flex;
     margin: 0 0 2.4rem;
     padding: 0;
-    font-size: 2.4rem;
+    font-size: 1.6rem;//2.4rem;
     border-bottom: 1px solid #bfbfbf;
     .fa {
       margin: 0 .5rem 0 0;
     }
 `;
 export const STab = styled(Tab)`
-    margin: 1.6rem 0 -.1rem 0;
-    padding: 1.2rem 2.4rem;
+    margin: 1.6rem 2rem -.1rem 0;//1.6rem 0 -.1rem 0
+    padding: 1.2rem 0rem;//1.2rem 2.4rem;
     cursor: pointer;
     color: #6c757d;
     outline: 0;
@@ -85,8 +86,8 @@ export const STabPanel = styled(TabPanel)`
       margin-bottom: 2rem;
     }
     .unlock-lock {
-      top: -11.5rem;
-      left: 35%;
+      top: -8.5rem;//-11.5rem;
+      left: ${props => props.inside ? "75%" : "75%"};
     }
     .card-content {
       position: relative;

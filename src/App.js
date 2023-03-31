@@ -4,9 +4,9 @@ import SignUp from "./components/common/SignUp";
 import PasswordRecovery from "./components/common/PasswordRecovery";
 import Layout from "./components/layout/Layout";
 import SearchResultWrapper from "./components/searchResult/SearchResultContainer";
-import SearchResultDetail from "./components/searchResult/SearchResultDetail";
+// import SearchResultDetail from "./components/searchResult/SearchResultDetail";
 import SearchOption from "./components/searchResult/SearchOption.jsx";
-import { StyledContainerMd } from "../styles/components/common/Common.styles";
+import { StyledContainerMd } from "../styles/components/common/Common.styles.js";
 import Blog from "./components/blog/Blog";
 import BlogPost from "./components/blog/BlogPost";
 import BlogCategory from "./components/blog/BlogCategory";
@@ -18,7 +18,8 @@ const App = () => {
     return (
         <Layout>
             <StyledContainerMd layout>
-                <SearchResultDetail />
+                <SearchResultWrapper />
+                {/* <SearchResultDetail /> */}
                 <center>
                     <h1 style={{ background: '#f1f9fe', padding: '2rem 0' }}>Page - Advanced Job Search</h1>
                 </center>
@@ -72,7 +73,7 @@ const App = () => {
                     <h1>&nbsp;</h1>
                     <h1 style={{ background: '#f1f9fe', padding: '2rem 0' }}>Page - Search Result</h1>
                 </center>
-                <SearchResultWrapper />
+                <SearchResultWrapper />                
             </StyledContainerMd>
         </Layout>
     )

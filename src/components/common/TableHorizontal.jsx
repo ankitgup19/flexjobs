@@ -68,6 +68,7 @@ const Table = styled.table`
     padding-bottom: 1.5rem;
     color: ${props => props.theme.colors.black};
     padding-right: 1.5rem;
+    white-space: nowrap;
   }
   td {
     padding-bottom: 1.5rem;
