@@ -15,13 +15,12 @@ import SectionHIW from "../careerCoaching/SectionHIW.jsx";
 import BackToTop from "../common/BackToTop.jsx";
 import WidgetFreeMonth from "../common/WidgetFreeMonth.jsx";
 import Pricing from "../../../styles/components/careerAdvice/CareerCoachingPricing.styled.js";
-import s from "../../../styles/components/careerAdvice/CareerCoaching.styled.js";
+import Styled from "../../../styles/components/careerAdvice/CareerCoaching.styled.js";
 
 const CareerCoaching = () => {
   return (
     <FlexLayout filter>
       <>
-        {/* <p style={{ margin: "2rem 0 0" }}>&nbsp;</p> */}
         <Breadcrumb />
         <CareerCoachingMain>
           <CareerCoachingHeaderContent
@@ -39,19 +38,19 @@ const CareerCoaching = () => {
             src="https://www.flexjobs.com/images/icons/streamline-bold/we-have-proof.svg"
             text="Benefits"
           />
-          <s.P center>
+          <Styled.P center>
             Here are just some of the many reasons to consider Career Coaching:
-          </s.P>
-          <s.Ul2col>
-            <s.Ul2colLi>Develop a job search action plan</s.Ul2colLi>
-            <s.Ul2colLi>Build confidence and find your strengths</s.Ul2colLi>
-            <s.Ul2colLi>
+          </Styled.P>
+          <Styled.Ul2col>
+            <Styled.Ul2colLi>Develop a job search action plan</Styled.Ul2colLi>
+            <Styled.Ul2colLi>Build confidence and find your strengths</Styled.Ul2colLi>
+            <Styled.Ul2colLi>
               Get support for career changes and transitions
-            </s.Ul2colLi>
-            <s.Ul2colLi>Get answers to your questions</s.Ul2colLi>
-            <s.Ul2colLi>Learn how to land a remote or flexible job</s.Ul2colLi>
-            <s.Ul2colLi>Re-enter the workforce with best practices</s.Ul2colLi>
-          </s.Ul2col>
+            </Styled.Ul2colLi>
+            <Styled.Ul2colLi>Get answers to your questions</Styled.Ul2colLi>
+            <Styled.Ul2colLi>Learn how to land a remote or flexible job</Styled.Ul2colLi>
+            <Styled.Ul2colLi>Re-enter the workforce with best practices</Styled.Ul2colLi>
+          </Styled.Ul2col>
           <BackToTop />
           <CareerCoaches />
           <HeaderWithIcon

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import s from '../../../styles/components/common/SectionCardMix.styles.js';
+import Styled from '../../../styles/components/common/SectionCardMix.styles.js';
 import { COACHING_PRICE_LIST } from '../../helper/CareerAdvice.js';
 
 const SectionCardMix = () => {
@@ -13,17 +13,17 @@ const SectionCardMix = () => {
     };
 
     return (
-        <s.SectionCardMix>
-            <s.Heading>One-on-One Personalized Career Coaching Services</s.Heading>
-            <s.P>
+        <Styled.SectionCardMix>
+            <Styled.Heading>One-on-One Personalized Career Coaching Services</Styled.Heading>
+            <Styled.P>
                 FlexJobs offers expert career services at up to 35% off compared to
                 other services to support you in your search for a remote or flexible
                 job!
-            </s.P>
-            <s.PriceCardVertWrap>
+            </Styled.P>
+            <Styled.PriceCardVertWrap>
                 {COACHING_PRICE_LIST.slice(0, 3).map((item, index) => (
-                    <s.PriceCard key={index}>
-                        <s.PriceCardImg
+                    <Styled.PriceCard key={index}>
+                        <Styled.PriceCardImg
                             src={item.imgSrc}
                             className='card-img-top'
                             alt={item.imgInfo}
@@ -41,15 +41,15 @@ const SectionCardMix = () => {
                                     title='Award banner' />
                             </>
                         }
-                        <s.PriceCardBody>
-                            <s.PriceCardDesc>
-                                <s.PriceCardHeading>{item.service}</s.PriceCardHeading>
-                                <s.PriceInfo>
-                                    <s.Price>{item.price}</s.Price>
-                                    <s.Slash>/</s.Slash>
-                                    <s.PriceText dangerouslySetInnerHTML={{ __html: item.priceInfo }} />
-                                </s.PriceInfo>
-                            </s.PriceCardDesc>
+                        <Styled.PriceCardBody>
+                            <Styled.PriceCardDesc>
+                                <Styled.PriceCardHeading>{item.service}</Styled.PriceCardHeading>
+                                <Styled.PriceInfo>
+                                    <Styled.Price>{item.price}</Styled.Price>
+                                    <Styled.Slash>/</Styled.Slash>
+                                    <Styled.PriceText dangerouslySetInnerHTML={{ __html: item.priceInfo }} />
+                                </Styled.PriceInfo>
+                            </Styled.PriceCardDesc>
                             <a
                                 className='toggle-upsell-details'
                                 href='#collapseExample'
@@ -64,35 +64,35 @@ const SectionCardMix = () => {
                             <p className='collapse' id={`collapseTxt${index}`}>
                                 {item.detail}
                             </p>
-                        </s.PriceCardBody>
+                        </Styled.PriceCardBody>
                         <div className='card-footer'>
-                            <s.LinkMore href={item.moreHref}>
+                            <Styled.LinkMore href={item.moreHref}>
                                 Learn More
-                            </s.LinkMore>
+                            </Styled.LinkMore>
                         </div>
-                    </s.PriceCard>
+                    </Styled.PriceCard>
                 ))}
-            </s.PriceCardVertWrap>
+            </Styled.PriceCardVertWrap>
             {COACHING_PRICE_LIST.slice(-2).map((item, index) => (
-                <s.PriceCard block key={index}>
+                <Styled.PriceCard block key={index}>
                     <div className={`img-col ${item.imgClass}`} />
                     <div className='card-body'>
-                        <s.PriceCardHeading>{item.service}</s.PriceCardHeading>
+                        <Styled.PriceCardHeading>{item.service}</Styled.PriceCardHeading>
                         <p className='detail'>{item.detail}</p>
                     </div>
                     <div className='price-col'>
-                        <s.PriceInfo block>
-                            <s.Price>{item.price}</s.Price>
-                            <s.Slash>/</s.Slash>
-                            <s.PriceText dangerouslySetInnerHTML={{ __html: item.priceInfo }} block />
-                        </s.PriceInfo>
-                        <s.LinkMore href={item.moreHref} block>
+                        <Styled.PriceInfo block>
+                            <Styled.Price>{item.price}</Styled.Price>
+                            <Styled.Slash>/</Styled.Slash>
+                            <Styled.PriceText dangerouslySetInnerHTML={{ __html: item.priceInfo }} block />
+                        </Styled.PriceInfo>
+                        <Styled.LinkMore href={item.moreHref} block>
                             Learn More
-                        </s.LinkMore>
+                        </Styled.LinkMore>
                     </div>
-                </s.PriceCard>
+                </Styled.PriceCard>
             ))}
-        </s.SectionCardMix>
+        </Styled.SectionCardMix>
     );
 };
 
