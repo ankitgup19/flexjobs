@@ -18,7 +18,7 @@ const Layout = (props) => {
 export const FlexLayout = (props) => {
   const [left, right] = Children.toArray(props.children);
   return (
-    <FeaturedWrap {...props}>
+    <FeaturedWrap {...props} className="ft-wrp">
       <LeftSec className="left" {...props}>
         {left}
       </LeftSec>

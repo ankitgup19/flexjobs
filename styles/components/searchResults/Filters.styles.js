@@ -3,8 +3,10 @@ import styled from "styled-components";
 export const FilterWrap = styled.div`
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     .btn-group{
         position: relative;
+        margin: 0 0 .4rem;
         &.active{
             .dropdown{
                 display: block;

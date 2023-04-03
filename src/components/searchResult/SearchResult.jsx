@@ -1,9 +1,14 @@
 import React from "react";
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 const SearchResult = (props) => {
+  const jobClick = (e) => {
+    props.showDetail();
+    props.setActiveIndex(e.currentTarget.getAttribute("data-index"));
+  }
+
   return (
-    <Styled.Wrapper featured={props.featured}>
+    <Styled.Wrapper featured={props.featured} onClick={jobClick} isActive={props.isActive} data-index={props.index}>
       {props.featured && (
         <span className="featured-job">
           <i className="fa fa-star"></i> Featured
@@ -53,10 +58,41 @@ export default SearchResult;
 
 const Styled = {
   Wrapper: styled.div`
-    border: 1px solid #e5e5e5;
-    padding: 1.6rem 2rem;
+    border: ${props => props.isActive ? "2px solid #00506d" : "1px solid #e5e5e5"};
+    padding: ${props => props.isActive ? "1.5rem 1.9rem" : "1.6rem 2rem"};
     color: #444;
     border-left: ${(props) => props.featured && "3px solid #FF532A"};
+    cursor: pointer;
+    position: relative;
+    ${props => props.isActive && css`
+      border-left: 2px solid #00506d;
+      &::before {
+        content: '';
+        position: absolute;
+        top: calc(50% - 22px);
+        left: 100%;
+        border-style: solid;
+        border-width: 15px 0 16px 16px;
+        border-color: transparent transparent transparent #00506d;
+        display: block;
+        width: 0;
+        z-index: 1;
+        color: #fff;
+      }
+      &::after {
+          content: '';
+          position: absolute;
+          top: calc(50% - 20px);
+          left: 100%;
+          border-style: solid;
+          border-width: 13px 0 13px 14px;
+          border-color: transparent transparent transparent #fff;
+          display: block;
+          width: 0;
+          z-index: 1;
+          color: #fff;
+      }
+    `}
     .featured-job {
       color: #fe5329;
     }

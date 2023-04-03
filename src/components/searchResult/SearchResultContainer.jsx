@@ -11,34 +11,38 @@ import PageHeader from "../common/PageHeader";
 import { SearchResultsWrap } from "../../../styles/components/searchResults/SearchResults.styles";
 
 const SearchResultWrapper = () => {
-  const [flexLayoutFilter, setFlexLayoutFilter] = useState(true);
+  const [detailStatus, setDetailStatus] = useState(false);
 
-  const toggleLayout = () => {
-    setFlexLayoutFilter(true);
+  const showDetail = () => {
+    setDetailStatus(true);
+  };
+
+  const hideDetail = () => {
+    setDetailStatus(false);
   };
   
   return (
     <SearchResultsWrap>
-      <FlexLayout filter={flexLayoutFilter}>
+      <FlexLayout filter={!detailStatus}>
         <>
           <Breadcrumb />
           <Search type="transparent" country />
           <Filter />
           <SearchHeader />
-          <SearchResultList />
+          <SearchResultList showDetail={showDetail} />
         </>
         <>
-          {flexLayoutFilter ? <p>RightSide Bar</p> : 
-          <JobViewInside className="JobViewInside">
+          {detailStatus ? <JobViewInside className="job-view-inside">
             <button
-              onClick={toggleLayout}
+              onClick={hideDetail}
               type="button" className="btn-close" id="close-inset-detail" aria-hidden="true" />
             <PageHeader
-              mainHeading='Manager'
-              borderBottom='true'
+              mainHeading='Accounting Manager'
             />
             <Tabs inside='true' />
-          </JobViewInside>}
+          </JobViewInside> : 
+          <p>RightSide Bar</p>
+          }
         </>
       </FlexLayout>
     </SearchResultsWrap>

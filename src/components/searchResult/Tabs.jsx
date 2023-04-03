@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import TableHorizontal from "../common/TableHorizontal";
 import BannerUnlock from "../common/BannerUnlock";
 
@@ -11,12 +11,12 @@ const DetailsTabs = (props) => {
       selectedTabPanelClassName='is-selected'
     >
       <STabList className='details-tabs'>
-        <STab name='job' onClick={props.getActiveTab}>
+        <STab name='job' onClick={props.getActiveTab} page={props.page}>
           <i className="fa fa-list"></i>
           {/* <i className='fa fa-briefcase fa-fw'></i> */}
-          Job Summary
+          Job{!props.page && <> Summary</>} 
         </STab>
-        <STab name='company' onClick={props.getActiveTab}>
+        <STab name='company' onClick={props.getActiveTab} page={props.page}>
           <i className='fa fa-building fa-fw'></i>
           Company
         </STab>
@@ -62,11 +62,14 @@ export const STabList = styled(TabList)`
     }
 `;
 export const STab = styled(Tab)`
-    margin: 1.6rem 2rem -.1rem 0;//1.6rem 0 -.1rem 0
-    padding: 1.2rem 0rem;//1.2rem 2.4rem;
+    margin: 0 2rem -.1rem 0;//1.6rem 0 -.1rem 0
+    padding: ${props => props.page ? "1.2rem 2.4rem" : "1.2rem 0rem"};
     cursor: pointer;
     color: #6c757d;
     outline: 0;
+    ${props => props.page && css`
+      font-size: ${props => props.theme.fontSize.lg};
+    `}
 
     &.is-selected {
         color: ${props => props.theme.colors.primaryLight};

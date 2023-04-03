@@ -14,7 +14,9 @@ const H1 = styled.h1`
   line-height: 3.4rem;
   margin: 0 0 .8rem;
   padding: 0 0 .8rem;//0 1.2rem .8rem;
-  border-bottom: ${props => props.borderBottom ? '1px solid #bfbfbf' : '1px solid #bfbfbf'};
+  .job-view-inside & {
+    border-bottom: 1px solid #bfbfbf;
+  }
 `;
 
 export default PageHeader;

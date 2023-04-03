@@ -280,7 +280,7 @@ const SearchOptionMain = () => {
 
 const SearchOptionMainWrap = styled.div`
   box-shadow: rgba(0,0,0,0.03) 0 2px 0 2px;
-  padding: 1.6rem 0 26rem;
+  padding: 1.6rem 0  6rem;
   .row {
     display: flex;
     flex-wrap: wrap;

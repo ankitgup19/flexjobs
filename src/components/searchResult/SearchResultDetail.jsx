@@ -10,7 +10,7 @@ import { FlexLayout } from "../layout/Layout";
 
 const SearchOption = () => {
   return (
-    <FlexLayout filter="true">
+    <FlexLayout filter="true" className='pg-srch-rslt'>
       <>
         <Breadcrumb />
         <SearchResultDetailMain />
