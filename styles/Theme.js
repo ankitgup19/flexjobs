@@ -21,7 +21,6 @@ const Variables = () => {
                 danger: '#d2322d',
                 dangerLight: "#f5c2c7",
                 dangerLighter: "#f8d7da",
-                //border: 1px solid #ced4da;FormGroup Input
                 //#f0f0f0 PopoverHeader bg
                 // border-top: 1px solid #c0c0c0;
                 // border-bottom: 1px solid #dee2e6;
