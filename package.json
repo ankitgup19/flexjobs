@@ -6,8 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --hot --open --mode development",
     "build": "webpack --config webpack.config.js --mode production",
-    "eslint": "eslint \"**/*.{js,jsx,ts,tsx}\"",    
-    "lint:css":"stylelint '*.js'"
+    "eslint": "eslint \"**/*.{js,jsx,ts,tsx}\"",
+    "lint:css": "stylelint '*.js'"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +19,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
+    "react-select": "^5.7.2",
     "react-tabs": "^6.0.0",
     "swiper": "^9.1.0"
   },
